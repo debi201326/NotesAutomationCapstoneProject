@@ -1,13 +1,10 @@
 pipeline {
-
     agent any
-
     stages {
 
         stage('Checkout') {
             steps {
-                git branch: 'main',
-                url: 'https://github.com/debi201326/NotesAutomationCapstoneProject.git'
+                git branch: 'main', url: 'https://github.com/debi201326/NotesAutomationCapstoneProject.git'
             }
         }
 
@@ -17,15 +14,21 @@ pipeline {
             }
         }
 
-        stage('UI Tests') {
-            steps {
-                bat 'mvn test -Dtest=LoginTest,CreateNoteTest,NegativeUITest,NegativeLoginTest'
-            }
-        }
+        stage('UI and API Tests') {
+            parallel {
 
-        stage('API Tests') {
-            steps {
-                bat 'mvn test -Dtest=GetNotesAPITest,DeleteNoteAPITest,ResponseTimeAPITest,JMeterTest,NegativeAPITest'
+                stage('UI Tests') {
+                    steps {
+                        bat 'mvn test -Dtest=LoginTest,CreateNoteTest,NegativeUITest,NegativeLoginTest'
+                    }
+                }
+
+                stage('API Tests') {
+                    steps {
+                        bat 'mvn test -Dtest=GetNotesAPITest,DeleteNoteAPITest,ResponseTimeAPITest,JMeterTest,NegativeAPITest'
+                    }
+                }
+
             }
         }
 
@@ -37,7 +40,6 @@ pipeline {
 
         stage('Publish Reports') {
             steps {
-
                 junit 'target/surefire-reports/*.xml'
 
                 allure([
@@ -51,22 +53,20 @@ pipeline {
                     reportName: 'Extent Test Report',
                     keepAll: true,
                     alwaysLinkToLastBuild: true,
-                    allowMissing: false
+                    allowMissing: true
                 ])
             }
         }
+
     }
 
     post {
-
         always {
             echo 'Test Execution Completed'
         }
-
         success {
             echo 'Build SUCCESS'
         }
-
         failure {
             echo 'Build FAILED'
         }
