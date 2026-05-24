@@ -4,7 +4,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/debi201326/NotesAutomationHybrid.git'
+                git branch: 'main', url: 'https://github.com/debi201326/NotesAutomationCapstoneProject.git'
             }
         }
 
@@ -25,7 +25,7 @@ pipeline {
 
                 stage('API Tests') {
                     steps {
-                        bat 'mvn test -Dtest=GetNotesAPITest,DeleteNoteAPITest,ResponseTimeAPITest,JMMeterTest,NegativeAPITest'
+                        bat 'mvn test -Dtest=GetNotesAPITest,DeleteNoteAPITest,ResponseTimeAPITest,JMeterTest,NegativeAPITest'
                     }
                 }
 
