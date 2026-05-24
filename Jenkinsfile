@@ -4,11 +4,11 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/debi201326/NotesAutomationCapstoneProject.git'
+                git branch: 'main', url: 'https://github.com/debi201326/NotesAutomationHybrid.git'
             }
         }
 
-        stage('Build') {
+        stage('Clean and Build') {
             steps {
                 bat 'mvn clean compile'
             }
@@ -38,14 +38,13 @@ pipeline {
             }
         }
 
-        stage('Allure Report') {
-            steps {
-                bat 'mvn allure:report'
-            }
-        }
-
         stage('Publish Reports') {
             steps {
+                junit 'target/surefire-reports/*.xml'
+                allure([
+                    reportBuildPolicy: 'ALWAYS',
+                    results: [[path: 'target/allure-results']]
+                ])
                 publishHTML([
                     reportDir: 'target/extent-report',
                     reportFiles: 'ExtentReport.html',
@@ -57,5 +56,18 @@ pipeline {
             }
         }
 
+    }
+
+    post {
+        always {
+            echo 'Test Execution Completed'
+            cleanWs()
+        }
+        success {
+            echo 'Build SUCCESS'
+        }
+        failure {
+            echo 'Build FAILED'
+        }
     }
 }
