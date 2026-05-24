@@ -25,7 +25,7 @@ pipeline {
 
                 stage('API Tests') {
                     steps {
-                        bat 'mvn test -Dtest=GetNotesAPITest,DeleteNoteAPITest,ResponseTimeAPITest,NegativeAPITest'
+                        bat 'mvn test -Dtest=GetNotesAPITest,DeleteNoteAPITest,ResponseTimeAPITest,JMMeterTest,NegativeAPITest'
                     }
                 }
 
