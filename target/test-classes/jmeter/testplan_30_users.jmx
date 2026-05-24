@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jmeterTestPlan version="1.2" properties="5.0" jmeter="5.6.3">
+  <hashTree>
+
+    <TestPlan guiclass="TestPlanGui"
+              testclass="TestPlan"
+              testname="30 Users Notes API Test"
+              enabled="true">
+
+      <stringProp name="TestPlan.comments"></stringProp>
+      <boolProp name="TestPlan.functional_mode">false</boolProp>
+      <boolProp name="TestPlan.tearDown_on_shutdown">true</boolProp>
+      <boolProp name="TestPlan.serialize_threadgroups">false</boolProp>
+
+      <elementProp name="TestPlan.user_defined_variables"
+                   elementType="Arguments"
+                   guiclass="ArgumentsPanel"
+                   testclass="Arguments"
+                   enabled="true">
+        <collectionProp name="Arguments.arguments"/>
+      </elementProp>
+
+    </TestPlan>
+
+    <hashTree>
+
+      <ThreadGroup guiclass="ThreadGroupGui"
+                   testclass="ThreadGroup"
+                   testname="30 Users"
+                   enabled="true">
+
+        <stringProp name="ThreadGroup.num_threads">30</stringProp>
+        <stringProp name="ThreadGroup.ramp_time">10</stringProp>
+        <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
+        <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
+
+        <elementProp name="ThreadGroup.main_controller"
+                     elementType="LoopController"
+                     guiclass="LoopControlPanel"
+                     testclass="LoopController"
+                     enabled="true">
+
+          <boolProp name="LoopController.continue_forever">false</boolProp>
+          <stringProp name="LoopController.loops">1</stringProp>
+
+        </elementProp>
+
+      </ThreadGroup>
+
+      <hashTree>
+
+        <!-- LOGIN API -->
+
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui"
+                          testclass="HTTPSamplerProxy"
+                          testname="Login API"
+                          enabled="true">
+
+          <stringProp name="HTTPSampler.domain">practice.expandtesting.com</stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.path">/notes/api/users/login</stringProp>
+          <stringProp name="HTTPSampler.method">POST</stringProp>
+
+          <boolProp name="HTTPSampler.postBodyRaw">true</boolProp>
+
+          <elementProp name="HTTPsampler.Arguments"
+                       elementType="Arguments">
+
+            <collectionProp name="Arguments.arguments">
+
+              <elementProp name="" elementType="HTTPArgument">
+                <boolProp name="HTTPArgument.always_encode">false</boolProp>
+                <stringProp name="Argument.value">
+{
+  "email":"abc9237@mail.com",
+  "password":"abc123"}
+                </stringProp>
+                <stringProp name="Argument.metadata">=</stringProp>
+              </elementProp>
+
+            </collectionProp>
+
+          </elementProp>
+
+        </HTTPSamplerProxy>
+
+        <hashTree>
+
+          <!-- TOKEN EXTRACTOR -->
+
+          <JSONPostProcessor guiclass="JSONPostProcessorGui"
+                             testclass="JSONPostProcessor"
+                             testname="Extract Token"
+                             enabled="true">
+
+            <stringProp name="JSONPostProcessor.referenceNames">token</stringProp>
+            <stringProp name="JSONPostProcessor.jsonPathExprs">$.data.token</stringProp>
+
+          </JSONPostProcessor>
+
+          <hashTree/>
+
+        </hashTree>
+
+        <!-- GET NOTES API -->
+
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui"
+                          testclass="HTTPSamplerProxy"
+                          testname="Get Notes API"
+                          enabled="true">
+
+          <stringProp name="HTTPSampler.domain">practice.expandtesting.com</stringProp>
+          <stringProp name="HTTPSampler.protocol">https</stringProp>
+          <stringProp name="HTTPSampler.path">/notes/api/notes</stringProp>
+          <stringProp name="HTTPSampler.method">GET</stringProp>
+
+        </HTTPSamplerProxy>
+
+        <hashTree>
+
+          <!-- AUTH HEADER -->
+
+          <HeaderManager guiclass="HeaderPanel"
+                         testclass="HeaderManager"
+                         testname="Authorization Header"
+                         enabled="true">
+
+            <collectionProp name="HeaderManager.headers">
+
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">x-auth-token</stringProp>
+                <stringProp name="Header.value">${token}</stringProp>
+              </elementProp>
+
+            </collectionProp>
+
+          </HeaderManager>
+
+          <hashTree/>
+
+        </hashTree>
+
+      </hashTree>
+
+    </hashTree>
+
+  </hashTree>
+</jmeterTestPlan>

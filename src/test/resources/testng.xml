@@ -51,6 +51,12 @@
         </classes>
     </test>
 
+    <test name="JMeter Performance Tests">
+        <classes>
+            <class name="tests.API.JMeterTest"/>
+        </classes>
+    </test>
+
     <test name="Negative API Tests">
         <classes>
             <class name="tests.API.NegativeAPITest"/>

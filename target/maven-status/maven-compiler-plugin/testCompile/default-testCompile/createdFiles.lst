@@ -1,9 +1,9 @@
 tests\E2E\EndToEndTest.class
 tests\API\ResponseTimeAPITest.class
 tests\API\GetNotesAPITest.class
+tests\API\JMeterTest.class
 tests\UI\CreateNoteTest.class
 tests\API\DeleteNoteAPITest.class
-tests\API\PerformanceTest.class
 tests\API\NegativeAPITest.class
 tests\UI\LoginTest.class
 tests\UI\NegativeUITest.class
