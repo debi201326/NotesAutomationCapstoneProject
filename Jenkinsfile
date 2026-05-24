@@ -14,15 +14,21 @@ pipeline {
             }
         }
 
-        stage('UI Tests') {
-            steps {
-                bat 'mvn test -Dtest=LoginTest,CreateNoteTest,NegativeUITest,NegativeLoginTest'
-            }
-        }
+        stage('UI and API Tests') {
+            parallel {
 
-        stage('API Tests') {
-            steps {
-                bat 'mvn test -Dtest=GetNotesAPITest,DeleteNoteAPITest,ResponseTimeAPITest,NegativeAPITest'
+                stage('UI Tests') {
+                    steps {
+                        bat 'mvn test -Dtest=LoginTest,CreateNoteTest,NegativeUITest,NegativeLoginTest'
+                    }
+                }
+
+                stage('API Tests') {
+                    steps {
+                        bat 'mvn test -Dtest=GetNotesAPITest,DeleteNoteAPITest,ResponseTimeAPITest,NegativeAPITest'
+                    }
+                }
+
             }
         }
 
