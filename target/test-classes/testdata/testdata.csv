@@ -1,0 +1,8 @@
+type,email,password
+valid_user,abc9237@mail.com,abc@123
+invalid_user,abc9237@mail.com,wrongpass
+wrong_email_user,wronguser@test.com,wrongpass123
+invalid_email_format,notanemail,abc@123
+empty_email,,abc@123
+empty_password,abc9237@mail.com,
+both_empty,,

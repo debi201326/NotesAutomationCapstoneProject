@@ -1,0 +1,4 @@
+type,noteTitle,noteDescription,noteCategory
+valid_note,Automation Note,Created using Selenium,Home
+empty_title,,Description Only,Work
+empty_description,Title Only,,Personal

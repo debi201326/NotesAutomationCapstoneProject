@@ -1,0 +1,69 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="NotesApp Test Suite" parallel="tests" thread-count="3">
+    <listeners>
+        <listener class-name="utils.ReportManager"/>
+    </listeners>
+
+    <!-- UI TESTS -->
+
+    <test name="Login UI Tests">
+        <classes>
+            <class name="tests.UI.LoginTest"/>
+        </classes>
+    </test>
+
+    <test name="Create Note UI Tests">
+        <classes>
+            <class name="tests.UI.CreateNoteTest"/>
+        </classes>
+    </test>
+
+    <test name="Negative UI Tests">
+        <classes>
+            <class name="tests.UI.NegativeUITest"/>
+        </classes>
+    </test>
+
+    <test name="Negative Login Tests">
+        <classes>
+            <class name="tests.UI.NegativeLoginTest"/>
+        </classes>
+    </test>
+    
+    <!-- API TESTS -->
+
+    <test name="GET API Tests">
+        <classes>
+            <class name="tests.API.GetNotesAPITest"/>
+        </classes>
+    </test>
+
+    <test name="DELETE API Tests">
+        <classes>
+            <class name="tests.API.DeleteNoteAPITest"/>
+        </classes>
+    </test>
+
+    <test name="Response Time API Tests">
+        <classes>
+            <class name="tests.API.ResponseTimeAPITest"/>
+        </classes>
+    </test>
+
+    <test name="Negative API Tests">
+        <classes>
+            <class name="tests.API.NegativeAPITest"/>
+        </classes>
+    </test>
+
+    <!-- END TO END TESTS -->
+
+    <test name="End to End Tests" parallel="none">
+        <classes>
+            <class name="tests.E2E.EndToEndTest"/>
+        </classes>
+    </test>
+
+</suite>
+
