@@ -34,7 +34,7 @@ public class NegativeUITest extends BaseTest {
 
             NotesPage notesPage = new NotesPage(driver, wait);
 
-            notesPage.createNote(emptyTitle, description);
+            notesPage.createNote(emptyTitle, description, noteCategory);
 
             Thread.sleep(1500);
 
@@ -83,7 +83,7 @@ public class NegativeUITest extends BaseTest {
 
             NotesPage notesPage = new NotesPage(driver, wait);
 
-            notesPage.createNote(title, emptyDescription);
+            notesPage.createNote(title, emptyDescription, noteCategory);
 
             Thread.sleep(1500);
 

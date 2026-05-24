@@ -23,7 +23,7 @@ public class CreateNoteTest extends BaseTest {
             loginPage.login(email, password);
 
             NotesPage notesPage = new NotesPage(driver, wait);
-            notesPage.createNote(noteTitle, noteDescription);
+            notesPage.createNote(noteTitle, noteDescription, noteCategory);
 
             boolean created = notesPage.isNoteVisible(noteTitle);
 
@@ -51,7 +51,7 @@ public class CreateNoteTest extends BaseTest {
             loginPage.login(email, password);
 
             NotesPage notesPage = new NotesPage(driver, wait);
-            notesPage.createNote(noteTitle, noteDescription);
+            notesPage.createNote(noteTitle, noteDescription, noteCategory);
 
             boolean visible = notesPage.isNoteVisible(noteTitle);
 

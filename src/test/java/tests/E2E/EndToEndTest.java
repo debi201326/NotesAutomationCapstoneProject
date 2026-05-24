@@ -31,7 +31,7 @@ public class EndToEndTest extends BaseTest {
                         loginPage.login(email, password);
 
                         NotesPage notesPage = new NotesPage(driver, wait);
-                        notesPage.createNote(noteTitle, noteDescription);
+                        notesPage.createNote(noteTitle, noteDescription, noteCategory);
 
                         boolean visible = notesPage.isNoteVisible(noteTitle);
 
@@ -159,7 +159,7 @@ public class EndToEndTest extends BaseTest {
                         loginPage.login(email, password);
 
                         NotesPage notesPage = new NotesPage(driver, wait);
-                        notesPage.createNote(noteTitle, noteDescription);
+                        notesPage.createNote(noteTitle, noteDescription, noteCategory);
 
                         String uiTitle = WaitUtil.waitForVisible(
                                         wait,
