@@ -4,7 +4,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/debi201326/NotesAutomationCapstoneProject.git'
+                git branch: 'main', url: 'https://github.com/debi201326/NotesAutomationHybrid.git'
             }
         }
 
@@ -41,17 +41,19 @@ pipeline {
         stage('Publish Reports') {
             steps {
                 junit 'target/surefire-reports/*.xml'
+
                 allure([
                     reportBuildPolicy: 'ALWAYS',
                     results: [[path: 'target/allure-results']]
                 ])
+
                 publishHTML([
                     reportDir: 'target/extent-report',
                     reportFiles: 'ExtentReport.html',
                     reportName: 'Extent Test Report',
                     keepAll: true,
                     alwaysLinkToLastBuild: true,
-                    allowMissing: true
+                    allowMissing: false
                 ])
             }
         }
@@ -61,7 +63,6 @@ pipeline {
     post {
         always {
             echo 'Test Execution Completed'
-            cleanWs()
         }
         success {
             echo 'Build SUCCESS'
