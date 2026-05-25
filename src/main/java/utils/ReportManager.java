@@ -15,8 +15,7 @@ public class ReportManager implements ITestListener {
 
     private static synchronized void initExtent() {
         if (extent == null) {
-            ExtentSparkReporter spark = new ExtentSparkReporter(
-                "target/extent-report/ExtentReport.html");
+            ExtentSparkReporter spark = new ExtentSparkReporter("target/extent-report/ExtentReport.html");
             spark.config().setReportName("Notes App - Full Test Report");
             spark.config().setDocumentTitle("Test Execution Report");
             extent = new ExtentReports();
@@ -35,8 +34,7 @@ public class ReportManager implements ITestListener {
     @Override
     public void onTestStart(ITestResult result) {
         initExtent();
-        ExtentTest extentTest = extent.createTest(
-            result.getMethod().getMethodName());
+        ExtentTest extentTest = extent.createTest(result.getMethod().getMethodName());
         test.set(extentTest);
     }
 
@@ -52,13 +50,11 @@ public class ReportManager implements ITestListener {
 
         try {
             Object instance = result.getInstance();
-            WebDriver driver = (WebDriver) instance.getClass()
-                .getField("driver").get(instance);
+            WebDriver driver = (WebDriver) instance.getClass().getField("driver").get(instance);
             String base64 = ((org.openqa.selenium.TakesScreenshot) driver)
-                .getScreenshotAs(org.openqa.selenium.OutputType.BASE64);
+                    .getScreenshotAs(org.openqa.selenium.OutputType.BASE64);
             test.get().addScreenCaptureFromBase64String(base64, "Failure Screenshot");
-            ScreenshotUtil.captureAndAttach(driver,
-                "Failure - " + result.getMethod().getMethodName());
+            ScreenshotUtil.captureAndAttach(driver, "Failure - " + result.getMethod().getMethodName());
         } catch (Exception e) {
             test.get().warning("Could not capture screenshot: " + e.getMessage());
         }

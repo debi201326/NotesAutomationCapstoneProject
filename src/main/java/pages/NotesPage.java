@@ -13,15 +13,15 @@ public class NotesPage {
     private WebDriver driver;
     private WebDriverWait wait;
 
-    private By addNoteBtn    = By.xpath("//button[contains(text(),'Add Note')]");
-    private By titleField    = By.id("title");
-    private By descField     = By.id("description");
+    private By addNoteBtn = By.xpath("//button[contains(text(),'Add Note')]");
+    private By titleField = By.id("title");
+    private By descField = By.id("description");
     private By categoryField = By.id("category");
-    private By createButton  = By.xpath("//button[@data-testid='note-submit']");
+    private By createButton = By.xpath("//button[@data-testid='note-submit']");
 
     public NotesPage(WebDriver driver, WebDriverWait wait) {
         this.driver = driver;
-        this.wait   = wait;
+        this.wait = wait;
     }
 
     public void createNote(String title, String description, String category) {
@@ -42,9 +42,7 @@ public class NotesPage {
 
     public boolean isNoteVisible(String title) {
         try {
-            String text = WaitUtil.waitForVisible(wait,
-                By.xpath("//*[contains(text(),'" + title + "')]"))
-                .getText();
+            String text = WaitUtil.waitForVisible(wait, By.xpath("//*[contains(text(),'" + title + "')]")).getText();
             return text.contains(title);
         } catch (Exception e) {
             return false;

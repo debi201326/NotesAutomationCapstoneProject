@@ -1,3 +1,4 @@
+utils\SelfHealingLocator.class
 pages\LoginPage.class
 api\APIAuthentication.class
 utils\SchemaValidator.class

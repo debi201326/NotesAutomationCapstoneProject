@@ -1,5 +1,3 @@
-
-
 package utils;
 
 import org.openqa.selenium.JavascriptExecutor;
@@ -11,8 +9,7 @@ public class PerformanceUtil {
     public static void checkApiResponseTime(long responseTimeMs, long limitMs) {
         System.out.println("API Response Time: " + responseTimeMs + "ms");
         if (responseTimeMs > limitMs) {
-            System.out.println("WARNING: Response time " + responseTimeMs 
-                + "ms exceeded limit of " + limitMs + "ms");
+            System.out.println("WARNING: Response time " + responseTimeMs + "ms exceeded limit of " + limitMs + "ms");
         } else {
             System.out.println("PASS: Response time is within limit");
         }
@@ -22,8 +19,8 @@ public class PerformanceUtil {
     public static long getPageLoadTime(WebDriver driver) {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         Long loadTime = (Long) js.executeScript(
-            "return performance.timing.loadEventEnd " +
-            "- performance.timing.navigationStart;");
+                "return performance.timing.loadEventEnd " +
+                        "- performance.timing.navigationStart;");
         System.out.println("Page Load Time: " + loadTime + "ms");
         return loadTime;
     }
@@ -32,8 +29,8 @@ public class PerformanceUtil {
     public static long getDomReadyTime(WebDriver driver) {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         Long domTime = (Long) js.executeScript(
-            "return performance.timing.domContentLoadedEventEnd " +
-            "- performance.timing.navigationStart;");
+                "return performance.timing.domContentLoadedEventEnd " +
+                        "- performance.timing.navigationStart;");
         System.out.println("DOM Ready Time: " + domTime + "ms");
         return domTime;
     }

@@ -8,107 +8,65 @@ import java.util.List;
 
 public class JMeterUtil {
 
-    static String JMETER_PATH =
-            "C:\\Users\\debi2\\Downloads\\apache-jmeter-5.6.3\\bin\\jmeter.bat";
+        static String JMETER_PATH = "C:\\Users\\debi2\\Downloads\\apache-jmeter-5.6.3\\bin\\jmeter.bat";
 
-    public static void runJMeter(
-            String testPlan,
-            String resultFile) throws Exception {
+        public static void runJMeter(
+                        String testPlan,
+                        String resultFile) throws Exception {
 
-        Files.createDirectories(Paths.get("target/jmeter"));
+                Files.createDirectories(Paths.get("target/jmeter"));
+                System.out.println("[JMETER] Running: " + testPlan);
 
-        System.out.println("[JMETER] Running: " + testPlan);
+                ProcessBuilder pb = new ProcessBuilder(
+                                JMETER_PATH,
+                                "-n",
+                                "-t", testPlan,
+                                "-l", resultFile);
 
-        ProcessBuilder pb = new ProcessBuilder(
-                JMETER_PATH,
-                "-n",
-                "-t", testPlan,
-                "-l", resultFile
-        );
-
-        pb.redirectErrorStream(true);
-
-        Process process = pb.start();
-
-        BufferedReader reader =
-                new BufferedReader(
-                        new InputStreamReader(process.getInputStream()));
-
-        String line;
-
-        while ((line = reader.readLine()) != null) {
-            System.out.println(line);
+                pb.redirectErrorStream(true);
+                Process process = pb.start();
+                BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+                String line;
+                while ((line = reader.readLine()) != null) {
+                        System.out.println(line);
+                }
+                if (process.waitFor() != 0) {
+                        throw new RuntimeException("[JMETER] Execution failed!");
+                }
+                System.out.println("[JMETER] Done. Results saved at: " + resultFile);
         }
 
-        if (process.waitFor() != 0) {
-            throw new RuntimeException(
-                    "[JMETER] Execution failed!");
+        public static void printPerformanceSummary(
+                        String resultFile,
+                        String label) throws Exception {
+
+                List<String> lines = Files.readAllLines(Paths.get(resultFile));
+
+                long total = 0;
+                long min = Long.MAX_VALUE;
+                long max = Long.MIN_VALUE;
+                int count = 0;
+
+                for (String line : lines) {
+                        if (line.contains("elapsed") || line.trim().isEmpty()) {
+                                continue;
+                        }
+                        String[] data = line.split(",");
+                        long responseTime = Long.parseLong(data[1]);
+                        total += responseTime;
+                        if (responseTime < min) {
+                                min = responseTime;
+                        }
+                        if (responseTime > max) {
+                                max = responseTime;
+                        }
+                        count++;
+                }
+                long avg = count > 0 ? total / count : 0;
+                System.out.println("[JMETER] PERFORMANCE SUMMARY : " + label);
+                System.out.println("Total Requests : " + count);
+                System.out.println("Average Time   : " + avg + " ms");
+                System.out.println("Min Time       : " + min + " ms");
+                System.out.println("Max Time       : " + max + " ms");
         }
-
-        System.out.println(
-                "[JMETER] Done. Results saved at: " + resultFile);
-    }
-
-    public static void printPerformanceSummary(
-            String resultFile,
-            String label) throws Exception {
-
-        List<String> lines =
-                Files.readAllLines(Paths.get(resultFile));
-
-        long total = 0;
-        long min = Long.MAX_VALUE;
-        long max = Long.MIN_VALUE;
-        int count = 0;
-
-        for (String line : lines) {
-
-            if (line.contains("elapsed")
-                    || line.trim().isEmpty()) {
-
-                continue;
-            }
-
-            String[] data = line.split(",");
-
-            long responseTime =
-                    Long.parseLong(data[1]);
-
-            total += responseTime;
-
-            if (responseTime < min) {
-                min = responseTime;
-            }
-
-            if (responseTime > max) {
-                max = responseTime;
-            }
-
-            count++;
-        }
-
-        long avg =
-                count > 0 ? total / count : 0;
-
-        System.out.println(
-                "\n========================================");
-
-        System.out.println(
-                "[JMETER] PERFORMANCE SUMMARY : " + label);
-
-        System.out.println(
-                "Total Requests : " + count);
-
-        System.out.println(
-                "Average Time   : " + avg + " ms");
-
-        System.out.println(
-                "Min Time       : " + min + " ms");
-
-        System.out.println(
-                "Max Time       : " + max + " ms");
-
-        System.out.println(
-                "========================================");
-    }
 }

@@ -11,23 +11,18 @@ public class ClickUtil {
 
         while (attempts < 3) {
             try {
-
                 WebElement element = WaitUtil.waitForPresence(wait, locator);
-
                 ((JavascriptExecutor) driver).executeScript(
                         "arguments[0].scrollIntoView({block: 'center', inline: 'nearest'});",
                         element);
 
                 WaitUtil.waitForClickable(wait, locator);
-
                 element.click();
                 return;
 
             } catch (ElementClickInterceptedException e) {
-
                 attempts++;
                 System.out.println("[WARN] Click intercepted. Retry: " + attempts);
-
                 try {
                     Thread.sleep(1000);
                 } catch (InterruptedException ignored) {
@@ -41,12 +36,9 @@ public class ClickUtil {
     }
 
     public static void jsClick(WebDriver driver, WebDriverWait wait, By locator) {
-
         WebElement element = WaitUtil.waitForPresence(wait, locator);
-
         ((JavascriptExecutor) driver).executeScript(
                 "arguments[0].click();", element);
-
         System.out.println("[INFO] JS click performed on: " + locator);
     }
 }

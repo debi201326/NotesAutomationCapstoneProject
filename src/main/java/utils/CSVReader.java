@@ -3,7 +3,6 @@ package utils;
 import java.io.FileReader;
 import java.util.HashMap;
 import java.util.Map;
-
 import com.opencsv.CSVReaderHeaderAware;
 
 import config.ConfigReader;
@@ -16,8 +15,7 @@ public class CSVReader {
         Map<String, String> row = new HashMap<>();
 
         try {
-            CSVReaderHeaderAware reader = new CSVReaderHeaderAware(
-                    new FileReader(csvPath));
+            CSVReaderHeaderAware reader = new CSVReaderHeaderAware(new FileReader(csvPath));
             Map<String, String> line;
 
             while ((line = reader.readMap()) != null) {
@@ -34,15 +32,15 @@ public class CSVReader {
         return row;
     }
 
-// Reads notes data from CSV, appends timestamp to noteTitle, and returns a map for the specified type
+    // Reads notes data from CSV, appends timestamp to noteTitle, and returns a map
+    // for the specified type
     public static Map<String, String> getNotesRowByType(String type) {
 
         String csvPath = ConfigReader.get("notesDataPath");
         Map<String, String> row = new HashMap<>();
 
         try {
-            CSVReaderHeaderAware reader = new CSVReaderHeaderAware(
-                    new FileReader(csvPath));
+            CSVReaderHeaderAware reader = new CSVReaderHeaderAware(new FileReader(csvPath));
             Map<String, String> line;
 
             while ((line = reader.readMap()) != null) {

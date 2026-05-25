@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="198.848" tests="18" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="221.708" tests="18" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="webdriver.chrome.driver" value="C:\Users\debi2\.cache\selenium\chromedriver\win64\148.0.7778.178\chromedriver.exe"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\debi2\AppData\Local\Temp\surefire13158465686523783392\surefirebooter-20260524232915813_3.jar C:\Users\debi2\AppData\Local\Temp\surefire13158465686523783392 2026-05-24T23-29-15_502-jvmRun1 surefire-20260524232915813_1tmp surefire_0-20260524232915813_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\debi2\AppData\Local\Temp\surefire13489286289767215276\surefirebooter-20260525123314716_3.jar C:\Users\debi2\AppData\Local\Temp\surefire13489286289767215276 2026-05-25T12-33-14_380-jvmRun1 surefire-20260525123314716_1tmp surefire_0-20260525123314716_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\debi2\OneDrive\Pictures\NotesAutomationHybrid\target\test-classes;C:\Users\debi2\OneDrive\Pictures\NotesAutomationHybrid\target\classes;C:\Users\debi2\.m2\repository\org\seleniumhq\selenium\selenium-java\4.18.1\selenium-java-4.18.1.jar;C:\Users\debi2\.m2\repository\org\seleniumhq\selenium\selenium-api\4.18.1\selenium-api-4.18.1.jar;C:\Users\debi2\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.18.1\selenium-chrome-driver-4.18.1.jar;C:\Users\debi2\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\debi2\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.18.1\selenium-chromium-driver-4.18.1.jar;C:\Users\debi2\.m2\repository\org\seleniumhq\selenium\selenium-json\4.18.1\selenium-json-4.18.1.jar;C:\Users\debi2\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.18.1\selenium-manager-4.18.1.jar;C:\Users\debi2\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v120\4.18.1\selenium-devtools-v120-4.18.1.jar;C:\Users\debi2\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v121\4.18.1\selenium-devtools-v121-4.18.1.jar;C:\Users\debi2\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v122\4.18.1\selenium-devtools-v122-4.18.1.jar;C:\Users\debi2\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.18.1\selenium-devtools-v85-4.18.1.jar;C:\Users\debi2\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.18.1\selenium-edge-driver-4.18.1.jar;C:\Users\debi2\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.18.1\selenium-firefox-driver-4.18.1.jar;C:\Users\debi2\.m2\repository\org\seleniumhq\selenium\selenium-http\4.18.1\selenium-http-4.18.1.jar;C:\Users\debi2\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\debi2\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.18.1\selenium-ie-driver-4.18.1.jar;C:\Users\debi2\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.18.1\selenium-remote-driver-4.18.1.jar;C:\Users\debi2\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.23.1-alpha\opentelemetry-semconv-1.23.1-alpha.jar;C:\Users\debi2\.m2\repository\io\opentelemetry\opentelemetry-api\1.35.0\opentelemetry-api-1.35.0.jar;C:\Users\debi2\.m2\repository\io\opentelemetry\opentelemetry-context\1.35.0\opentelemetry-context-1.35.0.jar;C:\Users\debi2\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.35.0\opentelemetry-exporter-logging-1.35.0.jar;C:\Users\debi2\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.35.0\opentelemetry-sdk-common-1.35.0.jar;C:\Users\debi2\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.35.0\opentelemetry-sdk-extension-autoconfigure-spi-1.35.0.jar;C:\Users\debi2\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.35.0\opentelemetry-sdk-extension-autoconfigure-1.35.0.jar;C:\Users\debi2\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.35.0-alpha\opentelemetry-api-events-1.35.0-alpha.jar;C:\Users\debi2\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.35.0\opentelemetry-sdk-trace-1.35.0.jar;C:\Users\debi2\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.35.0-alpha\opentelemetry-extension-incubator-1.35.0-alpha.jar;C:\Users\debi2\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.35.0\opentelemetry-sdk-1.35.0.jar;C:\Users\debi2\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.35.0\opentelemetry-sdk-metrics-1.35.0.jar;C:\Users\debi2\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.35.0\opentelemetry-sdk-logs-1.35.0.jar;C:\Users\debi2\.m2\repository\net\bytebuddy\byte-buddy\1.14.12\byte-buddy-1.14.12.jar;C:\Users\debi2\.m2\repository\org\seleniumhq\selenium\selenium-os\4.18.1\selenium-os-4.18.1.jar;C:\Users\debi2\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\debi2\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.18.1\selenium-safari-driver-4.18.1.jar;C:\Users\debi2\.m2\repository\org\seleniumhq\selenium\selenium-support\4.18.1\selenium-support-4.18.1.jar;C:\Users\debi2\.m2\repository\io\github\bonigarcia\webdrivermanager\5.7.0\webdrivermanager-5.7.0.jar;C:\Users\debi2\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\debi2\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\debi2\.m2\repository\com\github\docker-java\docker-java\3.3.5\docker-java-3.3.5.jar;C:\Users\debi2\.m2\repository\com\github\docker-java\docker-java-core\3.3.5\docker-java-core-3.3.5.jar;C:\Users\debi2\.m2\repository\com\github\docker-java\docker-java-api\3.3.5\docker-java-api-3.3.5.jar;C:\Users\debi2\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\debi2\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\debi2\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\debi2\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\debi2\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\debi2\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\debi2\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\debi2\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.5\docker-java-transport-httpclient5-3.3.5.jar;C:\Users\debi2\.m2\repository\com\github\docker-java\docker-java-transport\3.3.5\docker-java-transport-3.3.5.jar;C:\Users\debi2\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\debi2\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\debi2\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\debi2\.m2\repository\org\apache\commons\commons-compress\1.26.0\commons-compress-1.26.0.jar;C:\Users\debi2\.m2\repository\commons-io\commons-io\2.15.1\commons-io-2.15.1.jar;C:\Users\debi2\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\debi2\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\debi2\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\debi2\.m2\repository\org\testng\testng\7.9.0\testng-7.9.0.jar;C:\Users\debi2\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\debi2\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\debi2\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\debi2\.m2\repository\org\apache\groovy\groovy\4.0.16\groovy-4.0.16.jar;C:\Users\debi2\.m2\repository\org\apache\groovy\groovy-xml\4.0.16\groovy-xml-4.0.16.jar;C:\Users\debi2\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\debi2\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\debi2\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\debi2\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\debi2\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\debi2\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\debi2\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\debi2\.m2\repository\io\rest-assured\json-path\5.4.0\json-path-5.4.0.jar;C:\Users\debi2\.m2\repository\org\apache\groovy\groovy-json\4.0.16\groovy-json-4.0.16.jar;C:\Users\debi2\.m2\repository\io\rest-assured\rest-assured-common\5.4.0\rest-assured-common-5.4.0.jar;C:\Users\debi2\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\debi2\.m2\repository\io\qameta\allure\allure-testng\2.25.0\allure-testng-2.25.0.jar;C:\Users\debi2\.m2\repository\io\qameta\allure\allure-java-commons\2.25.0\allure-java-commons-2.25.0.jar;C:\Users\debi2\.m2\repository\io\qameta\allure\allure-model\2.25.0\allure-model-2.25.0.jar;C:\Users\debi2\.m2\repository\io\qameta\allure\allure-test-filter\2.25.0\allure-test-filter-2.25.0.jar;C:\Users\debi2\.m2\repository\com\aventstack\extentreports\5.1.1\extentreports-5.1.1.jar;C:\Users\debi2\.m2\repository\io\reactivex\rxjava3\rxjava\3.1.6\rxjava-3.1.6.jar;C:\Users\debi2\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\debi2\.m2\repository\org\freemarker\freemarker\2.3.32\freemarker-2.3.32.jar;C:\Users\debi2\.m2\repository\org\projectlombok\lombok\1.18.26\lombok-1.18.26.jar;C:\Users\debi2\.m2\repository\com\opencsv\opencsv\5.9\opencsv-5.9.jar;C:\Users\debi2\.m2\repository\org\apache\commons\commons-text\1.11.0\commons-text-1.11.0.jar;C:\Users\debi2\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\debi2\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\debi2\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\debi2\.m2\repository\org\slf4j\slf4j-simple\2.0.12\slf4j-simple-2.0.12.jar;C:\Users\debi2\.m2\repository\io\rest-assured\json-schema-validator\5.4.0\json-schema-validator-5.4.0.jar;C:\Users\debi2\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\debi2\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\debi2\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\debi2\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\debi2\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\debi2\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\debi2\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\debi2\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\debi2\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\debi2\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\debi2\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\debi2\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\debi2\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\debi2\.m2\repository\com\google\guava\guava\32.0.1-jre\guava-32.0.1-jre.jar;C:\Users\debi2\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\debi2\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\debi2\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\debi2\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\debi2\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\debi2\AppData\Local\Temp\surefire13158465686523783392\surefirebooter-20260524232915813_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\debi2\AppData\Local\Temp\surefire13489286289767215276\surefirebooter-20260525123314716_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.12+8-LTS-286"/>
@@ -57,12 +57,12 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="TC_UI_02_CreateNote" classname="tests.UI.CreateNoteTest" time="24.798">
-    <system-out><![CDATA[===== TC-UI-01: Login with Valid Credentials =====
+  <testcase name="TC_UI_01_ValidLogin" classname="tests.UI.LoginTest" time="21.363">
+    <system-out><![CDATA[===== TC-UI-02: Create a New Note via UI and Verify it appears in UI List =====
 ===== TC-NEG-01: Create Note with Empty Title =====
-===== TC-UI-02: Create a New Note via UI and Verify it appears in UI List =====
-Page Load Time: 13167ms
-Page load time: 13167ms
+===== TC-UI-01: Login with Valid Credentials =====
+Page Load Time: 33863ms
+Page load time: 33863ms
 [INFO] Ad iframes removed
 [INFO] Vignette ad removed
 [INFO] Ad iframes removed
@@ -74,61 +74,44 @@ Login successful
 [INFO] JS click performed on: By.xpath: //button[contains(text(),'Add Note')]
 [INFO] Ad iframes removed
 [INFO] Vignette ad removed
+[INFO] Ad iframes removed
+[INFO] Vignette ad removed
 [INFO] JS click performed on: By.xpath: //button[@data-testid='note-submit']
-Note created: Automation Note 1779645557970
-Screenshot attached to Allure: TC-UI-02 Note Created
-Screenshot saved to: target/screenshots/TC-UI-02_Note_Created_20260524_233000.png
-TC-UI-02 PASSED
+Note created:  [Home]
+[INFO] Ad iframes removed
+[INFO] Vignette ad removed
+[INFO] JS click performed on: By.xpath: //button[text()='Login']
+Login successful
+Screenshot attached to Allure: TC-NEG-01 Empty Title Validation
+Screenshot saved to: target/screenshots/TC-NEG-01_Empty_Title_Validation_20260525_123422.png
+TC-NEG-01 PASSED
+Screenshot attached to Allure: TC-UI-01 Login Success
+Screenshot saved to: target/screenshots/TC-UI-01_Login_Success_20260525_123422.png
+TC-UI-01 PASSED
 ]]></system-out>
     <system-err><![CDATA[[TestNG-tests-2] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 148.0.7778.178 (resolved driver for Chrome 148)
-[TestNG-tests-3] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 148.0.7778.178 (resolved driver for Chrome 148)
 [TestNG-tests-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 148.0.7778.178 (resolved driver for Chrome 148)
+[TestNG-tests-3] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 148.0.7778.178 (resolved driver for Chrome 148)
 [TestNG-tests-2] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\debi2\.cache\selenium\chromedriver\win64\148.0.7778.178\chromedriver.exe
-[TestNG-tests-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\debi2\.cache\selenium\chromedriver\win64\148.0.7778.178\chromedriver.exe
 [TestNG-tests-3] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\debi2\.cache\selenium\chromedriver\win64\148.0.7778.178\chromedriver.exe
-May 24, 2026 11:29:23 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+[TestNG-tests-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\debi2\.cache\selenium\chromedriver\win64\148.0.7778.178\chromedriver.exe
+May 25, 2026 12:33:28 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 148
-May 24, 2026 11:29:23 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 25, 2026 12:33:28 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 148
-May 24, 2026 11:29:23 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 25, 2026 12:33:28 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 148
-May 24, 2026 11:29:23 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+May 25, 2026 12:33:28 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 148.0.7778.179. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-May 24, 2026 11:29:23 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+May 25, 2026 12:33:28 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 148.0.7778.179. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-May 24, 2026 11:29:23 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+May 25, 2026 12:33:28 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 148.0.7778.179. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="TC_UI_03_NoteAppearsInList" classname="tests.UI.CreateNoteTest" time="9.465">
-    <system-out><![CDATA[Login successful
-[INFO] Ad iframes removed
-[INFO] Vignette ad removed
-[INFO] JS click performed on: By.xpath: //button[contains(text(),'Add Note')]
-[INFO] Ad iframes removed
-[INFO] Vignette ad removed
-[INFO] JS click performed on: By.xpath: //button[@data-testid='note-submit']
-Note created: Title Only 1779645652543
-Screenshot attached to Allure: TC-UI-03 Note in List
-Screenshot saved to: target/screenshots/TC-UI-03_Note_in_List_20260524_233101.png
-TC-UI-03 PASSED
-]]></system-out>
-  </testcase>
-  <testcase name="TC_UI_01_ValidLogin" classname="tests.UI.LoginTest" time="31.395">
-    <system-out><![CDATA[[INFO] Ad iframes removed
-[INFO] Vignette ad removed
-[INFO] Ad iframes removed
-[INFO] Vignette ad removed
-[INFO] JS click performed on: By.xpath: //button[text()='Login']
-Login successful
-Screenshot attached to Allure: TC-UI-01 Login Success
-Screenshot saved to: target/screenshots/TC-UI-01_Login_Success_20260524_233007.png
-TC-UI-01 PASSED
-]]></system-out>
-  </testcase>
-  <testcase name="TC_NEG_01_CreateNoteEmptyTitle" classname="tests.UI.NegativeUITest" time="36.759">
-    <system-out><![CDATA[[INFO] Ad iframes removed
-[INFO] Vignette ad removed
+  <testcase name="TC_NEG_01_CreateNoteEmptyTitle" classname="tests.UI.NegativeUITest" time="21.427"/>
+  <testcase name="TC_NEG_02_CreateNoteEmptyDescription" classname="tests.UI.NegativeUITest" time="44.482">
+    <system-out><![CDATA[[INFO] Vignette ad removed
 [INFO] Ad iframes removed
 [INFO] Vignette ad removed
 [INFO] JS click performed on: By.xpath: //button[text()='Login']
@@ -139,37 +122,115 @@ Login successful
 [INFO] Ad iframes removed
 [INFO] Vignette ad removed
 [INFO] JS click performed on: By.xpath: //button[@data-testid='note-submit']
-Note created: 
-Screenshot attached to Allure: TC-NEG-01 Empty Title Validation
-Screenshot saved to: target/screenshots/TC-NEG-01_Empty_Title_Validation_20260524_233013.png
-TC-NEG-01 PASSED
-]]></system-out>
-  </testcase>
-  <testcase name="TC_NEG_02_CreateNoteEmptyDescription" classname="tests.UI.NegativeUITest" time="10.238">
-    <system-out><![CDATA[Screenshot attached to Allure: TC-NEG-02 Empty Description Validation
-Screenshot saved to: target/screenshots/TC-NEG-02_Empty_Description_Validation_20260524_233102.png
+Note created: Title Only 1779692679350 [Home]
+[TEARDOWN] Browser closed for: NegativeLoginTest
+Screenshot attached to Allure: TC-NEG-02 Empty Description Validation
+Screenshot saved to: target/screenshots/TC-NEG-02_Empty_Description_Validation_20260525_123523.png
 TC-NEG-02 PASSED
+[TEARDOWN] Browser closed for: CreateNoteTest
 ]]></system-out>
+    <system-err><![CDATA[[TestNG-tests-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 148.0.7778.178 (resolved driver for Chrome 148)
+[TestNG-tests-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\debi2\.cache\selenium\chromedriver\win64\148.0.7778.178\chromedriver.exe
+[TestNG-tests-2] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 148.0.7778.178 (resolved driver for Chrome 148)
+]]></system-err>
   </testcase>
-  <testcase name="TC_NEG_06_WrongPassword" classname="tests.UI.NegativeLoginTest" time="4.302">
-    <system-out><![CDATA[[TEARDOWN] Browser closed for: CreateNoteTest
+  <testcase name="TC_NEG_06_WrongPassword" classname="tests.UI.NegativeLoginTest" time="35.036">
+    <system-out><![CDATA[[TEARDOWN] Browser closed for: NegativeUITest
 [TEARDOWN] Browser closed for: LoginTest
 Extent Report saved at: target/extent-report/ExtentReport.html
-===== TC-UI-03: Newly Created Note Appears in UI List =====
 ===== TC-NEG-06: Login with Wrong Password =====
-[TEARDOWN] Browser closed for: NegativeUITest
+===== TC-NEG-02: Create Note with Empty Description =====
+[INFO] Ad iframes removed
+[INFO] Vignette ad removed
+[INFO] Ad iframes removed
+[INFO] Vignette ad removed
+[INFO] JS click performed on: By.xpath: //button[text()='Login']
+Login successful
+[INFO] Ad iframes removed
+[INFO] Vignette ad removed
+[INFO] JS click performed on: By.xpath: //button[contains(text(),'Add Note')]
+[INFO] Ad iframes removed
+[INFO] Vignette ad removed
+[INFO] JS click performed on: By.xpath: //button[@data-testid='note-submit']
+Note created: Automation Note 1779692597236 [Home]
 [INFO] Ad iframes removed
 [INFO] Vignette ad removed
 [INFO] Ad iframes removed
 [INFO] Vignette ad removed
 [INFO] JS click performed on: By.xpath: //button[text()='Login']
 Login attempt submitted
+Screenshot attached to Allure: TC-NEG-06 Wrong Password Error
+Screenshot saved to: target/screenshots/TC-NEG-06_Wrong_Password_Error_20260525_123513.png
+TC-NEG-06 PASSED
+]]></system-out>
+    <system-err><![CDATA[[TestNG-tests-3] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 148.0.7778.178 (resolved driver for Chrome 148)
+[TestNG-tests-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 148.0.7778.178 (resolved driver for Chrome 148)
+[TestNG-tests-3] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\debi2\.cache\selenium\chromedriver\win64\148.0.7778.178\chromedriver.exe
+[TestNG-tests-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\debi2\.cache\selenium\chromedriver\win64\148.0.7778.178\chromedriver.exe
+May 25, 2026 12:34:28 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 148
+May 25, 2026 12:34:28 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 148.0.7778.179. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+May 25, 2026 12:34:28 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 148
+May 25, 2026 12:34:28 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 148.0.7778.179. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="TC_NEG_07_BothFieldsEmpty" classname="tests.UI.NegativeLoginTest" time="4.044">
+    <system-out><![CDATA[===== TC-NEG-07: Login with Both Fields Empty =====
+[INFO] Ad iframes removed
+[TEARDOWN] Browser closed for: NegativeUITest
+Extent Report saved at: target/extent-report/ExtentReport.html
+===== TC-UI-03: Newly Created Note Appears in UI List =====
+[INFO] Ad iframes removed
 [INFO] Ad iframes removed
 [INFO] Vignette ad removed
+Screenshot attached to Allure: TC-NEG-07 Both Fields Empty
+Screenshot saved to: target/screenshots/TC-NEG-07_Both_Fields_Empty_20260525_123537.png
+TC-NEG-07 PASSED
 [INFO] Ad iframes removed
-[INFO] Vignette ad removed
+]]></system-out>
+    <system-err><![CDATA[[TestNG-tests-2] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\debi2\.cache\selenium\chromedriver\win64\148.0.7778.178\chromedriver.exe
+May 25, 2026 12:35:24 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 148
+May 25, 2026 12:35:24 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 148.0.7778.179. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+May 25, 2026 12:35:26 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 148
+May 25, 2026 12:35:26 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 148.0.7778.179. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="TC_UI_02_CreateNote" classname="tests.UI.CreateNoteTest" time="38.036">
+    <system-out><![CDATA[[INFO] Ad iframes removed
+Screenshot attached to Allure: TC-UI-02 Note Created
+Screenshot saved to: target/screenshots/TC-UI-02_Note_Created_20260525_123517.png
+TC-UI-02 PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="TC_UI_03_NoteAppearsInList" classname="tests.UI.CreateNoteTest" time="5.962">
+    <system-out><![CDATA[[TEARDOWN] API test - no browser to close for: NegativeAPITest
+Extent Report saved at: target/extent-report/ExtentReport.html
+Creating summariser <summary>
+Created the tree successfully using src/test/resources/jmeter/testplan_30_users.jmx
+Starting standalone test @ 2026 May 25 12:35:53 IST (1779692753641)
+Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445
+Screenshot attached to Allure: TC-UI-03 Note in List
+Screenshot saved to: target/screenshots/TC-UI-03_Note_in_List_20260525_123554.png
+TC-UI-03 PASSED
+]]></system-out>
+    <system-err><![CDATA[[TestNG-tests-3] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 148.0.7778.178 (resolved driver for Chrome 148)
+[TestNG-tests-3] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\debi2\.cache\selenium\chromedriver\win64\148.0.7778.178\chromedriver.exe
+May 25, 2026 12:35:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 148
+May 25, 2026 12:35:52 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 148.0.7778.179. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="TC_API_01_GetNotes" classname="tests.API.GetNotesAPITest" time="2.384">
+    <system-out><![CDATA[[INFO] Vignette ad removed
 [INFO] JS click performed on: By.xpath: //button[text()='Login']
-===== TC-NEG-02: Create Note with Empty Description =====
 Login successful
 [INFO] Ad iframes removed
 [INFO] Vignette ad removed
@@ -177,37 +238,127 @@ Login successful
 [INFO] Ad iframes removed
 [INFO] Vignette ad removed
 [INFO] JS click performed on: By.xpath: //button[@data-testid='note-submit']
-Note created: Automation Note 1779645614982
+Note created: Automation Note 1779692723547 [Home]
+[TEARDOWN] Browser closed for: NegativeLoginTest
+Extent Report saved at: target/extent-report/ExtentReport.html
+Token generated: 70ef14a5826146d78f1f1bdb76109f638ac0f9273b074a698b55f5225a2a6d16
+===== TC-API-01: GET /notes Returns Notes List =====
+Token generated: 70ef14a5826146d78f1f1bdb76109f638ac0f9273b074a698b55f5225a2a6d16
+===== TC-API-02: Delete a Note via API =====
+Creating a note to delete...
+[RETRY] Success on attempt: 1
+Status Code: 200
+Create response status: 200
+[SCHEMA] Validation passed for: create_note_schema.json
+Note created with ID: 6a13f4c5038935029664a97b
+Sending DELETE request for note ID: 6a13f4c5038935029664a97b
+[SCHEMA] Validation passed for: get_notes_schema.json
+TC-API-01 PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="TC_API_02_DeleteNote" classname="tests.API.DeleteNoteAPITest" time="3.023">
+    <system-out><![CDATA[[TEARDOWN] API test - no browser to close for: GetNotesAPITest
+Extent Report saved at: target/extent-report/ExtentReport.html
+Delete response status: 200
+Delete response body: {"success":true,"status":200,"message":"Note successfully deleted"}
+TC-API-02 PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="TC_API_03_ResponseTimeUnder2Seconds" classname="tests.API.ResponseTimeAPITest" time="0.932">
+    <system-out><![CDATA[[TEARDOWN] API test - no browser to close for: DeleteNoteAPITest
+Extent Report saved at: target/extent-report/ExtentReport.html
+Token generated: 70ef14a5826146d78f1f1bdb76109f638ac0f9273b074a698b55f5225a2a6d16
+===== TC-API-03: API Response Time Under 2 Seconds =====
+===== TC-PERF-01 : 30 USERS TEST =====
+[JMETER] Running: src/test/resources/jmeter/testplan_30_users.jmx
+[RETRY] Success on attempt: 1
+API Response Time: 672ms
+PASS: Response time is within limit
+TC-API-03 PASSED - Response Time: 672ms
+]]></system-out>
+  </testcase>
+  <testcase name="TC_NEG_03_CreateNoteWithoutToken" classname="tests.API.NegativeAPITest" time="0.504">
+    <system-out><![CDATA[[TEARDOWN] API test - no browser to close for: ResponseTimeAPITest
+Extent Report saved at: target/extent-report/ExtentReport.html
+Token generated: 70ef14a5826146d78f1f1bdb76109f638ac0f9273b074a698b55f5225a2a6d16
+===== TC-NEG-03: Create Note via API without Token =====
+Status: 401
+TC-NEG-03 PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="TC_NEG_04_InvalidToken" classname="tests.API.NegativeAPITest" time="0.501">
+    <system-out><![CDATA[[TEARDOWN] API test - no browser to close for: NegativeAPITest
+===== TC-NEG-04: GET /notes with Invalid Token =====
+Status: 401
+TC-NEG-04 PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="TC_NEG_05_DeleteWrongNoteId" classname="tests.API.NegativeAPITest" time="0.506">
+    <system-out><![CDATA[[TEARDOWN] API test - no browser to close for: NegativeAPITest
+===== TC-NEG-05: DELETE Note with Wrong Note ID =====
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+Status: 400
+TC-NEG-05 PASSED
+]]></system-out>
+  </testcase>
+  <testcase name="TC_PERF_01_30Users" classname="tests.API.JMeterTest" time="10.111">
+    <system-out><![CDATA[===== TC-E2E-01: UI Created Note Visible in API =====
+summary +     28 in 00:00:06 =    4.7/s Avg:  1057 Min:   319 Max:  2595 Err:    28 (100.00%) Active: 3 Started: 16 Finished: 13
+[TEARDOWN] Browser closed for: CreateNoteTest
+Extent Report saved at: target/extent-report/ExtentReport.html
 [INFO] Ad iframes removed
 [INFO] Vignette ad removed
 [INFO] Ad iframes removed
 [INFO] Vignette ad removed
 [INFO] JS click performed on: By.xpath: //button[text()='Login']
-Screenshot attached to Allure: TC-NEG-06 Wrong Password Error
-Screenshot saved to: target/screenshots/TC-NEG-06_Wrong_Password_Error_20260524_233056.png
-TC-NEG-06 PASSED
+Login successful
+[INFO] Ad iframes removed
+[INFO] Vignette ad removed
+[INFO] JS click performed on: By.xpath: //button[contains(text(),'Add Note')]
+[INFO] Ad iframes removed
+[INFO] Vignette ad removed
+[INFO] JS click performed on: By.xpath: //button[@data-testid='note-submit']
+Note created: Automation Note 1779692749808 [Home]
+summary +     32 in 00:00:07 =    4.4/s Avg:   750 Min:   537 Max:  3814 Err:    32 (100.00%) Active: 0 Started: 30 Finished: 30
+summary =     60 in 00:00:13 =    4.5/s Avg:   893 Min:   319 Max:  3814 Err:    60 (100.00%)
+Tidying up ...    @ 2026 May 25 12:36:07 IST (1779692767392)
+... end of run
+[JMETER] Done. Results saved at: target/jmeter/30_users_results.jtl
+[JMETER] PERFORMANCE SUMMARY : 30 USERS
+Total Requests : 60
+Average Time   : 893 ms
+Min Time       : 319 ms
+Max Time       : 3814 ms
+TC-PERF-01 PASSED
 ]]></system-out>
-    <system-err><![CDATA[[TestNG-tests-2] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 148.0.7778.178 (resolved driver for Chrome 148)
-[TestNG-tests-2] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\debi2\.cache\selenium\chromedriver\win64\148.0.7778.178\chromedriver.exe
-[TestNG-tests-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 148.0.7778.178 (resolved driver for Chrome 148)
-[TestNG-tests-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\debi2\.cache\selenium\chromedriver\win64\148.0.7778.178\chromedriver.exe
-May 24, 2026 11:30:19 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 148
-May 24, 2026 11:30:19 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 148.0.7778.179. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-May 24, 2026 11:30:19 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 148
-May 24, 2026 11:30:19 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 148.0.7778.179. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-[TestNG-tests-3] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 148.0.7778.178 (resolved driver for Chrome 148)
+  </testcase>
+  <testcase name="TC_PERF_02_50Users" classname="tests.API.JMeterTest" time="0.659">
+    <system-out><![CDATA[[TEARDOWN] Browser closed for: EndToEndTest
+summary =    100 in 00:00:11 =    8.8/s Avg:   626 Min:   332 Max:  1426 Err:   100 (100.00%)
+Tidying up ...    @ 2026 May 25 12:36:25 IST (1779692785750)
+... end of run
+===== TC-E2E-02: API Deleted Note Disappears from UI =====
+Token generated: 70ef14a5826146d78f1f1bdb76109f638ac0f9273b074a698b55f5225a2a6d16
+[JMETER] Done. Results saved at: target/jmeter/50_users_results.jtl
+[JMETER] PERFORMANCE SUMMARY : 50 USERS
+Total Requests : 100
+Average Time   : 626 ms
+Min Time       : 332 ms
+Max Time       : 1426 ms
+TC-PERF-02 PASSED
+]]></system-out>
+    <system-err><![CDATA[[TestNG-tests-3] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 148.0.7778.178 (resolved driver for Chrome 148)
 [TestNG-tests-3] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\debi2\.cache\selenium\chromedriver\win64\148.0.7778.178\chromedriver.exe
-May 24, 2026 11:30:36 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 25, 2026 12:36:21 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 148
-May 24, 2026 11:30:36 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+May 25, 2026 12:36:21 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 148.0.7778.179. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="TC_NEG_07_BothFieldsEmpty" classname="tests.UI.NegativeLoginTest" time="11.053">
+  <testcase name="TC_E2E_01_UICreatedNoteVisibleInAPI" classname="tests.E2E.EndToEndTest" time="8.869">
     <system-out><![CDATA[[TEARDOWN] API test - no browser to close for: JMeterTest
 ===== TC-PERF-02 : 50 USERS TEST =====
 [JMETER] Running: src/test/resources/jmeter/testplan_50_users.jmx
@@ -217,169 +368,18 @@ WARN StatusConsoleListener The use of package scanning to locate plugins is depr
 WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
 Creating summariser <summary>
 Created the tree successfully using src/test/resources/jmeter/testplan_50_users.jmx
-Starting standalone test @ 2026 May 24 23:31:42 IST (1779645702921)
+Starting standalone test @ 2026 May 25 12:36:14 IST (1779692774121)
 Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445
-[INFO] Ad iframes removed
-Screenshot attached to Allure: TC-NEG-07 Both Fields Empty
-Screenshot saved to: target/screenshots/TC-NEG-07_Both_Fields_Empty_20260524_233147.png
-TC-NEG-07 PASSED
-]]></system-out>
-  </testcase>
-  <testcase name="TC_API_01_GetNotes" classname="tests.API.GetNotesAPITest" time="2.644">
-    <system-out><![CDATA[[TEARDOWN] Browser closed for: NegativeLoginTest
-[TEARDOWN] Browser closed for: CreateNoteTest
-Extent Report saved at: target/extent-report/ExtentReport.html
-[TEARDOWN] Browser closed for: NegativeUITest
-Extent Report saved at: target/extent-report/ExtentReport.html
-Token generated: 70ef14a5826146d78f1f1bdb76109f638ac0f9273b074a698b55f5225a2a6d16
-Token generated: 70ef14a5826146d78f1f1bdb76109f638ac0f9273b074a698b55f5225a2a6d16
-===== TC-API-01: GET /notes Returns Notes List =====
-===== TC-API-02: Delete a Note via API =====
-Creating a note to delete...
-[RETRY] Success on attempt: 1
-Status Code: 200
-Create response status: 200
-[SCHEMA] Validation passed for: create_note_schema.json
-Note created with ID: 6a133cec0389350296642138
-Sending DELETE request for note ID: 6a133cec0389350296642138
-[SCHEMA] Validation passed for: get_notes_schema.json
-TC-API-01 PASSED
-]]></system-out>
-    <system-err><![CDATA[[TestNG-tests-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 148.0.7778.178 (resolved driver for Chrome 148)
-[TestNG-tests-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\debi2\.cache\selenium\chromedriver\win64\148.0.7778.178\chromedriver.exe
-May 24, 2026 11:31:10 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 148
-May 24, 2026 11:31:10 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 148.0.7778.179. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
-  </testcase>
-  <testcase name="TC_API_02_DeleteNote" classname="tests.API.DeleteNoteAPITest" time="3.372">
-    <system-out><![CDATA[[TEARDOWN] API test - no browser to close for: GetNotesAPITest
-Extent Report saved at: target/extent-report/ExtentReport.html
-Delete response status: 200
-Delete response body: {"success":true,"status":200,"message":"Note successfully deleted"}
-TC-API-02 PASSED
-]]></system-out>
-  </testcase>
-  <testcase name="TC_API_03_ResponseTimeUnder2Seconds" classname="tests.API.ResponseTimeAPITest" time="0.391">
-    <system-out><![CDATA[[TEARDOWN] API test - no browser to close for: DeleteNoteAPITest
-Extent Report saved at: target/extent-report/ExtentReport.html
-Token generated: 70ef14a5826146d78f1f1bdb76109f638ac0f9273b074a698b55f5225a2a6d16
-===== TC-API-03: API Response Time Under 2 Seconds =====
-===== TC-PERF-01 : 30 USERS TEST =====
-[JMETER] Running: src/test/resources/jmeter/testplan_30_users.jmx
-[RETRY] Success on attempt: 1
-API Response Time: 398ms
-PASS: Response time is within limit
-TC-API-03 PASSED - Response Time: 398ms
-]]></system-out>
-  </testcase>
-  <testcase name="TC_NEG_03_CreateNoteWithoutToken" classname="tests.API.NegativeAPITest" time="0.933">
-    <system-out><![CDATA[[TEARDOWN] API test - no browser to close for: ResponseTimeAPITest
-Extent Report saved at: target/extent-report/ExtentReport.html
-===== TC-NEG-07: Login with Both Fields Empty =====
-[INFO] Ad iframes removed
-Token generated: 70ef14a5826146d78f1f1bdb76109f638ac0f9273b074a698b55f5225a2a6d16
-===== TC-NEG-03: Create Note via API without Token =====
-Status: 401
-TC-NEG-03 PASSED
-]]></system-out>
-  </testcase>
-  <testcase name="TC_NEG_04_InvalidToken" classname="tests.API.NegativeAPITest" time="0.834">
-    <system-out><![CDATA[[TEARDOWN] API test - no browser to close for: NegativeAPITest
-===== TC-NEG-04: GET /notes with Invalid Token =====
-WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
-WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
-WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
-WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
-Status: 401
-TC-NEG-04 PASSED
-]]></system-out>
-  </testcase>
-  <testcase name="TC_NEG_05_DeleteWrongNoteId" classname="tests.API.NegativeAPITest" time="0.566">
-    <system-out><![CDATA[[TEARDOWN] API test - no browser to close for: NegativeAPITest
-===== TC-NEG-05: DELETE Note with Wrong Note ID =====
-Creating summariser <summary>
-Created the tree successfully using src/test/resources/jmeter/testplan_30_users.jmx
-Starting standalone test @ 2026 May 24 23:31:23 IST (1779645683419)
-Status: 400
-Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445
-TC-NEG-05 PASSED
-]]></system-out>
-  </testcase>
-  <testcase name="TC_PERF_01_30Users" classname="tests.API.JMeterTest" time="3.173">
-    <system-out><![CDATA[[TEARDOWN] API test - no browser to close for: NegativeAPITest
-Extent Report saved at: target/extent-report/ExtentReport.html
-summary +     33 in 00:00:06 =    5.2/s Avg:  1152 Min:   469 Max:  3179 Err:    33 (100.00%) Active: 4 Started: 19 Finished: 15
-===== TC-E2E-01: UI Created Note Visible in API =====
-summary +     27 in 00:00:05 =    6.0/s Avg:   627 Min:   375 Max:   873 Err:    27 (100.00%) Active: 0 Started: 30 Finished: 30
-summary =     60 in 00:00:11 =    5.5/s Avg:   916 Min:   375 Max:  3179 Err:    60 (100.00%)
-Tidying up ...    @ 2026 May 24 23:31:34 IST (1779645694699)
-... end of run
-[JMETER] Done. Results saved at: target/jmeter/30_users_results.jtl
-
-========================================
-[JMETER] PERFORMANCE SUMMARY : 30 USERS
-Total Requests : 60
-Average Time   : 916 ms
-Min Time       : 375 ms
-Max Time       : 3179 ms
-========================================
-TC-PERF-01 PASSED
-]]></system-out>
-    <system-err><![CDATA[[TestNG-tests-2] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 148.0.7778.178 (resolved driver for Chrome 148)
-[TestNG-tests-2] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\debi2\.cache\selenium\chromedriver\win64\148.0.7778.178\chromedriver.exe
-May 24, 2026 11:31:25 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 148
-May 24, 2026 11:31:25 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 148.0.7778.179. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
-  </testcase>
-  <testcase name="TC_PERF_02_50Users" classname="tests.API.JMeterTest" time="19.578">
-    <system-out><![CDATA[[INFO] Ad iframes removed
-[INFO] Vignette ad removed
-[INFO] Ad iframes removed
-[INFO] Vignette ad removed
-[INFO] JS click performed on: By.xpath: //button[text()='Login']
-[TEARDOWN] Browser closed for: NegativeLoginTest
-Extent Report saved at: target/extent-report/ExtentReport.html
-Login successful
-[INFO] Ad iframes removed
-[INFO] Vignette ad removed
-[INFO] JS click performed on: By.xpath: //button[contains(text(),'Add Note')]
-[INFO] Ad iframes removed
-[INFO] Vignette ad removed
-[INFO] JS click performed on: By.xpath: //button[@data-testid='note-submit']
-Note created: Automation Note 1779645683559
-summary =    100 in 00:00:11 =    9.1/s Avg:   829 Min:   328 Max:  1862 Err:   100 (100.00%)
-Tidying up ...    @ 2026 May 24 23:31:54 IST (1779645714555)
-... end of run
-[JMETER] Done. Results saved at: target/jmeter/50_users_results.jtl
-
-========================================
-[JMETER] PERFORMANCE SUMMARY : 50 USERS
-Total Requests : 100
-Average Time   : 829 ms
-Min Time       : 328 ms
-Max Time       : 1862 ms
-========================================
-TC-PERF-02 PASSED
-]]></system-out>
-  </testcase>
-  <testcase name="TC_E2E_01_UICreatedNoteVisibleInAPI" classname="tests.E2E.EndToEndTest" time="22.95">
-    <system-out><![CDATA[[TEARDOWN] API test - no browser to close for: JMeterTest
-Extent Report saved at: target/extent-report/ExtentReport.html
 Screenshot attached to Allure: TC-E2E-01 Note in UI
-Screenshot saved to: target/screenshots/TC-E2E-01_Note_in_UI_20260524_233157.png
+Screenshot saved to: target/screenshots/TC-E2E-01_Note_in_UI_20260525_123616.png
 Token generated: 70ef14a5826146d78f1f1bdb76109f638ac0f9273b074a698b55f5225a2a6d16
-Note found in API - ID: 6a133d0e038935029664218a
+Note found in API - ID: 6a13f4dd038935029664a9d8
 TC-E2E-01 PASSED
 ]]></system-out>
   </testcase>
-  <testcase name="TC_E2E_02_APIDeletedNoteGoneFromUI" classname="tests.E2E.EndToEndTest" time="9.958">
-    <system-out><![CDATA[[TEARDOWN] Browser closed for: EndToEndTest
-===== TC-E2E-02: API Deleted Note Disappears from UI =====
-Token generated: 70ef14a5826146d78f1f1bdb76109f638ac0f9273b074a698b55f5225a2a6d16
+  <testcase name="TC_E2E_02_APIDeletedNoteGoneFromUI" classname="tests.E2E.EndToEndTest" time="8.899">
+    <system-out><![CDATA[[TEARDOWN] API test - no browser to close for: JMeterTest
+Extent Report saved at: target/extent-report/ExtentReport.html
 Delete Status: 200
 [INFO] Ad iframes removed
 [INFO] Vignette ad removed
@@ -388,18 +388,11 @@ Delete Status: 200
 [INFO] JS click performed on: By.xpath: //button[text()='Login']
 Login successful
 Screenshot attached to Allure: TC-E2E-02 Note Deleted from UI
-Screenshot saved to: target/screenshots/TC-E2E-02_Note_Deleted_from_UI_20260524_233215.png
+Screenshot saved to: target/screenshots/TC-E2E-02_Note_Deleted_from_UI_20260525_123635.png
 TC-E2E-02 PASSED
 ]]></system-out>
-    <system-err><![CDATA[[TestNG-tests-2] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 148.0.7778.178 (resolved driver for Chrome 148)
-[TestNG-tests-2] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\debi2\.cache\selenium\chromedriver\win64\148.0.7778.178\chromedriver.exe
-May 24, 2026 11:32:01 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 148
-May 24, 2026 11:32:01 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 148.0.7778.179. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
   </testcase>
-  <testcase name="TC_E2E_03_UIAPIDataConsistency" classname="tests.E2E.EndToEndTest" time="12.4">
+  <testcase name="TC_E2E_03_UIAPIDataConsistency" classname="tests.E2E.EndToEndTest" time="14.766">
     <system-out><![CDATA[[TEARDOWN] Browser closed for: EndToEndTest
 ===== TC-E2E-03: UI and API Data Consistency Check =====
 [INFO] Ad iframes removed
@@ -414,21 +407,21 @@ Login successful
 [INFO] Ad iframes removed
 [INFO] Vignette ad removed
 [INFO] JS click performed on: By.xpath: //button[@data-testid='note-submit']
-Note created: Automation Note 1779645736177
-UI Title: Automation Note 1779645736177
+Note created: Automation Note 1779692799746 [Home]
+UI Title: Automation Note 1779692799746
 Screenshot attached to Allure: TC-E2E-03 UI Note Data
-Screenshot saved to: target/screenshots/TC-E2E-03_UI_Note_Data_20260524_233233.png
+Screenshot saved to: target/screenshots/TC-E2E-03_UI_Note_Data_20260525_123654.png
 Token generated: 70ef14a5826146d78f1f1bdb76109f638ac0f9273b074a698b55f5225a2a6d16
-API Title: Automation Note 1779645736177
+API Title: Automation Note 1779692799746
 API Description: Created using Selenium
 All fields matched between UI and API
 TC-E2E-03 PASSED
 ]]></system-out>
-    <system-err><![CDATA[[TestNG-tests-2] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 148.0.7778.178 (resolved driver for Chrome 148)
-[TestNG-tests-2] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\debi2\.cache\selenium\chromedriver\win64\148.0.7778.178\chromedriver.exe
-May 24, 2026 11:32:17 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[[TestNG-tests-3] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 148.0.7778.178 (resolved driver for Chrome 148)
+[TestNG-tests-3] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\debi2\.cache\selenium\chromedriver\win64\148.0.7778.178\chromedriver.exe
+May 25, 2026 12:36:40 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 148
-May 24, 2026 11:32:17 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+May 25, 2026 12:36:40 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 148.0.7778.179. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
