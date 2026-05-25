@@ -11,7 +11,7 @@ public class APIAuthentication {
     // shared token used by authenticated API requests
     public static String token;
 
-    // generateToken reads valid credentials from CSV data and logs in to get an auth token
+    // reads valid credentials from CSV data and logs in to get an auth token
     public static void generateToken() {
         Map<String, String> data = CSVReader.getRowByType("valid_user");
         String email = data.get("email");
