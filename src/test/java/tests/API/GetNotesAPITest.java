@@ -26,6 +26,8 @@ public class GetNotesAPITest extends BaseTest {
 
         System.out.println("===== TC-API-01: GET /notes Returns Notes List =====");
         Response response = APIAuthentication.getWithRetry("/notes", 3);
+        System.out.println("Response Body:");
+response.getBody().prettyPrint();
         System.out.println("Status Code: " + response.statusCode());
         Assert.assertEquals(response.statusCode(), 200, "GET /notes did not return 200");
         String body = response.getBody().asString();

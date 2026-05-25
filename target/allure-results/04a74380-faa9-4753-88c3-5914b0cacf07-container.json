@@ -1,0 +1,1 @@
+{"uuid":"04a74380-faa9-4753-88c3-5914b0cacf07","name":"tests.API.DeleteNoteAPITest","children":["17043d02-970a-45aa-b412-242d1fe2ca6e"],"befores":[{"name":"apiSetup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1779727647204,"stop":1779727653036}],"afters":[],"start":1779727647200,"stop":1779727656237}

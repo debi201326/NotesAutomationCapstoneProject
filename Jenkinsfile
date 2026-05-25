@@ -46,15 +46,6 @@ pipeline {
                     reportBuildPolicy: 'ALWAYS',
                     results: [[path: 'target/allure-results']]
                 ])
-
-                publishHTML([
-                    reportDir: 'target/extent-report',
-                    reportFiles: 'ExtentReport.html',
-                    reportName: 'Extent Test Report',
-                    keepAll: true,
-                    alwaysLinkToLastBuild: true,
-                    allowMissing: true
-                ])
             }
         }
 
