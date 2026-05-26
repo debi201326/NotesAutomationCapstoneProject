@@ -1,5 +1,6 @@
 pipeline {
     agent any
+
     stages {
 
         stage('Checkout') {
@@ -19,13 +20,13 @@ pipeline {
 
                 stage('UI Tests') {
                     steps {
-                        bat 'mvn test -Dtest=LoginTest,CreateNoteTest,NegativeUITest,NegativeLoginTest'
+                        bat 'mvn test -Dtest=LoginTest,CreateNoteTest,NegativeUITest,NegativeLoginTest -Dproject.build.directory=target-ui'
                     }
                 }
 
                 stage('API Tests') {
                     steps {
-                        bat 'mvn test -Dtest=GetNotesAPITest,DeleteNoteAPITest,ResponseTimeAPITest,JMeterTest,NegativeAPITest'
+                        bat 'mvn test -Dtest=GetNotesAPITest,DeleteNoteAPITest,ResponseTimeAPITest,JMeterTest,NegativeAPITest -Dproject.build.directory=target-api'
                     }
                 }
 
@@ -40,6 +41,8 @@ pipeline {
 
         stage('Publish Reports') {
             steps {
+                junit 'target-ui/surefire-reports/*.xml'
+                junit 'target-api/surefire-reports/*.xml'
                 junit 'target/surefire-reports/*.xml'
 
                 allure([
