@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-NotesApp_Test_Suite" class="navigator-link">
-              <span class="suite-name border-failed">NotesApp Test Suite</span>
+              <span class="suite-name border-passed">NotesApp Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">16 methods, 1 failed,   15 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-NotesApp_Test_Suite" class="hide-methods failed suite-NotesApp_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-NotesApp_Test_Suite -->
-                      <a href="#" panel-name="suite-NotesApp_Test_Suite" class="show-methods failed suite-NotesApp_Test_Suite"> (show)</a> <!-- show-methods failed suite-NotesApp_Test_Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-NotesApp_Test_Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-NotesApp_Test_Suite" title="tests.API.ResponseTimeAPITest" class="method navigator-link" hash-for-method="TC_API_03_ResponseTimeUnder2Seconds">TC_API_03_ResponseTimeUnder2Seconds</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-NotesApp_Test_Suite -->
+                    <span class="method-stats">16 methods,   16 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -123,6 +109,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-NotesApp_Test_Suite" title="tests.API.DeleteNoteAPITest" class="method navigator-link" hash-for-method="TC_API_02_DeleteNote">TC_API_02_DeleteNote</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-NotesApp_Test_Suite" title="tests.API.ResponseTimeAPITest" class="method navigator-link" hash-for-method="TC_API_03_ResponseTimeUnder2Seconds">TC_API_03_ResponseTimeUnder2Seconds</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -202,45 +193,19 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-NotesApp_Test_Suite" class="panel NotesApp_Test_Suite">
-          <div class="suite-NotesApp_Test_Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">tests.API.ResponseTimeAPITest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_API_03_ResponseTimeUnder2Seconds">
-                  </a> <!-- TC_API_03_ResponseTimeUnder2Seconds -->
-                  <span class="method-name">TC_API_03_ResponseTimeUnder2Seconds</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at tests.API.ResponseTimeAPITest.TC_API_03_ResponseTimeUnder2Seconds(ResponseTimeAPITest.java:32)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
-	at java.base/java.lang.Thread.run(Thread.java:842)
-... Removed 21 stack frames
-</div> <!-- stack-trace -->
-                  <em>
-(TC-API-03: API Response Time is Under 2 Seconds)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-NotesApp_Test_Suite-class-failed -->
           <div class="suite-NotesApp_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">tests.API.GetNotesAPITest</span>
+              <span class="class-name">tests.API.DeleteNoteAPITest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TC_API_01_GetNotes">
-                  </a> <!-- TC_API_01_GetNotes -->
-                  <span class="method-name">TC_API_01_GetNotes</span>
+                  <a name="TC_API_02_DeleteNote">
+                  </a> <!-- TC_API_02_DeleteNote -->
+                  <span class="method-name">TC_API_02_DeleteNote</span>
                   <em>
-(TC-API-01: GET /notes Returns Notes List)                  </em>
+(TC-API-02: Delete a Note via API)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -267,118 +232,6 @@
                   <span class="method-name">TC_PERF_02_50Users</span>
                   <em>
 (Performance Test - 50 Users)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-NotesApp_Test_Suite-class-passed -->
-          <div class="suite-NotesApp_Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.UI.NegativeLoginTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_NEG_06_WrongPassword">
-                  </a> <!-- TC_NEG_06_WrongPassword -->
-                  <span class="method-name">TC_NEG_06_WrongPassword</span>
-                  <em>
-(TC-NEG-06: Login with Wrong Password)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_NEG_07_BothFieldsEmpty">
-                  </a> <!-- TC_NEG_07_BothFieldsEmpty -->
-                  <span class="method-name">TC_NEG_07_BothFieldsEmpty</span>
-                  <em>
-(TC-NEG-07: Login with Both Fields Empty)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-NotesApp_Test_Suite-class-passed -->
-          <div class="suite-NotesApp_Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.UI.CreateNoteTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_UI_02_CreateNote">
-                  </a> <!-- TC_UI_02_CreateNote -->
-                  <span class="method-name">TC_UI_02_CreateNote</span>
-                  <em>
-(TC-UI-02: Create a New Note via UI)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_UI_03_NoteAppearsInList">
-                  </a> <!-- TC_UI_03_NoteAppearsInList -->
-                  <span class="method-name">TC_UI_03_NoteAppearsInList</span>
-                  <em>
-(TC-UI-03: Newly Created Note Appears in UI List)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-NotesApp_Test_Suite-class-passed -->
-          <div class="suite-NotesApp_Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.UI.LoginTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_UI_01_ValidLogin">
-                  </a> <!-- TC_UI_01_ValidLogin -->
-                  <span class="method-name">TC_UI_01_ValidLogin</span>
-                  <em>
-(TC-UI-01: Login with Valid Credentials)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-NotesApp_Test_Suite-class-passed -->
-          <div class="suite-NotesApp_Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.E2E.EndToEndTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_E2E_01_CompleteFlow">
-                  </a> <!-- TC_E2E_01_CompleteFlow -->
-                  <span class="method-name">TC_E2E_01_CompleteFlow</span>
-                  <em>
-(TC-E2E-01: Complete Notes App Flow - Login, Create, Verify, Delete)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-NotesApp_Test_Suite-class-passed -->
-          <div class="suite-NotesApp_Test_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">tests.UI.NegativeUITest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_NEG_01_CreateNoteEmptyTitle">
-                  </a> <!-- TC_NEG_01_CreateNoteEmptyTitle -->
-                  <span class="method-name">TC_NEG_01_CreateNoteEmptyTitle</span>
-                  <em>
-(TC-NEG-01: Create Note with Empty Title)                  </em>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC_NEG_02_CreateNoteEmptyDescription">
-                  </a> <!-- TC_NEG_02_CreateNoteEmptyDescription -->
-                  <span class="method-name">TC_NEG_02_CreateNoteEmptyDescription</span>
-                  <em>
-(TC-NEG-02: Create Note with Empty Description)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -421,16 +274,145 @@
           <div class="suite-NotesApp_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">tests.API.DeleteNoteAPITest</span>
+              <span class="class-name">tests.API.GetNotesAPITest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TC_API_02_DeleteNote">
-                  </a> <!-- TC_API_02_DeleteNote -->
-                  <span class="method-name">TC_API_02_DeleteNote</span>
+                  <a name="TC_API_01_GetNotes">
+                  </a> <!-- TC_API_01_GetNotes -->
+                  <span class="method-name">TC_API_01_GetNotes</span>
                   <em>
-(TC-API-02: Delete a Note via API)                  </em>
+(TC-API-01: GET /notes Returns Notes List)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-NotesApp_Test_Suite-class-passed -->
+          <div class="suite-NotesApp_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.UI.CreateNoteTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_UI_02_CreateNote">
+                  </a> <!-- TC_UI_02_CreateNote -->
+                  <span class="method-name">TC_UI_02_CreateNote</span>
+                  <em>
+(TC-UI-02: Create a New Note via UI)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_UI_03_NoteAppearsInList">
+                  </a> <!-- TC_UI_03_NoteAppearsInList -->
+                  <span class="method-name">TC_UI_03_NoteAppearsInList</span>
+                  <em>
+(TC-UI-03: Newly Created Note Appears in UI List)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-NotesApp_Test_Suite-class-passed -->
+          <div class="suite-NotesApp_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.E2E.EndToEndTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_E2E_01_CompleteFlow">
+                  </a> <!-- TC_E2E_01_CompleteFlow -->
+                  <span class="method-name">TC_E2E_01_CompleteFlow</span>
+                  <em>
+(TC-E2E-01: Complete Notes App Flow - Login, Create, Verify, Delete)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-NotesApp_Test_Suite-class-passed -->
+          <div class="suite-NotesApp_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.UI.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_UI_01_ValidLogin">
+                  </a> <!-- TC_UI_01_ValidLogin -->
+                  <span class="method-name">TC_UI_01_ValidLogin</span>
+                  <em>
+(TC-UI-01: Login with Valid Credentials)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-NotesApp_Test_Suite-class-passed -->
+          <div class="suite-NotesApp_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.UI.NegativeLoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_NEG_06_WrongPassword">
+                  </a> <!-- TC_NEG_06_WrongPassword -->
+                  <span class="method-name">TC_NEG_06_WrongPassword</span>
+                  <em>
+(TC-NEG-06: Login with Wrong Password)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_NEG_07_BothFieldsEmpty">
+                  </a> <!-- TC_NEG_07_BothFieldsEmpty -->
+                  <span class="method-name">TC_NEG_07_BothFieldsEmpty</span>
+                  <em>
+(TC-NEG-07: Login with Both Fields Empty)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-NotesApp_Test_Suite-class-passed -->
+          <div class="suite-NotesApp_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.UI.NegativeUITest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_NEG_01_CreateNoteEmptyTitle">
+                  </a> <!-- TC_NEG_01_CreateNoteEmptyTitle -->
+                  <span class="method-name">TC_NEG_01_CreateNoteEmptyTitle</span>
+                  <em>
+(TC-NEG-01: Create Note with Empty Title)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_NEG_02_CreateNoteEmptyDescription">
+                  </a> <!-- TC_NEG_02_CreateNoteEmptyDescription -->
+                  <span class="method-name">TC_NEG_02_CreateNoteEmptyDescription</span>
+                  <em>
+(TC-NEG-02: Create Note with Empty Description)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-NotesApp_Test_Suite-class-passed -->
+          <div class="suite-NotesApp_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.API.ResponseTimeAPITest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TC_API_03_ResponseTimeUnder2Seconds">
+                  </a> <!-- TC_API_03_ResponseTimeUnder2Seconds -->
+                  <span class="method-name">TC_API_03_ResponseTimeUnder2Seconds</span>
+                  <em>
+(TC-API-03: API Response Time is Under 2 Seconds)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -563,67 +545,67 @@ data.addRows(16);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'TC_UI_02_CreateNote')
 data.setCell(0, 2, 'tests.UI.CreateNoteTest')
-data.setCell(0, 3, 47012);
+data.setCell(0, 3, 60859);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TC_E2E_01_CompleteFlow')
-data.setCell(1, 2, 'tests.E2E.EndToEndTest')
-data.setCell(1, 3, 39424);
+data.setCell(1, 1, 'TC_UI_01_ValidLogin')
+data.setCell(1, 2, 'tests.UI.LoginTest')
+data.setCell(1, 3, 30758);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'TC_PERF_01_30Users')
-data.setCell(2, 2, 'tests.API.JMeterTest')
-data.setCell(2, 3, 27259);
+data.setCell(2, 1, 'TC_NEG_06_WrongPassword')
+data.setCell(2, 2, 'tests.UI.NegativeLoginTest')
+data.setCell(2, 3, 24272);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'TC_PERF_02_50Users')
-data.setCell(3, 2, 'tests.API.JMeterTest')
-data.setCell(3, 3, 20606);
+data.setCell(3, 1, 'TC_UI_03_NoteAppearsInList')
+data.setCell(3, 2, 'tests.UI.CreateNoteTest')
+data.setCell(3, 3, 23023);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'TC_UI_01_ValidLogin')
-data.setCell(4, 2, 'tests.UI.LoginTest')
-data.setCell(4, 3, 20568);
+data.setCell(4, 1, 'TC_NEG_07_BothFieldsEmpty')
+data.setCell(4, 2, 'tests.UI.NegativeLoginTest')
+data.setCell(4, 3, 22990);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'TC_NEG_07_BothFieldsEmpty')
-data.setCell(5, 2, 'tests.UI.NegativeLoginTest')
-data.setCell(5, 3, 18824);
+data.setCell(5, 1, 'TC_NEG_02_CreateNoteEmptyDescription')
+data.setCell(5, 2, 'tests.UI.NegativeUITest')
+data.setCell(5, 3, 21632);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'TC_UI_03_NoteAppearsInList')
-data.setCell(6, 2, 'tests.UI.CreateNoteTest')
-data.setCell(6, 3, 17930);
+data.setCell(6, 1, 'TC_NEG_01_CreateNoteEmptyTitle')
+data.setCell(6, 2, 'tests.UI.NegativeUITest')
+data.setCell(6, 3, 21574);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'TC_NEG_01_CreateNoteEmptyTitle')
-data.setCell(7, 2, 'tests.UI.NegativeUITest')
-data.setCell(7, 3, 14529);
+data.setCell(7, 1, 'TC_PERF_01_30Users')
+data.setCell(7, 2, 'tests.API.JMeterTest')
+data.setCell(7, 3, 21240);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'TC_NEG_02_CreateNoteEmptyDescription')
-data.setCell(8, 2, 'tests.UI.NegativeUITest')
-data.setCell(8, 3, 14329);
+data.setCell(8, 1, 'TC_E2E_01_CompleteFlow')
+data.setCell(8, 2, 'tests.E2E.EndToEndTest')
+data.setCell(8, 3, 17514);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'TC_NEG_06_WrongPassword')
-data.setCell(9, 2, 'tests.UI.NegativeLoginTest')
-data.setCell(9, 3, 14292);
+data.setCell(9, 1, 'TC_PERF_02_50Users')
+data.setCell(9, 2, 'tests.API.JMeterTest')
+data.setCell(9, 3, 17429);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'TC_API_02_DeleteNote')
-data.setCell(10, 2, 'tests.API.DeleteNoteAPITest')
-data.setCell(10, 3, 3309);
+data.setCell(10, 1, 'TC_API_01_GetNotes')
+data.setCell(10, 2, 'tests.API.GetNotesAPITest')
+data.setCell(10, 3, 4157);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'TC_NEG_03_CreateNoteWithoutToken')
-data.setCell(11, 2, 'tests.API.NegativeAPITest')
-data.setCell(11, 3, 3297);
+data.setCell(11, 1, 'TC_API_02_DeleteNote')
+data.setCell(11, 2, 'tests.API.DeleteNoteAPITest')
+data.setCell(11, 3, 1798);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'TC_API_01_GetNotes')
-data.setCell(12, 2, 'tests.API.GetNotesAPITest')
-data.setCell(12, 3, 2757);
+data.setCell(12, 1, 'TC_NEG_04_InvalidToken')
+data.setCell(12, 2, 'tests.API.NegativeAPITest')
+data.setCell(12, 3, 1114);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'TC_API_03_ResponseTimeUnder2Seconds')
-data.setCell(13, 2, 'tests.API.ResponseTimeAPITest')
-data.setCell(13, 3, 2676);
+data.setCell(13, 1, 'TC_NEG_03_CreateNoteWithoutToken')
+data.setCell(13, 2, 'tests.API.NegativeAPITest')
+data.setCell(13, 3, 925);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'TC_NEG_04_InvalidToken')
-data.setCell(14, 2, 'tests.API.NegativeAPITest')
-data.setCell(14, 3, 1186);
+data.setCell(14, 1, 'TC_API_03_ResponseTimeUnder2Seconds')
+data.setCell(14, 2, 'tests.API.ResponseTimeAPITest')
+data.setCell(14, 3, 736);
 data.setCell(15, 0, 15)
 data.setCell(15, 1, 'TC_NEG_05_DeleteWrongNoteId')
 data.setCell(15, 2, 'tests.API.NegativeAPITest')
-data.setCell(15, 3, 1162);
+data.setCell(15, 3, 512);
 window.suiteTableData['NotesApp_Test_Suite']= { tableData: data, tableDiv: 'times-div-NotesApp_Test_Suite'}
 return data;
 }
@@ -661,302 +643,297 @@ return data;
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.UI.CreateNoteTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tests.UI.NegativeUITest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(public void tests.UI.CreateNoteTest.TC_UI_02_CreateNote())</span>
+                <span class="method-name">setUp(public void tests.UI.NegativeUITest.TC_NEG_01_CreateNoteEmptyTitle())</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.UI.NegativeUITest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tests.UI.CreateNoteTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(public void tests.UI.NegativeUITest.TC_NEG_01_CreateNoteEmptyTitle())</span>
+                <span class="method-name">setUp(public void tests.UI.CreateNoteTest.TC_UI_02_CreateNote())</span>
                 <span class="method-start">1 ms</span>
               </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.UI.CreateNoteTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">TC_UI_02_CreateNote</span>
-                <span class="method-start">7473 ms</span>
+                <span class="method-start">8434 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.UI.LoginTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">TC_UI_01_ValidLogin</span>
-                <span class="method-start">7478 ms</span>
+                <span class="method-start">8448 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.UI.NegativeUITest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">TC_NEG_01_CreateNoteEmptyTitle</span>
-                <span class="method-start">27381 ms</span>
+                <span class="method-start">13331 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">35144 ms</span>
+              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.UI.LoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">28082 ms</span>
+                <span class="method-start">39211 ms</span>
               </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.UI.NegativeUITest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void tests.UI.NegativeUITest.TC_NEG_02_CreateNoteEmptyDescription())</span>
+                <span class="method-start">41787 ms</span>
+              </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.UI.NegativeLoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(public void tests.UI.NegativeLoginTest.TC_NEG_06_WrongPassword())</span>
-                <span class="method-start">29892 ms</span>
+                <span class="method-start">43232 ms</span>
               </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.UI.NegativeUITest</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">41919 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp(public void tests.UI.NegativeUITest.TC_NEG_02_CreateNoteEmptyDescription())</span>
-                <span class="method-start">48019 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.UI.NegativeLoginTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">TC_NEG_06_WrongPassword</span>
-                <span class="method-start">48086 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.UI.CreateNoteTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">54488 ms</span>
-              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.UI.NegativeUITest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">TC_NEG_02_CreateNoteEmptyDescription</span>
-                <span class="method-start">62020 ms</span>
+                <span class="method-start">44605 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.UI.NegativeLoginTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">62386 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.UI.CreateNoteTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp(public void tests.UI.CreateNoteTest.TC_UI_03_NoteAppearsInList())</span>
-                <span class="method-start">64431 ms</span>
-              </div> <!-- configuration-method before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.UI.NegativeLoginTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp(public void tests.UI.NegativeLoginTest.TC_NEG_07_BothFieldsEmpty())</span>
-                <span class="method-start">66410 ms</span>
-              </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">TC_NEG_07_BothFieldsEmpty</span>
-                <span class="method-start">69880 ms</span>
+                <span class="method-name">TC_NEG_06_WrongPassword</span>
+                <span class="method-start">46480 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.UI.NegativeUITest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">76384 ms</span>
+                <span class="method-start">66242 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.UI.CreateNoteTest</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">TC_UI_03_NoteAppearsInList</span>
-                <span class="method-start">83088 ms</span>
-              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">69298 ms</span>
+              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.UI.NegativeLoginTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">88713 ms</span>
+                <span class="method-start">70756 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.API.GetNotesAPITest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">apiSetup</span>
-                <span class="method-start">89839 ms</span>
+                <span class="method-start">72170 ms</span>
               </div> <!-- configuration-class before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.UI.NegativeLoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void tests.UI.NegativeLoginTest.TC_NEG_07_BothFieldsEmpty())</span>
+                <span class="method-start">74291 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.UI.CreateNoteTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void tests.UI.CreateNoteTest.TC_UI_03_NoteAppearsInList())</span>
+                <span class="method-start">74596 ms</span>
+              </div> <!-- configuration-method before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.UI.NegativeLoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">TC_NEG_07_BothFieldsEmpty</span>
+                <span class="method-start">78219 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.UI.CreateNoteTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <span class="method-name">TC_UI_03_NoteAppearsInList</span>
+                <span class="method-start">78360 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.API.GetNotesAPITest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(public void tests.API.GetNotesAPITest.TC_API_01_GetNotes())</span>
-                <span class="method-start">97052 ms</span>
+                <span class="method-start">80349 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_API_01_GetNotes</span>
-                <span class="method-start">97063 ms</span>
+                <span class="method-start">80369 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">99835 ms</span>
+                <span class="method-start">84530 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.API.DeleteNoteAPITest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">apiSetup</span>
-                <span class="method-start">99869 ms</span>
+                <span class="method-start">84572 ms</span>
               </div> <!-- configuration-class before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.UI.CreateNoteTest</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">101020 ms</span>
-              </div> <!-- configuration-method after -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.API.DeleteNoteAPITest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(public void tests.API.DeleteNoteAPITest.TC_API_02_DeleteNote())</span>
-                <span class="method-start">101166 ms</span>
+                <span class="method-start">85343 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_API_02_DeleteNote</span>
-                <span class="method-start">101173 ms</span>
+                <span class="method-start">85373 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">87181 ms</span>
+              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.API.ResponseTimeAPITest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">apiSetup</span>
-                <span class="method-start">102299 ms</span>
+                <span class="method-start">87203 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(public void tests.API.ResponseTimeAPITest.TC_API_03_ResponseTimeUnder2Seconds())</span>
-                <span class="method-start">104329 ms</span>
+                <span class="method-start">87887 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">TC_API_03_ResponseTimeUnder2Seconds</span>
-                <span class="method-start">104333 ms</span>
+                <span class="method-start">87914 ms</span>
               </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.API.DeleteNoteAPITest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">104484 ms</span>
+                <span class="method-start">88659 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.API.JMeterTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(public void tests.API.JMeterTest.TC_PERF_01_30Users() throws java.lang.Exception)</span>
-                <span class="method-start">104497 ms</span>
+                <span class="method-start">88702 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_PERF_01_30Users</span>
-                <span class="method-start">104500 ms</span>
+                <span class="method-start">88707 ms</span>
               </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.UI.NegativeLoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">101212 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.UI.CreateNoteTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">101388 ms</span>
+              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.API.NegativeAPITest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">apiSetup</span>
-                <span class="method-start">106204 ms</span>
+                <span class="method-start">103260 ms</span>
               </div> <!-- configuration-class before -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">tests.API.ResponseTimeAPITest</div> <!-- chronological-class-name -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">107093 ms</span>
-              </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.E2E.EndToEndTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(public void tests.E2E.EndToEndTest.TC_E2E_01_CompleteFlow())</span>
-                <span class="method-start">107184 ms</span>
+                <span class="method-start">103330 ms</span>
               </div> <!-- configuration-method before -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.API.NegativeAPITest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(public void tests.API.NegativeAPITest.TC_NEG_03_CreateNoteWithoutToken())</span>
-                <span class="method-start">107366 ms</span>
+                <span class="method-start">103943 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_NEG_03_CreateNoteWithoutToken</span>
-                <span class="method-start">107369 ms</span>
+                <span class="method-start">103944 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">110668 ms</span>
+                <span class="method-start">104989 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(public void tests.API.NegativeAPITest.TC_NEG_04_InvalidToken())</span>
-                <span class="method-start">110671 ms</span>
+                <span class="method-start">104995 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_NEG_04_InvalidToken</span>
-                <span class="method-start">110675 ms</span>
+                <span class="method-start">105082 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">111863 ms</span>
+                <span class="method-start">106207 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp(public void tests.API.NegativeAPITest.TC_NEG_05_DeleteWrongNoteId())</span>
-                <span class="method-start">111892 ms</span>
+                <span class="method-start">106219 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">TC_NEG_05_DeleteWrongNoteId</span>
-                <span class="method-start">111992 ms</span>
+                <span class="method-start">106298 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">113157 ms</span>
+                <span class="method-start">106812 ms</span>
               </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.API.JMeterTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">109952 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp(public void tests.API.JMeterTest.TC_PERF_02_50Users() throws java.lang.Exception)</span>
+                <span class="method-start">109984 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TC_PERF_02_50Users</span>
+                <span class="method-start">110032 ms</span>
+              </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.E2E.EndToEndTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">TC_E2E_01_CompleteFlow</span>
-                <span class="method-start">120975 ms</span>
+                <span class="method-start">111818 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.API.JMeterTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">131761 ms</span>
-              </div> <!-- configuration-method after -->
-              <div class="configuration-method before">
-                <span class="method-name">setUp(public void tests.API.JMeterTest.TC_PERF_02_50Users() throws java.lang.Exception)</span>
-                <span class="method-start">131797 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">TC_PERF_02_50Users</span>
-                <span class="method-start">131832 ms</span>
-              </div> <!-- test-method -->
-              <div class="configuration-method after">
-                <span class="method-name">tearDown</span>
-                <span class="method-start">152442 ms</span>
+                <span class="method-start">127463 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.E2E.EndToEndTest</div> <!-- chronological-class-name -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">160404 ms</span>
+                <span class="method-start">129343 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

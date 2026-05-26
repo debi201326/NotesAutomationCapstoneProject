@@ -1,1 +1,0 @@
-{"uuid":"9f3a36d6-e852-4cd5-8835-3a9f5b45dca4","name":"tests.API.ResponseTimeAPITest","children":["6148b677-3884-4571-b52d-b58f1af28da6"],"befores":[{"name":"apiSetup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1779776536145,"stop":1779776538174}],"afters":[],"start":1779776536144,"stop":1779776540988}

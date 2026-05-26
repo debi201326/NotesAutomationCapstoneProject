@@ -17,39 +17,39 @@ import utils.WaitUtil;
 
 public class EndToEndTest extends BaseTest {
 
-    @Test(description = "TC-E2E-01: Complete Notes App Flow - Login, Create, Verify, Delete")
+    @Test(description = "TC-E2E-01: Complete UI and API Note Lifecycle Validation")
     @Severity(SeverityLevel.BLOCKER)
     public void TC_E2E_01_CompleteFlow() {
-        System.out.println("===== TC-E2E-01: Complete End to End Flow =====");
+        System.out.println("===== TC-E2E-01: Complete UI and API Note Lifecycle Validation =====");
 
         try {
 
             // FR-01 UI LOGIN
-            System.out.println("[STEP 1] FR-01: Login via UI");
+            System.out.println("FR-01: Login via UI");
             LoginPage loginPage = new LoginPage(driver, wait);
             loginPage.login(email, password);
             boolean loggedIn = WaitUtil.waitForVisible(wait,
                 By.cssSelector("[data-testid='logout']")).isDisplayed();
             Assert.assertTrue(loggedIn, "FR-01 Failed: Login did not work");
             ScreenshotUtil.captureAndAttach(driver, "Step1 - Login Success");
-            System.out.println("[STEP 1] FR-01 PASSED");
+            System.out.println("FR-01 PASSED");
 
             // FR-02 CREATE NOTE VIA UI
-            System.out.println("[STEP 2] FR-02: Create note via UI");
+            System.out.println("FR-02: Create note via UI");
             NotesPage notesPage = new NotesPage(driver, wait);
             notesPage.createNote(noteTitle, noteDescription, noteCategory);
             ScreenshotUtil.captureAndAttach(driver, "Step2 - Note Created");
-            System.out.println("[STEP 2] FR-02 PASSED");
+            System.out.println("FR-02 PASSED");
 
             // FR-03 NOTE APPEARS IN UI LIST
-            System.out.println("[STEP 3] FR-03: Verify note appears in UI list");
+            System.out.println("FR-03: Verify note appears in UI list");
             boolean visibleInUI = notesPage.isNoteVisible(noteTitle);
             Assert.assertTrue(visibleInUI, "FR-03 Failed: Note did not appear in UI list");
             ScreenshotUtil.captureAndAttach(driver, "Step3 - Note Visible in UI");
-            System.out.println("[STEP 3] FR-03 PASSED");
+            System.out.println("FR-03 PASSED");
 
             // FR-04 API GET /notes RETURNS LIST
-            System.out.println("[STEP 4] FR-04: GET /notes API returns list");
+            System.out.println("FR-04: GET /notes API returns list");
             APIAuthentication.generateToken();
             RestAssured.baseURI = ConfigReader.get("api.base.url");
 
@@ -60,10 +60,10 @@ public class EndToEndTest extends BaseTest {
 
             Assert.assertEquals(getResponse.statusCode(), 200,
                 "FR-04 Failed: GET /notes did not return 200");
-            System.out.println("[STEP 4] FR-04 PASSED");
+            System.out.println("FR-04 PASSED");
 
             // FR-05 UI CREATED NOTE VISIBLE IN API
-            System.out.println("[STEP 5] FR-05: UI created note visible in API");
+            System.out.println("FR-05: UI created note visible in API");
             String body = getResponse.getBody().asString();
             Assert.assertTrue(body.contains(noteTitle),
                 "FR-05 Failed: Note created in UI not found in API response");
@@ -79,10 +79,10 @@ public class EndToEndTest extends BaseTest {
 
             System.out.println("Note ID: " + noteId);
             System.out.println("UI Title: " + noteTitle + " API Title: " + apiTitle);
-            System.out.println("[STEP 5] FR-05 PASSED");
+            System.out.println("FR-05 PASSED");
 
             // FR-06 DELETE NOTE VIA API
-            System.out.println("[STEP 6] FR-06: Delete note via API");
+            System.out.println("FR-06: Delete note via API");
             Response deleteResponse = RestAssured
                 .given()
                 .header("x-auth-token", APIAuthentication.token)
@@ -90,16 +90,16 @@ public class EndToEndTest extends BaseTest {
 
             Assert.assertEquals(deleteResponse.statusCode(), 200,
                 "FR-06 Failed: Delete API did not return 200");
-            System.out.println("[STEP 6] FR-06 PASSED");
+            System.out.println("FR-06 PASSED");
 
             // FR-07 DELETED NOTE DISAPPEARS FROM UI
-            System.out.println("[STEP 7] FR-07: Deleted note disappears from UI");
+            System.out.println("FR-07: Deleted note disappears from UI");
             driver.navigate().refresh();
             boolean isGone = !driver.getPageSource().contains(noteTitle);
             ScreenshotUtil.captureAndAttach(driver, "Step7 - Note Gone from UI");
             Assert.assertTrue(isGone,
                 "FR-07 Failed: Deleted note still appears in UI");
-            System.out.println("[STEP 7] FR-07 PASSED");
+            System.out.println("FR-07 PASSED");
 
             System.out.println("===== TC-E2E-01: ALL STEPS PASSED =====");
 

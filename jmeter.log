@@ -1,211 +1,209 @@
-2026-05-26 11:52:48,477 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
-2026-05-26 11:52:48,510 INFO o.a.j.JMeter: Loading user properties from: C:\Users\debi2\Downloads\apache-jmeter-5.6.3\bin\user.properties
-2026-05-26 11:52:48,510 INFO o.a.j.JMeter: Loading system properties from: C:\Users\debi2\Downloads\apache-jmeter-5.6.3\bin\system.properties
-2026-05-26 11:52:48,527 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
-2026-05-26 11:52:48,527 INFO o.a.j.JMeter: Version 5.6.3
-2026-05-26 11:52:48,529 INFO o.a.j.JMeter: java.version=17.0.12
-2026-05-26 11:52:48,529 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
-2026-05-26 11:52:48,529 INFO o.a.j.JMeter: os.name=Windows 11
-2026-05-26 11:52:48,529 INFO o.a.j.JMeter: os.arch=amd64
-2026-05-26 11:52:48,529 INFO o.a.j.JMeter: os.version=10.0
-2026-05-26 11:52:48,529 INFO o.a.j.JMeter: file.encoding=Cp1252
-2026-05-26 11:52:48,529 INFO o.a.j.JMeter: java.awt.headless=true
-2026-05-26 11:52:48,529 INFO o.a.j.JMeter: Max memory     =1073741824
-2026-05-26 11:52:48,529 INFO o.a.j.JMeter: Available Processors =4
-2026-05-26 11:52:48,549 INFO o.a.j.JMeter: Default Locale=English (EN)
-2026-05-26 11:52:48,549 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
-2026-05-26 11:52:48,550 INFO o.a.j.JMeter: JMeterHome=C:\Users\debi2\Downloads\apache-jmeter-5.6.3
-2026-05-26 11:52:48,550 INFO o.a.j.JMeter: user.dir  =C:\Users\debi2\OneDrive\Pictures\NotesAutomationHybrid
-2026-05-26 11:52:48,551 INFO o.a.j.JMeter: PWD       =C:\Users\debi2\OneDrive\Pictures\NotesAutomationHybrid
-2026-05-26 11:52:48,853 INFO o.a.j.JMeter: IP: 172.31.0.176 Name: LAPTOP-VU4Q2S43 FullName: 172.31.0.176
-2026-05-26 11:52:48,901 INFO o.a.j.s.FileServer: Default base='C:\Users\debi2\OneDrive\Pictures\NotesAutomationHybrid'
-2026-05-26 11:52:48,906 INFO o.a.j.s.FileServer: Set new base='C:\Users\debi2\OneDrive\Pictures\NotesAutomationHybrid\src\test\resources\jmeter'
-2026-05-26 11:52:49,672 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
-2026-05-26 11:52:49,715 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
-2026-05-26 11:52:49,715 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
-2026-05-26 11:52:49,724 INFO o.a.j.s.SaveService: Loading file: src\test\resources\jmeter\testplan_50_users.jmx
-2026-05-26 11:52:49,833 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2026-05-26 11:52:49,833 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2026-05-26 11:52:49,833 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2026-05-26 11:52:49,833 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
-2026-05-26 11:52:49,833 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
-2026-05-26 11:52:49,833 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
-2026-05-26 11:52:50,134 INFO o.a.j.JMeter: Creating summariser <summary>
-2026-05-26 11:52:50,190 INFO o.a.j.e.StandardJMeterEngine: Running the test!
-2026-05-26 11:52:50,191 INFO o.a.j.s.SampleEvent: List of sample_variables: []
-2026-05-26 11:52:50,201 INFO o.a.j.s.SampleEvent: List of sample_variables: []
-2026-05-26 11:52:50,453 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
-2026-05-26 11:52:50,453 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
-2026-05-26 11:52:50,659 INFO o.a.j.JMeter: Running test (1779776570659)
-2026-05-26 11:52:50,681 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : 50 Users
-2026-05-26 11:52:50,683 INFO o.a.j.e.StandardJMeterEngine: Starting 50 threads for group 50 Users.
-2026-05-26 11:52:50,683 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
-2026-05-26 11:52:50,683 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=50 ramp-up=10 delayedStart=false
-2026-05-26 11:52:50,704 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-1
-2026-05-26 11:52:50,781 INFO o.a.j.t.ThreadGroup: Started thread group number 1
-2026-05-26 11:52:50,783 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
-2026-05-26 11:52:50,790 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = LAPTOP-VU4Q2S43
-2026-05-26 11:52:50,813 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
-2026-05-26 11:52:50,818 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
-2026-05-26 11:52:50,823 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
-2026-05-26 11:52:50,823 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
-2026-05-26 11:52:50,823 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
-2026-05-26 11:52:50,905 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-2
-2026-05-26 11:52:51,101 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-3
-2026-05-26 11:52:51,121 INFO o.a.j.p.h.s.h.LazyLayeredConnectionSocketFactory: Setting up HTTPS TrustAll Socket Factory
-2026-05-26 11:52:51,135 INFO o.a.j.u.JsseSSLManager: Using default SSL protocol: TLS
-2026-05-26 11:52:51,135 INFO o.a.j.u.JsseSSLManager: SSL session context: per-thread
-2026-05-26 11:52:51,301 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-4
-2026-05-26 11:52:51,502 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-5
-2026-05-26 11:52:51,541 INFO o.a.j.u.SSLManager: JmeterKeyStore Location:  type JKS
-2026-05-26 11:52:51,545 INFO o.a.j.u.SSLManager: KeyStore created OK
-2026-05-26 11:52:51,546 WARN o.a.j.u.SSLManager: Keystore file not found, loading empty keystore
-2026-05-26 11:52:51,704 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-6
-2026-05-26 11:52:51,901 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-7
-2026-05-26 11:52:52,099 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-8
-2026-05-26 11:52:52,306 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-9
-2026-05-26 11:52:52,498 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-10
-2026-05-26 11:52:52,705 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-11
-2026-05-26 11:52:52,895 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-12
-2026-05-26 11:52:53,097 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-13
-2026-05-26 11:52:53,329 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-14
-2026-05-26 11:52:53,511 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-15
-2026-05-26 11:52:53,712 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-16
-2026-05-26 11:52:53,915 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-17
-2026-05-26 11:52:54,098 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-7
-2026-05-26 11:52:54,098 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-7
-2026-05-26 11:52:54,098 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-5
-2026-05-26 11:52:54,098 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-5
-2026-05-26 11:52:54,100 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-18
-2026-05-26 11:52:54,312 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-19
-2026-05-26 11:52:54,416 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-3
-2026-05-26 11:52:54,417 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-3
-2026-05-26 11:52:54,513 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-20
-2026-05-26 11:52:54,549 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-4
-2026-05-26 11:52:54,550 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-4
-2026-05-26 11:52:54,713 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-21
-2026-05-26 11:52:54,913 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-22
-2026-05-26 11:52:54,941 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-2
-2026-05-26 11:52:54,941 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-2
-2026-05-26 11:52:54,949 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-12
-2026-05-26 11:52:54,949 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-12
-2026-05-26 11:52:54,949 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-1
-2026-05-26 11:52:54,949 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-1
-2026-05-26 11:52:54,954 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-6
-2026-05-26 11:52:54,955 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-6
-2026-05-26 11:52:55,071 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-9
-2026-05-26 11:52:55,071 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-9
-2026-05-26 11:52:55,113 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-23
-2026-05-26 11:52:55,213 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-10
-2026-05-26 11:52:55,213 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-10
-2026-05-26 11:52:55,314 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-24
-2026-05-26 11:52:55,513 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-25
-2026-05-26 11:52:55,528 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-11
-2026-05-26 11:52:55,528 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-8
-2026-05-26 11:52:55,528 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-11
-2026-05-26 11:52:55,528 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-8
-2026-05-26 11:52:55,712 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-26
-2026-05-26 11:52:55,911 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-27
-2026-05-26 11:52:56,112 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-28
-2026-05-26 11:52:56,312 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-29
-2026-05-26 11:52:56,513 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-30
-2026-05-26 11:52:56,712 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-31
-2026-05-26 11:52:56,789 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-18
-2026-05-26 11:52:56,789 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-18
-2026-05-26 11:52:56,912 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-32
-2026-05-26 11:52:57,107 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-33
-2026-05-26 11:52:57,260 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-21
-2026-05-26 11:52:57,260 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-21
-2026-05-26 11:52:57,313 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-34
-2026-05-26 11:52:57,338 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-15
-2026-05-26 11:52:57,338 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-15
-2026-05-26 11:52:57,513 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-35
-2026-05-26 11:52:57,642 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-17
-2026-05-26 11:52:57,642 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-17
-2026-05-26 11:52:57,693 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-26
-2026-05-26 11:52:57,693 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-26
-2026-05-26 11:52:57,713 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-36
-2026-05-26 11:52:57,856 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-13
-2026-05-26 11:52:57,856 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-13
-2026-05-26 11:52:57,876 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-16
-2026-05-26 11:52:57,876 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-16
-2026-05-26 11:52:57,925 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-37
-2026-05-26 11:52:57,990 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-24
-2026-05-26 11:52:57,995 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-24
-2026-05-26 11:52:58,025 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-27
-2026-05-26 11:52:58,025 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-27
-2026-05-26 11:52:58,117 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-38
-2026-05-26 11:52:58,148 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-22
-2026-05-26 11:52:58,148 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-22
-2026-05-26 11:52:58,150 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-28
-2026-05-26 11:52:58,150 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-28
-2026-05-26 11:52:58,281 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-23
-2026-05-26 11:52:58,282 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-19
-2026-05-26 11:52:58,282 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-19
-2026-05-26 11:52:58,282 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-23
-2026-05-26 11:52:58,306 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-39
-2026-05-26 11:52:58,473 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-29
-2026-05-26 11:52:58,473 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-29
-2026-05-26 11:52:58,473 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-14
-2026-05-26 11:52:58,474 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-14
-2026-05-26 11:52:58,505 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-40
-2026-05-26 11:52:58,627 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-25
-2026-05-26 11:52:58,627 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-25
-2026-05-26 11:52:58,698 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-41
-2026-05-26 11:52:58,830 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-32
-2026-05-26 11:52:58,830 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-32
-2026-05-26 11:52:58,902 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-42
-2026-05-26 11:52:58,912 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-30
-2026-05-26 11:52:58,912 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-30
-2026-05-26 11:52:59,093 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-43
-2026-05-26 11:52:59,299 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-44
-2026-05-26 11:52:59,504 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-45
-2026-05-26 11:52:59,695 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-46
-2026-05-26 11:52:59,712 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-36
-2026-05-26 11:52:59,712 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-36
-2026-05-26 11:52:59,888 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-35
-2026-05-26 11:52:59,888 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-35
-2026-05-26 11:52:59,903 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-47
-2026-05-26 11:53:00,014 INFO o.a.j.r.Summariser: summary +     75 in 00:00:09 =    8.0/s Avg:  1447 Min:   583 Max:  4048 Err:     0 (0.00%) Active: 15 Started: 47 Finished: 32
-2026-05-26 11:53:00,016 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-31
-2026-05-26 11:53:00,016 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-31
-2026-05-26 11:53:00,069 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-38
-2026-05-26 11:53:00,075 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-38
-2026-05-26 11:53:00,077 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-33
-2026-05-26 11:53:00,078 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-33
-2026-05-26 11:53:00,093 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-48
-2026-05-26 11:53:00,295 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-49
-2026-05-26 11:53:00,503 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-50
-2026-05-26 11:53:00,767 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-34
-2026-05-26 11:53:00,767 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-34
-2026-05-26 11:53:00,949 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-41
-2026-05-26 11:53:00,949 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-41
-2026-05-26 11:53:01,263 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-42
-2026-05-26 11:53:01,265 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-42
-2026-05-26 11:53:01,456 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-37
-2026-05-26 11:53:01,456 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-37
-2026-05-26 11:53:01,456 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-40
-2026-05-26 11:53:01,457 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-40
-2026-05-26 11:53:01,460 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-39
-2026-05-26 11:53:01,461 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-39
-2026-05-26 11:53:01,767 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-20
-2026-05-26 11:53:01,767 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-20
-2026-05-26 11:53:02,295 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-46
-2026-05-26 11:53:02,295 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-46
-2026-05-26 11:53:02,454 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-43
-2026-05-26 11:53:02,454 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-43
-2026-05-26 11:53:02,520 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-45
-2026-05-26 11:53:02,520 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-45
-2026-05-26 11:53:03,527 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-49
-2026-05-26 11:53:03,527 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-49
-2026-05-26 11:53:03,739 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-50
-2026-05-26 11:53:03,739 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-50
-2026-05-26 11:53:03,874 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-48
-2026-05-26 11:53:03,874 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-48
-2026-05-26 11:53:03,930 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-44
-2026-05-26 11:53:03,931 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-44
-2026-05-26 11:53:04,699 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-47
-2026-05-26 11:53:04,699 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-47
-2026-05-26 11:53:04,699 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
-2026-05-26 11:53:04,699 INFO o.a.j.r.Summariser: summary +     25 in 00:00:05 =    5.3/s Avg:  1956 Min:   838 Max:  6238 Err:     0 (0.00%) Active: 0 Started: 50 Finished: 50
-2026-05-26 11:53:04,705 INFO o.a.j.r.Summariser: summary =    100 in 00:00:14 =    7.1/s Avg:  1574 Min:   583 Max:  6238 Err:     0 (0.00%)
+2026-05-26 12:26:38,452 INFO o.a.j.u.JMeterUtils: Setting Locale to en_EN
+2026-05-26 12:26:38,499 INFO o.a.j.JMeter: Loading user properties from: C:\Users\debi2\Downloads\apache-jmeter-5.6.3\bin\user.properties
+2026-05-26 12:26:38,499 INFO o.a.j.JMeter: Loading system properties from: C:\Users\debi2\Downloads\apache-jmeter-5.6.3\bin\system.properties
+2026-05-26 12:26:38,513 INFO o.a.j.JMeter: Copyright (c) 1998-2024 The Apache Software Foundation
+2026-05-26 12:26:38,514 INFO o.a.j.JMeter: Version 5.6.3
+2026-05-26 12:26:38,514 INFO o.a.j.JMeter: java.version=17.0.12
+2026-05-26 12:26:38,514 INFO o.a.j.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM
+2026-05-26 12:26:38,514 INFO o.a.j.JMeter: os.name=Windows 11
+2026-05-26 12:26:38,514 INFO o.a.j.JMeter: os.arch=amd64
+2026-05-26 12:26:38,514 INFO o.a.j.JMeter: os.version=10.0
+2026-05-26 12:26:38,514 INFO o.a.j.JMeter: file.encoding=Cp1252
+2026-05-26 12:26:38,514 INFO o.a.j.JMeter: java.awt.headless=true
+2026-05-26 12:26:38,514 INFO o.a.j.JMeter: Max memory     =1073741824
+2026-05-26 12:26:38,517 INFO o.a.j.JMeter: Available Processors =4
+2026-05-26 12:26:38,542 INFO o.a.j.JMeter: Default Locale=English (EN)
+2026-05-26 12:26:38,542 INFO o.a.j.JMeter: JMeter  Locale=English (EN)
+2026-05-26 12:26:38,544 INFO o.a.j.JMeter: JMeterHome=C:\Users\debi2\Downloads\apache-jmeter-5.6.3
+2026-05-26 12:26:38,544 INFO o.a.j.JMeter: user.dir  =C:\Users\debi2\OneDrive\Pictures\NotesAutomationHybrid
+2026-05-26 12:26:38,545 INFO o.a.j.JMeter: PWD       =C:\Users\debi2\OneDrive\Pictures\NotesAutomationHybrid
+2026-05-26 12:26:38,550 INFO o.a.j.JMeter: IP: 10.239.47.89 Name: LAPTOP-VU4Q2S43 FullName: LAPTOP-VU4Q2S43
+2026-05-26 12:26:38,612 INFO o.a.j.s.FileServer: Default base='C:\Users\debi2\OneDrive\Pictures\NotesAutomationHybrid'
+2026-05-26 12:26:38,615 INFO o.a.j.s.FileServer: Set new base='C:\Users\debi2\OneDrive\Pictures\NotesAutomationHybrid\src\test\resources\jmeter'
+2026-05-26 12:26:39,214 INFO o.a.j.s.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2
+2026-05-26 12:26:39,277 INFO o.a.j.s.SaveService: Using SaveService properties version 5.0
+2026-05-26 12:26:39,279 INFO o.a.j.s.SaveService: Using SaveService properties file encoding UTF-8
+2026-05-26 12:26:39,291 INFO o.a.j.s.SaveService: Loading file: src\test\resources\jmeter\testplan_50_users.jmx
+2026-05-26 12:26:39,535 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/html is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-05-26 12:26:39,535 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xhtml+xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-05-26 12:26:39,535 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for application/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-05-26 12:26:39,535 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/xml is org.apache.jmeter.protocol.http.parser.LagartoBasedHtmlParser
+2026-05-26 12:26:39,537 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser
+2026-05-26 12:26:39,539 INFO o.a.j.p.h.s.HTTPSamplerBase: Parser for text/css is org.apache.jmeter.protocol.http.parser.CssParser
+2026-05-26 12:26:39,584 INFO o.a.j.JMeter: Creating summariser <summary>
+2026-05-26 12:26:39,609 INFO o.a.j.e.StandardJMeterEngine: Running the test!
+2026-05-26 12:26:39,611 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-05-26 12:26:39,611 INFO o.a.j.s.SampleEvent: List of sample_variables: []
+2026-05-26 12:26:39,620 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must contain the string: '.functions.'
+2026-05-26 12:26:39,620 INFO o.a.j.e.u.CompoundVariable: Note: Function class names must not contain the string: '.gui.'
+2026-05-26 12:26:39,831 INFO o.a.j.JMeter: Running test (1779778599831)
+2026-05-26 12:26:39,862 INFO o.a.j.e.StandardJMeterEngine: Starting ThreadGroup: 1 : 50 Users
+2026-05-26 12:26:39,862 INFO o.a.j.e.StandardJMeterEngine: Starting 50 threads for group 50 Users.
+2026-05-26 12:26:39,862 INFO o.a.j.e.StandardJMeterEngine: Thread will continue on error
+2026-05-26 12:26:39,862 INFO o.a.j.t.ThreadGroup: Starting thread group... number=1 threads=50 ramp-up=10 delayedStart=false
+2026-05-26 12:26:39,875 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-1
+2026-05-26 12:26:39,926 INFO o.a.j.t.ThreadGroup: Started thread group number 1
+2026-05-26 12:26:39,926 INFO o.a.j.e.StandardJMeterEngine: All thread groups have been started
+2026-05-26 12:26:39,940 INFO o.a.j.p.h.s.HTTPHCAbstractImpl: Local host = LAPTOP-VU4Q2S43
+2026-05-26 12:26:39,948 INFO o.a.j.p.h.s.HTTPHC4Impl: HTTP request retry count = 0
+2026-05-26 12:26:39,950 INFO o.a.j.s.SampleResult: Note: Sample TimeStamps are START times
+2026-05-26 12:26:39,950 INFO o.a.j.s.SampleResult: sampleresult.default.encoding is set to UTF-8
+2026-05-26 12:26:39,950 INFO o.a.j.s.SampleResult: sampleresult.useNanoTime=true
+2026-05-26 12:26:39,950 INFO o.a.j.s.SampleResult: sampleresult.nanoThreadSleep=5000
+2026-05-26 12:26:40,074 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-2
+2026-05-26 12:26:40,228 INFO o.a.j.p.h.s.h.LazyLayeredConnectionSocketFactory: Setting up HTTPS TrustAll Socket Factory
+2026-05-26 12:26:40,248 INFO o.a.j.u.JsseSSLManager: Using default SSL protocol: TLS
+2026-05-26 12:26:40,248 INFO o.a.j.u.JsseSSLManager: SSL session context: per-thread
+2026-05-26 12:26:40,268 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-3
+2026-05-26 12:26:40,466 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-4
+2026-05-26 12:26:40,524 INFO o.a.j.u.SSLManager: JmeterKeyStore Location:  type JKS
+2026-05-26 12:26:40,528 INFO o.a.j.u.SSLManager: KeyStore created OK
+2026-05-26 12:26:40,530 WARN o.a.j.u.SSLManager: Keystore file not found, loading empty keystore
+2026-05-26 12:26:40,671 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-5
+2026-05-26 12:26:40,871 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-6
+2026-05-26 12:26:41,068 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-7
+2026-05-26 12:26:41,268 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-8
+2026-05-26 12:26:41,490 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-9
+2026-05-26 12:26:41,718 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-10
+2026-05-26 12:26:41,871 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-11
+2026-05-26 12:26:42,068 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-12
+2026-05-26 12:26:42,265 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-13
+2026-05-26 12:26:42,472 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-14
+2026-05-26 12:26:42,648 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-4
+2026-05-26 12:26:42,648 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-4
+2026-05-26 12:26:42,679 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-15
+2026-05-26 12:26:42,747 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-3
+2026-05-26 12:26:42,747 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-3
+2026-05-26 12:26:42,870 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-16
+2026-05-26 12:26:42,879 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-2
+2026-05-26 12:26:42,879 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-2
+2026-05-26 12:26:42,961 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-5
+2026-05-26 12:26:42,962 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-5
+2026-05-26 12:26:43,011 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-1
+2026-05-26 12:26:43,011 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-1
+2026-05-26 12:26:43,084 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-17
+2026-05-26 12:26:43,258 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-6
+2026-05-26 12:26:43,258 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-6
+2026-05-26 12:26:43,273 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-7
+2026-05-26 12:26:43,273 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-7
+2026-05-26 12:26:43,286 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-18
+2026-05-26 12:26:43,404 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-11
+2026-05-26 12:26:43,404 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-11
+2026-05-26 12:26:43,484 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-19
+2026-05-26 12:26:43,605 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-9
+2026-05-26 12:26:43,609 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-9
+2026-05-26 12:26:43,684 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-20
+2026-05-26 12:26:43,823 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-12
+2026-05-26 12:26:43,823 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-12
+2026-05-26 12:26:43,872 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-10
+2026-05-26 12:26:43,872 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-10
+2026-05-26 12:26:43,884 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-21
+2026-05-26 12:26:44,080 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-22
+2026-05-26 12:26:44,218 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-13
+2026-05-26 12:26:44,218 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-13
+2026-05-26 12:26:44,283 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-23
+2026-05-26 12:26:44,286 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-14
+2026-05-26 12:26:44,287 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-14
+2026-05-26 12:26:44,288 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-8
+2026-05-26 12:26:44,288 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-8
+2026-05-26 12:26:44,289 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-16
+2026-05-26 12:26:44,290 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-16
+2026-05-26 12:26:44,441 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-17
+2026-05-26 12:26:44,441 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-17
+2026-05-26 12:26:44,443 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-15
+2026-05-26 12:26:44,443 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-15
+2026-05-26 12:26:44,487 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-24
+2026-05-26 12:26:44,700 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-25
+2026-05-26 12:26:44,890 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-26
+2026-05-26 12:26:45,059 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-18
+2026-05-26 12:26:45,059 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-18
+2026-05-26 12:26:45,102 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-27
+2026-05-26 12:26:45,300 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-28
+2026-05-26 12:26:45,501 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-29
+2026-05-26 12:26:45,526 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-19
+2026-05-26 12:26:45,526 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-19
+2026-05-26 12:26:45,701 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-30
+2026-05-26 12:26:45,717 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-21
+2026-05-26 12:26:45,717 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-21
+2026-05-26 12:26:45,860 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-20
+2026-05-26 12:26:45,860 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-20
+2026-05-26 12:26:45,957 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-31
+2026-05-26 12:26:46,094 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-23
+2026-05-26 12:26:46,094 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-23
+2026-05-26 12:26:46,147 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-22
+2026-05-26 12:26:46,147 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-22
+2026-05-26 12:26:46,162 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-32
+2026-05-26 12:26:46,404 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-25
+2026-05-26 12:26:46,404 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-25
+2026-05-26 12:26:46,466 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-33
+2026-05-26 12:26:46,522 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-34
+2026-05-26 12:26:46,731 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-35
+2026-05-26 12:26:46,908 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-36
+2026-05-26 12:26:47,024 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-27
+2026-05-26 12:26:47,024 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-27
+2026-05-26 12:26:47,028 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-24
+2026-05-26 12:26:47,028 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-24
+2026-05-26 12:26:47,098 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-29
+2026-05-26 12:26:47,098 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-29
+2026-05-26 12:26:47,102 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-28
+2026-05-26 12:26:47,102 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-28
+2026-05-26 12:26:47,104 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-37
+2026-05-26 12:26:47,288 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-38
+2026-05-26 12:26:47,422 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-26
+2026-05-26 12:26:47,422 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-26
+2026-05-26 12:26:47,494 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-39
+2026-05-26 12:26:47,545 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-31
+2026-05-26 12:26:47,545 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-31
+2026-05-26 12:26:47,554 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-30
+2026-05-26 12:26:47,554 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-30
+2026-05-26 12:26:47,638 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-32
+2026-05-26 12:26:47,638 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-32
+2026-05-26 12:26:47,700 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-40
+2026-05-26 12:26:47,900 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-41
+2026-05-26 12:26:48,101 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-42
+2026-05-26 12:26:48,153 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-35
+2026-05-26 12:26:48,153 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-35
+2026-05-26 12:26:48,241 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-34
+2026-05-26 12:26:48,241 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-34
+2026-05-26 12:26:48,262 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-33
+2026-05-26 12:26:48,262 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-33
+2026-05-26 12:26:48,304 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-43
+2026-05-26 12:26:48,488 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-44
+2026-05-26 12:26:48,490 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-36
+2026-05-26 12:26:48,490 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-36
+2026-05-26 12:26:48,719 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-37
+2026-05-26 12:26:48,719 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-37
+2026-05-26 12:26:48,701 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-45
+2026-05-26 12:26:48,784 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-38
+2026-05-26 12:26:48,784 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-38
+2026-05-26 12:26:48,896 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-46
+2026-05-26 12:26:49,082 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-47
+2026-05-26 12:26:49,140 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-39
+2026-05-26 12:26:49,140 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-39
+2026-05-26 12:26:49,262 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-42
+2026-05-26 12:26:49,264 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-42
+2026-05-26 12:26:49,287 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-48
+2026-05-26 12:26:49,421 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-40
+2026-05-26 12:26:49,421 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-40
+2026-05-26 12:26:49,481 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-49
+2026-05-26 12:26:49,687 INFO o.a.j.t.JMeterThread: Thread started: 50 Users 1-50
+2026-05-26 12:26:49,846 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-44
+2026-05-26 12:26:49,846 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-44
+2026-05-26 12:26:49,860 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-41
+2026-05-26 12:26:49,860 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-41
+2026-05-26 12:26:49,925 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-43
+2026-05-26 12:26:49,925 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-43
+2026-05-26 12:26:50,396 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-45
+2026-05-26 12:26:50,396 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-45
+2026-05-26 12:26:50,498 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-46
+2026-05-26 12:26:50,498 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-46
+2026-05-26 12:26:50,558 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-49
+2026-05-26 12:26:50,558 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-49
+2026-05-26 12:26:50,666 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-47
+2026-05-26 12:26:50,666 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-47
+2026-05-26 12:26:51,054 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-50
+2026-05-26 12:26:51,054 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-50
+2026-05-26 12:26:51,170 INFO o.a.j.t.JMeterThread: Thread is done: 50 Users 1-48
+2026-05-26 12:26:51,170 INFO o.a.j.t.JMeterThread: Thread finished: 50 Users 1-48
+2026-05-26 12:26:51,171 INFO o.a.j.e.StandardJMeterEngine: Notifying test listeners of end of test
+2026-05-26 12:26:51,172 INFO o.a.j.r.Summariser: summary =    100 in 00:00:11 =    8.8/s Avg:   923 Min:   500 Max:  2032 Err:     0 (0.00%)
