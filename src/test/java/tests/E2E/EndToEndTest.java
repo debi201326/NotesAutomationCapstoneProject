@@ -10,131 +10,102 @@ import io.restassured.response.Response;
 import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-import utils.WaitUtil;
 import pages.LoginPage;
 import pages.NotesPage;
 import utils.ScreenshotUtil;
+import utils.WaitUtil;
 
 public class EndToEndTest extends BaseTest {
 
-        public static String capturedNoteId;
+    @Test(description = "TC-E2E-01: Complete Notes App Flow - Login, Create, Verify, Delete")
+    @Severity(SeverityLevel.BLOCKER)
+    public void TC_E2E_01_CompleteFlow() {
+        System.out.println("===== TC-E2E-01: Complete End to End Flow =====");
 
-        @Test(description = "TC-E2E-01: UI Created Note Visible in API")
-        @Severity(SeverityLevel.BLOCKER)
-        public void TC_E2E_01_UICreatedNoteVisibleInAPI() {
-                System.out.println("===== TC-E2E-01: UI Created Note Visible in API =====");
-                try {
-                        LoginPage loginPage = new LoginPage(driver, wait);
-                        loginPage.login(email, password);
+        try {
 
-                        NotesPage notesPage = new NotesPage(driver, wait);
-                        notesPage.createNote(noteTitle, noteDescription, noteCategory);
-                        boolean visible = notesPage.isNoteVisible(noteTitle);
-                        Assert.assertTrue(visible, "Note not visible in UI");
-                        ScreenshotUtil.captureAndAttach(driver, "TC-E2E-01 Note in UI");
+            // FR-01 UI LOGIN
+            System.out.println("[STEP 1] FR-01: Login via UI");
+            LoginPage loginPage = new LoginPage(driver, wait);
+            loginPage.login(email, password);
+            boolean loggedIn = WaitUtil.waitForVisible(wait,
+                By.cssSelector("[data-testid='logout']")).isDisplayed();
+            Assert.assertTrue(loggedIn, "FR-01 Failed: Login did not work");
+            ScreenshotUtil.captureAndAttach(driver, "Step1 - Login Success");
+            System.out.println("[STEP 1] FR-01 PASSED");
 
-                        APIAuthentication.generateToken();
+            // FR-02 CREATE NOTE VIA UI
+            System.out.println("[STEP 2] FR-02: Create note via UI");
+            NotesPage notesPage = new NotesPage(driver, wait);
+            notesPage.createNote(noteTitle, noteDescription, noteCategory);
+            ScreenshotUtil.captureAndAttach(driver, "Step2 - Note Created");
+            System.out.println("[STEP 2] FR-02 PASSED");
 
-                        RestAssured.baseURI = ConfigReader.get("api.base.url");
-                        Response getResponse = RestAssured
-                                        .given()
-                                        .header(
-                                                        "x-auth-token",
-                                                        APIAuthentication.token)
-                                        .get("/notes");
+            // FR-03 NOTE APPEARS IN UI LIST
+            System.out.println("[STEP 3] FR-03: Verify note appears in UI list");
+            boolean visibleInUI = notesPage.isNoteVisible(noteTitle);
+            Assert.assertTrue(visibleInUI, "FR-03 Failed: Note did not appear in UI list");
+            ScreenshotUtil.captureAndAttach(driver, "Step3 - Note Visible in UI");
+            System.out.println("[STEP 3] FR-03 PASSED");
 
-                        Assert.assertEquals(getResponse.statusCode(), 200);
-                        String body = getResponse.getBody().asString();
-                        Assert.assertTrue(body.contains(noteTitle), "Note created in UI not found in API response");
-                        capturedNoteId = getResponse.jsonPath().getString("data[0].id");
-                        System.out.println("Note found in API - ID: " + capturedNoteId);
-                        System.out.println("TC-E2E-01 PASSED");
+            // FR-04 API GET /notes RETURNS LIST
+            System.out.println("[STEP 4] FR-04: GET /notes API returns list");
+            APIAuthentication.generateToken();
+            RestAssured.baseURI = ConfigReader.get("api.base.url");
 
-                } catch (Exception e) {
-                        ScreenshotUtil.captureAndAttach(driver, "TC-E2E-01 FAILED");
-                        Assert.fail("TC-E2E-01 Failed: " + e.getMessage());
-                }
+            Response getResponse = RestAssured
+                .given()
+                .header("x-auth-token", APIAuthentication.token)
+                .get("/notes");
+
+            Assert.assertEquals(getResponse.statusCode(), 200,
+                "FR-04 Failed: GET /notes did not return 200");
+            System.out.println("[STEP 4] FR-04 PASSED");
+
+            // FR-05 UI CREATED NOTE VISIBLE IN API
+            System.out.println("[STEP 5] FR-05: UI created note visible in API");
+            String body = getResponse.getBody().asString();
+            Assert.assertTrue(body.contains(noteTitle),
+                "FR-05 Failed: Note created in UI not found in API response");
+
+            String apiTitle       = getResponse.jsonPath().getString("data[0].title");
+            String apiDescription = getResponse.jsonPath().getString("data[0].description");
+            String noteId         = getResponse.jsonPath().getString("data[0].id");
+
+            Assert.assertEquals(apiTitle, noteTitle,
+                "FR-05 Failed: Title mismatch - UI: " + noteTitle + " API: " + apiTitle);
+            Assert.assertEquals(apiDescription, noteDescription,
+                "FR-05 Failed: Description mismatch");
+
+            System.out.println("Note ID: " + noteId);
+            System.out.println("UI Title: " + noteTitle + " API Title: " + apiTitle);
+            System.out.println("[STEP 5] FR-05 PASSED");
+
+            // FR-06 DELETE NOTE VIA API
+            System.out.println("[STEP 6] FR-06: Delete note via API");
+            Response deleteResponse = RestAssured
+                .given()
+                .header("x-auth-token", APIAuthentication.token)
+                .delete("/notes/" + noteId);
+
+            Assert.assertEquals(deleteResponse.statusCode(), 200,
+                "FR-06 Failed: Delete API did not return 200");
+            System.out.println("[STEP 6] FR-06 PASSED");
+
+            // FR-07 DELETED NOTE DISAPPEARS FROM UI
+            System.out.println("[STEP 7] FR-07: Deleted note disappears from UI");
+            driver.navigate().refresh();
+            boolean isGone = !driver.getPageSource().contains(noteTitle);
+            ScreenshotUtil.captureAndAttach(driver, "Step7 - Note Gone from UI");
+            Assert.assertTrue(isGone,
+                "FR-07 Failed: Deleted note still appears in UI");
+            System.out.println("[STEP 7] FR-07 PASSED");
+
+            System.out.println("===== TC-E2E-01: ALL STEPS PASSED =====");
+
+        } catch (Exception e) {
+            ScreenshotUtil.captureAndAttach(driver, "TC-E2E-01 FAILED");
+            Assert.fail("TC-E2E-01 Failed: " + e.getMessage());
         }
-
-        @Test(description = "TC-E2E-02: API Deleted Note Disappears from UI", dependsOnMethods = "TC_E2E_01_UICreatedNoteVisibleInAPI")
-        @Severity(SeverityLevel.BLOCKER)
-        public void TC_E2E_02_APIDeletedNoteGoneFromUI() {
-                System.out.println("===== TC-E2E-02: API Deleted Note Disappears from UI =====");
-                try {
-                        APIAuthentication.generateToken();
-                        RestAssured.baseURI = ConfigReader.get("api.base.url");
-                        Assert.assertNotNull(
-                                        capturedNoteId,
-                                        "Note ID not available - TC-E2E-01 may have failed");
-
-                        Response deleteResponse = RestAssured
-                                        .given()
-                                        .header(
-                                                        "x-auth-token",
-                                                        APIAuthentication.token)
-                                        .delete("/notes/" + capturedNoteId);
-
-                        System.out.println("Delete Status: " + deleteResponse.statusCode());
-                        Assert.assertEquals(deleteResponse.statusCode(), 200, "Delete API did not return 200");
-
-                        LoginPage loginPage = new LoginPage(driver, wait);
-                        loginPage.login(email, password);
-                        driver.navigate().refresh();
-                        boolean isGone = !driver.getPageSource().contains(noteTitle);
-                        ScreenshotUtil.captureAndAttach(driver, "TC-E2E-02 Note Deleted from UI");
-                        Assert.assertTrue(isGone, "Deleted note still appears in UI after API deletion");
-                        System.out.println("TC-E2E-02 PASSED");
-
-                } catch (Exception e) {
-                        ScreenshotUtil.captureAndAttach(driver, "TC-E2E-02 FAILED");
-                        Assert.fail("TC-E2E-02 Failed: " + e.getMessage());
-                }
-        }
-
-        @Test(description = "TC-E2E-03: UI and API Data Consistency Check")
-        @Severity(SeverityLevel.CRITICAL)
-        public void TC_E2E_03_UIAPIDataConsistency() {
-                System.out.println("===== TC-E2E-03: UI and API Data Consistency Check =====");
-                try {
-                        LoginPage loginPage = new LoginPage(driver, wait);
-                        loginPage.login(email, password);
-
-                        NotesPage notesPage = new NotesPage(driver, wait);
-                        notesPage.createNote(noteTitle, noteDescription, noteCategory);
-                        String uiTitle = WaitUtil.waitForVisible(wait, By.xpath(
-                                        "//*[contains(text(),'"
-                                                        + noteTitle
-                                                        + "')]"))
-                                        .getText().trim();
-
-                        System.out.println("UI Title: " + uiTitle);
-                        ScreenshotUtil.captureAndAttach(driver, "TC-E2E-03 UI Note Data");
-
-                        APIAuthentication.generateToken();
-
-                        RestAssured.baseURI = ConfigReader.get("api.base.url");
-                        Response getResponse = RestAssured
-                                        .given()
-                                        .header(
-                                                        "x-auth-token",
-                                                        APIAuthentication.token)
-                                        .get("/notes");
-
-                        Assert.assertEquals(getResponse.statusCode(), 200);
-                        String apiTitle = getResponse.jsonPath().getString("data[0].title");
-                        String apiDescription = getResponse.jsonPath().getString("data[0].description");
-                        System.out.println("API Title: " + apiTitle);
-                        System.out.println("API Description: " + apiDescription);
-                        Assert.assertEquals(apiTitle, noteTitle,
-                                        "Title mismatch - UI: " + uiTitle + " API: " + apiTitle);
-                        Assert.assertEquals(apiDescription, noteDescription,
-                                        "Description mismatch - UI: " + noteDescription + " API: " + apiDescription);
-                        System.out.println("All fields matched between UI and API");
-                        System.out.println("TC-E2E-03 PASSED");
-
-                } catch (Exception e) {
-                        ScreenshotUtil.captureAndAttach(driver, "TC-E2E-03 FAILED");
-                        Assert.fail("TC-E2E-03 Failed: " + e.getMessage());
-                }
-        }
+    }
 }

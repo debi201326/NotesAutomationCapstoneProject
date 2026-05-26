@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="212.843" tests="18" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="TestSuite" time="161.98" tests="16" errors="0" skipped="0" failures="1">
   <properties>
     <property name="java.specification.version" value="17"/>
     <property name="webdriver.chrome.driver" value="C:\Users\debi2\.cache\selenium\chromedriver\win64\148.0.7778.178\chromedriver.exe"/>
@@ -16,7 +16,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="IN"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-17\bin"/>
-    <property name="sun.java.command" value="C:\Users\debi2\AppData\Local\Temp\surefire14830779982891397370\surefirebooter-20260525221514418_3.jar C:\Users\debi2\AppData\Local\Temp\surefire14830779982891397370 2026-05-25T22-15-13_921-jvmRun1 surefire-20260525221514418_1tmp surefire_0-20260525221514418_2tmp"/>
+    <property name="sun.java.command" value="C:\Users\debi2\AppData\Local\Temp\surefire5304807288144180870\surefirebooter-20260526115032146_3.jar C:\Users\debi2\AppData\Local\Temp\surefire5304807288144180870 2026-05-26T11-50-31_710-jvmRun1 surefire-20260526115032146_1tmp surefire_0-20260526115032146_2tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\debi2\OneDrive\Pictures\NotesAutomationHybrid\target\test-classes;C:\Users\debi2\OneDrive\Pictures\NotesAutomationHybrid\target\classes;C:\Users\debi2\.m2\repository\org\seleniumhq\selenium\selenium-java\4.18.1\selenium-java-4.18.1.jar;C:\Users\debi2\.m2\repository\org\seleniumhq\selenium\selenium-api\4.18.1\selenium-api-4.18.1.jar;C:\Users\debi2\.m2\repository\org\seleniumhq\selenium\selenium-chrome-driver\4.18.1\selenium-chrome-driver-4.18.1.jar;C:\Users\debi2\.m2\repository\com\google\auto\service\auto-service-annotations\1.1.1\auto-service-annotations-1.1.1.jar;C:\Users\debi2\.m2\repository\org\seleniumhq\selenium\selenium-chromium-driver\4.18.1\selenium-chromium-driver-4.18.1.jar;C:\Users\debi2\.m2\repository\org\seleniumhq\selenium\selenium-json\4.18.1\selenium-json-4.18.1.jar;C:\Users\debi2\.m2\repository\org\seleniumhq\selenium\selenium-manager\4.18.1\selenium-manager-4.18.1.jar;C:\Users\debi2\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v120\4.18.1\selenium-devtools-v120-4.18.1.jar;C:\Users\debi2\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v121\4.18.1\selenium-devtools-v121-4.18.1.jar;C:\Users\debi2\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v122\4.18.1\selenium-devtools-v122-4.18.1.jar;C:\Users\debi2\.m2\repository\org\seleniumhq\selenium\selenium-devtools-v85\4.18.1\selenium-devtools-v85-4.18.1.jar;C:\Users\debi2\.m2\repository\org\seleniumhq\selenium\selenium-edge-driver\4.18.1\selenium-edge-driver-4.18.1.jar;C:\Users\debi2\.m2\repository\org\seleniumhq\selenium\selenium-firefox-driver\4.18.1\selenium-firefox-driver-4.18.1.jar;C:\Users\debi2\.m2\repository\org\seleniumhq\selenium\selenium-http\4.18.1\selenium-http-4.18.1.jar;C:\Users\debi2\.m2\repository\dev\failsafe\failsafe\3.3.2\failsafe-3.3.2.jar;C:\Users\debi2\.m2\repository\org\seleniumhq\selenium\selenium-ie-driver\4.18.1\selenium-ie-driver-4.18.1.jar;C:\Users\debi2\.m2\repository\org\seleniumhq\selenium\selenium-remote-driver\4.18.1\selenium-remote-driver-4.18.1.jar;C:\Users\debi2\.m2\repository\io\opentelemetry\semconv\opentelemetry-semconv\1.23.1-alpha\opentelemetry-semconv-1.23.1-alpha.jar;C:\Users\debi2\.m2\repository\io\opentelemetry\opentelemetry-api\1.35.0\opentelemetry-api-1.35.0.jar;C:\Users\debi2\.m2\repository\io\opentelemetry\opentelemetry-context\1.35.0\opentelemetry-context-1.35.0.jar;C:\Users\debi2\.m2\repository\io\opentelemetry\opentelemetry-exporter-logging\1.35.0\opentelemetry-exporter-logging-1.35.0.jar;C:\Users\debi2\.m2\repository\io\opentelemetry\opentelemetry-sdk-common\1.35.0\opentelemetry-sdk-common-1.35.0.jar;C:\Users\debi2\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure-spi\1.35.0\opentelemetry-sdk-extension-autoconfigure-spi-1.35.0.jar;C:\Users\debi2\.m2\repository\io\opentelemetry\opentelemetry-sdk-extension-autoconfigure\1.35.0\opentelemetry-sdk-extension-autoconfigure-1.35.0.jar;C:\Users\debi2\.m2\repository\io\opentelemetry\opentelemetry-api-events\1.35.0-alpha\opentelemetry-api-events-1.35.0-alpha.jar;C:\Users\debi2\.m2\repository\io\opentelemetry\opentelemetry-sdk-trace\1.35.0\opentelemetry-sdk-trace-1.35.0.jar;C:\Users\debi2\.m2\repository\io\opentelemetry\opentelemetry-extension-incubator\1.35.0-alpha\opentelemetry-extension-incubator-1.35.0-alpha.jar;C:\Users\debi2\.m2\repository\io\opentelemetry\opentelemetry-sdk\1.35.0\opentelemetry-sdk-1.35.0.jar;C:\Users\debi2\.m2\repository\io\opentelemetry\opentelemetry-sdk-metrics\1.35.0\opentelemetry-sdk-metrics-1.35.0.jar;C:\Users\debi2\.m2\repository\io\opentelemetry\opentelemetry-sdk-logs\1.35.0\opentelemetry-sdk-logs-1.35.0.jar;C:\Users\debi2\.m2\repository\net\bytebuddy\byte-buddy\1.14.12\byte-buddy-1.14.12.jar;C:\Users\debi2\.m2\repository\org\seleniumhq\selenium\selenium-os\4.18.1\selenium-os-4.18.1.jar;C:\Users\debi2\.m2\repository\org\apache\commons\commons-exec\1.3\commons-exec-1.3.jar;C:\Users\debi2\.m2\repository\org\seleniumhq\selenium\selenium-safari-driver\4.18.1\selenium-safari-driver-4.18.1.jar;C:\Users\debi2\.m2\repository\org\seleniumhq\selenium\selenium-support\4.18.1\selenium-support-4.18.1.jar;C:\Users\debi2\.m2\repository\io\github\bonigarcia\webdrivermanager\5.7.0\webdrivermanager-5.7.0.jar;C:\Users\debi2\.m2\repository\org\slf4j\slf4j-api\2.0.12\slf4j-api-2.0.12.jar;C:\Users\debi2\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\debi2\.m2\repository\com\github\docker-java\docker-java\3.3.5\docker-java-3.3.5.jar;C:\Users\debi2\.m2\repository\com\github\docker-java\docker-java-core\3.3.5\docker-java-core-3.3.5.jar;C:\Users\debi2\.m2\repository\com\github\docker-java\docker-java-api\3.3.5\docker-java-api-3.3.5.jar;C:\Users\debi2\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.10.3\jackson-annotations-2.10.3.jar;C:\Users\debi2\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.10.3\jackson-databind-2.10.3.jar;C:\Users\debi2\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.10.3\jackson-core-2.10.3.jar;C:\Users\debi2\.m2\repository\org\bouncycastle\bcpkix-jdk18on\1.76\bcpkix-jdk18on-1.76.jar;C:\Users\debi2\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.76\bcprov-jdk18on-1.76.jar;C:\Users\debi2\.m2\repository\org\bouncycastle\bcutil-jdk18on\1.76\bcutil-jdk18on-1.76.jar;C:\Users\debi2\.m2\repository\org\slf4j\jcl-over-slf4j\1.7.30\jcl-over-slf4j-1.7.30.jar;C:\Users\debi2\.m2\repository\com\github\docker-java\docker-java-transport-httpclient5\3.3.5\docker-java-transport-httpclient5-3.3.5.jar;C:\Users\debi2\.m2\repository\com\github\docker-java\docker-java-transport\3.3.5\docker-java-transport-3.3.5.jar;C:\Users\debi2\.m2\repository\net\java\dev\jna\jna\5.13.0\jna-5.13.0.jar;C:\Users\debi2\.m2\repository\org\brotli\dec\0.1.2\dec-0.1.2.jar;C:\Users\debi2\.m2\repository\org\apache\commons\commons-lang3\3.14.0\commons-lang3-3.14.0.jar;C:\Users\debi2\.m2\repository\org\apache\commons\commons-compress\1.26.0\commons-compress-1.26.0.jar;C:\Users\debi2\.m2\repository\commons-io\commons-io\2.15.1\commons-io-2.15.1.jar;C:\Users\debi2\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.1\httpclient5-5.2.1.jar;C:\Users\debi2\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2\httpcore5-5.2.jar;C:\Users\debi2\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2\httpcore5-h2-5.2.jar;C:\Users\debi2\.m2\repository\org\testng\testng\7.9.0\testng-7.9.0.jar;C:\Users\debi2\.m2\repository\com\beust\jcommander\1.82\jcommander-1.82.jar;C:\Users\debi2\.m2\repository\org\webjars\jquery\3.7.1\jquery-3.7.1.jar;C:\Users\debi2\.m2\repository\io\rest-assured\rest-assured\5.4.0\rest-assured-5.4.0.jar;C:\Users\debi2\.m2\repository\org\apache\groovy\groovy\4.0.16\groovy-4.0.16.jar;C:\Users\debi2\.m2\repository\org\apache\groovy\groovy-xml\4.0.16\groovy-xml-4.0.16.jar;C:\Users\debi2\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\debi2\.m2\repository\org\apache\httpcomponents\httpcore\4.4.13\httpcore-4.4.13.jar;C:\Users\debi2\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\debi2\.m2\repository\commons-codec\commons-codec\1.11\commons-codec-1.11.jar;C:\Users\debi2\.m2\repository\org\apache\httpcomponents\httpmime\4.5.13\httpmime-4.5.13.jar;C:\Users\debi2\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\debi2\.m2\repository\org\ccil\cowan\tagsoup\tagsoup\1.2.1\tagsoup-1.2.1.jar;C:\Users\debi2\.m2\repository\io\rest-assured\json-path\5.4.0\json-path-5.4.0.jar;C:\Users\debi2\.m2\repository\org\apache\groovy\groovy-json\4.0.16\groovy-json-4.0.16.jar;C:\Users\debi2\.m2\repository\io\rest-assured\rest-assured-common\5.4.0\rest-assured-common-5.4.0.jar;C:\Users\debi2\.m2\repository\io\rest-assured\xml-path\5.4.0\xml-path-5.4.0.jar;C:\Users\debi2\.m2\repository\io\qameta\allure\allure-testng\2.25.0\allure-testng-2.25.0.jar;C:\Users\debi2\.m2\repository\io\qameta\allure\allure-java-commons\2.25.0\allure-java-commons-2.25.0.jar;C:\Users\debi2\.m2\repository\io\qameta\allure\allure-model\2.25.0\allure-model-2.25.0.jar;C:\Users\debi2\.m2\repository\io\qameta\allure\allure-test-filter\2.25.0\allure-test-filter-2.25.0.jar;C:\Users\debi2\.m2\repository\com\opencsv\opencsv\5.9\opencsv-5.9.jar;C:\Users\debi2\.m2\repository\org\apache\commons\commons-text\1.11.0\commons-text-1.11.0.jar;C:\Users\debi2\.m2\repository\commons-beanutils\commons-beanutils\1.9.4\commons-beanutils-1.9.4.jar;C:\Users\debi2\.m2\repository\commons-collections\commons-collections\3.2.2\commons-collections-3.2.2.jar;C:\Users\debi2\.m2\repository\org\apache\commons\commons-collections4\4.4\commons-collections4-4.4.jar;C:\Users\debi2\.m2\repository\org\slf4j\slf4j-simple\2.0.12\slf4j-simple-2.0.12.jar;C:\Users\debi2\.m2\repository\io\rest-assured\json-schema-validator\5.4.0\json-schema-validator-5.4.0.jar;C:\Users\debi2\.m2\repository\com\github\java-json-tools\json-schema-validator\2.2.14\json-schema-validator-2.2.14.jar;C:\Users\debi2\.m2\repository\com\github\java-json-tools\jackson-coreutils-equivalence\1.0\jackson-coreutils-equivalence-1.0.jar;C:\Users\debi2\.m2\repository\com\github\java-json-tools\jackson-coreutils\2.0\jackson-coreutils-2.0.jar;C:\Users\debi2\.m2\repository\com\github\java-json-tools\msg-simple\1.2\msg-simple-1.2.jar;C:\Users\debi2\.m2\repository\com\github\java-json-tools\btf\1.3\btf-1.3.jar;C:\Users\debi2\.m2\repository\com\github\java-json-tools\json-schema-core\1.2.14\json-schema-core-1.2.14.jar;C:\Users\debi2\.m2\repository\com\github\java-json-tools\uri-template\0.10\uri-template-0.10.jar;C:\Users\debi2\.m2\repository\org\mozilla\rhino\1.7.7.2\rhino-1.7.7.2.jar;C:\Users\debi2\.m2\repository\com\sun\mail\mailapi\1.6.2\mailapi-1.6.2.jar;C:\Users\debi2\.m2\repository\joda-time\joda-time\2.10.5\joda-time-2.10.5.jar;C:\Users\debi2\.m2\repository\com\googlecode\libphonenumber\libphonenumber\8.11.1\libphonenumber-8.11.1.jar;C:\Users\debi2\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar;C:\Users\debi2\.m2\repository\net\sf\jopt-simple\jopt-simple\5.0.4\jopt-simple-5.0.4.jar;C:\Users\debi2\.m2\repository\com\google\guava\guava\32.0.1-jre\guava-32.0.1-jre.jar;C:\Users\debi2\.m2\repository\com\google\guava\failureaccess\1.0.1\failureaccess-1.0.1.jar;C:\Users\debi2\.m2\repository\com\google\guava\listenablefuture\9999.0-empty-to-avoid-conflict-with-guava\listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar;C:\Users\debi2\.m2\repository\org\checkerframework\checker-qual\3.33.0\checker-qual-3.33.0.jar;C:\Users\debi2\.m2\repository\com\google\errorprone\error_prone_annotations\2.18.0\error_prone_annotations-2.18.0.jar;C:\Users\debi2\.m2\repository\com\google\j2objc\j2objc-annotations\2.8\j2objc-annotations-2.8.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -31,7 +31,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\debi2\AppData\Local\Temp\surefire14830779982891397370\surefirebooter-20260525221514418_3.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\debi2\AppData\Local\Temp\surefire5304807288144180870\surefirebooter-20260526115032146_3.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="17.0.12+8-LTS-286"/>
@@ -57,20 +57,61 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="61.0"/>
   </properties>
-  <testcase name="TC_NEG_01_CreateNoteEmptyTitle" classname="tests.UI.NegativeUITest" time="43.661">
+  <testcase name="TC_UI_01_ValidLogin" classname="tests.UI.LoginTest" time="0.84">
     <system-out><![CDATA[===== TC-UI-02: Create a New Note via UI and Verify it appears in UI List =====
 ===== TC-UI-01: Login with Valid Credentials =====
+Page Load Time: 11907ms
+Page load time: 11907ms
+[INFO] Ad iframes removed
+[INFO] Vignette ad removed
+[INFO] Ad iframes removed
+[INFO] Vignette ad removed
+[INFO] JS click performed on: By.xpath: //button[text()='Login']
 ===== TC-NEG-01: Create Note with Empty Title =====
-Page Load Time: 24127ms
-Page load time: 24127ms
+Login successful
+Screenshot attached to Allure: TC-UI-01 Login Success
+Screenshot saved to: target/screenshots/TC-UI-01_Login_Success_20260526_115101.png
+TC-UI-01 PASSED
+]]></system-out>
+    <system-err><![CDATA[[TestNG-tests-3] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 148.0.7778.178 (resolved driver for Chrome 148)
+[TestNG-tests-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 148.0.7778.178 (resolved driver for Chrome 148)
+[TestNG-tests-2] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 148.0.7778.178 (resolved driver for Chrome 148)
+[TestNG-tests-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\debi2\.cache\selenium\chromedriver\win64\148.0.7778.178\chromedriver.exe
+[TestNG-tests-3] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\debi2\.cache\selenium\chromedriver\win64\148.0.7778.178\chromedriver.exe
+[TestNG-tests-2] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\debi2\.cache\selenium\chromedriver\win64\148.0.7778.178\chromedriver.exe
+May 26, 2026 11:50:39 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 148
+May 26, 2026 11:50:39 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 148
+May 26, 2026 11:50:39 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 148
+May 26, 2026 11:50:39 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 148.0.7778.179. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+May 26, 2026 11:50:39 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 148.0.7778.179. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+May 26, 2026 11:50:39 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 148.0.7778.179. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="TC_NEG_01_CreateNoteEmptyTitle" classname="tests.UI.NegativeUITest" time="14.536">
+    <system-out><![CDATA[[TEARDOWN] Browser closed for: LoginTest
+[INFO] Ad iframes removed
+[INFO] Vignette ad removed
+[INFO] Ad iframes removed
+[INFO] Vignette ad removed
+[INFO] JS click performed on: By.xpath: //button[text()='Login']
 [INFO] Ad iframes removed
 [INFO] Vignette ad removed
 [INFO] Ad iframes removed
 [INFO] Vignette ad removed
 [INFO] JS click performed on: By.xpath: //button[text()='Login']
 Login successful
+Login successful
+[INFO] Ad iframes removed
 [INFO] Ad iframes removed
 [INFO] Vignette ad removed
+[INFO] Vignette ad removed
+[INFO] JS click performed on: By.xpath: //button[contains(text(),'Add Note')]
 [INFO] JS click performed on: By.xpath: //button[contains(text(),'Add Note')]
 [INFO] Ad iframes removed
 [INFO] Vignette ad removed
@@ -78,66 +119,27 @@ Login successful
 Note created:  [Home]
 [INFO] Ad iframes removed
 [INFO] Vignette ad removed
-[INFO] Ad iframes removed
-[INFO] Vignette ad removed
-[INFO] Ad iframes removed
-[INFO] Vignette ad removed
-[INFO] JS click performed on: By.xpath: //button[text()='Login']
-Screenshot attached to Allure: TC-NEG-01 Empty Title Validation
-Screenshot saved to: target/screenshots/TC-NEG-01_Empty_Title_Validation_20260525_221629.png
-TC-NEG-01 PASSED
-]]></system-out>
-    <system-err><![CDATA[[TestNG-tests-2] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 148.0.7778.178 (resolved driver for Chrome 148)
-[TestNG-tests-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 148.0.7778.178 (resolved driver for Chrome 148)
-[TestNG-tests-3] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 148.0.7778.178 (resolved driver for Chrome 148)
-[TestNG-tests-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\debi2\.cache\selenium\chromedriver\win64\148.0.7778.178\chromedriver.exe
-[TestNG-tests-3] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\debi2\.cache\selenium\chromedriver\win64\148.0.7778.178\chromedriver.exe
-[TestNG-tests-2] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\debi2\.cache\selenium\chromedriver\win64\148.0.7778.178\chromedriver.exe
-May 25, 2026 10:15:23 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 148
-May 25, 2026 10:15:23 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 148
-May 25, 2026 10:15:23 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 148
-May 25, 2026 10:15:23 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 148.0.7778.179. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-May 25, 2026 10:15:23 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 148.0.7778.179. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-May 25, 2026 10:15:23 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 148.0.7778.179. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
-  </testcase>
-  <testcase name="TC_NEG_02_CreateNoteEmptyDescription" classname="tests.UI.NegativeUITest" time="16.118">
-    <system-out><![CDATA[Login successful
-[INFO] Ad iframes removed
-[INFO] Vignette ad removed
-[INFO] JS click performed on: By.xpath: //button[contains(text(),'Add Note')]
-[INFO] Ad iframes removed
-[INFO] Vignette ad removed
 [INFO] JS click performed on: By.xpath: //button[@data-testid='note-submit']
-Note created: Title Only 1779727606974 [Home]
-[TEARDOWN] Browser closed for: NegativeLoginTest
-Screenshot attached to Allure: TC-NEG-02 Empty Description Validation
-Screenshot saved to: target/screenshots/TC-NEG-02_Empty_Description_Validation_20260525_221712.png
-TC-NEG-02 PASSED
+Note created: Automation Note 1779776433889 [Home]
+Screenshot attached to Allure: TC-NEG-01 Empty Title Validation
+Screenshot saved to: target/screenshots/TC-NEG-01_Empty_Title_Validation_20260526_115115.png
+TC-NEG-01 PASSED
 ]]></system-out>
     <system-err><![CDATA[[TestNG-tests-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 148.0.7778.178 (resolved driver for Chrome 148)
 [TestNG-tests-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\debi2\.cache\selenium\chromedriver\win64\148.0.7778.178\chromedriver.exe
-May 25, 2026 10:17:12 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 26, 2026 11:51:05 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 148
-May 25, 2026 10:17:12 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+May 26, 2026 11:51:05 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 148.0.7778.179. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="TC_UI_01_ValidLogin" classname="tests.UI.LoginTest" time="45.096">
-    <system-out><![CDATA[Login successful
-Screenshot attached to Allure: TC-UI-01 Login Success
-Screenshot saved to: target/screenshots/TC-UI-01_Login_Success_20260525_221630.png
-TC-UI-01 PASSED
-]]></system-out>
-  </testcase>
-  <testcase name="TC_UI_02_CreateNote" classname="tests.UI.CreateNoteTest" time="59.503">
-    <system-out><![CDATA[[INFO] Ad iframes removed
+  <testcase name="TC_NEG_02_CreateNoteEmptyDescription" classname="tests.UI.NegativeUITest" time="7.059">
+    <system-out><![CDATA[[TEARDOWN] Browser closed for: CreateNoteTest
+[TEARDOWN] Browser closed for: NegativeLoginTest
+[INFO] Ad iframes removed
+[INFO] Vignette ad removed
+[INFO] Ad iframes removed
+===== TC-NEG-07: Login with Both Fields Empty =====
 [INFO] Vignette ad removed
 [INFO] JS click performed on: By.xpath: //button[text()='Login']
 Login successful
@@ -147,1173 +149,268 @@ Login successful
 [INFO] Ad iframes removed
 [INFO] Vignette ad removed
 [INFO] JS click performed on: By.xpath: //button[@data-testid='note-submit']
-Note created: Automation Note 1779727517151 [Home]
-[TEARDOWN] Browser closed for: NegativeUITest
-[TEARDOWN] Browser closed for: LoginTest
+Note created: Title Only 1779776495873 [Home]
+Screenshot attached to Allure: TC-NEG-02 Empty Description Validation
+Screenshot saved to: target/screenshots/TC-NEG-02_Empty_Description_Validation_20260526_115150.png
+TC-NEG-02 PASSED
+]]></system-out>
+    <system-err><![CDATA[[TestNG-tests-2] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 148.0.7778.178 (resolved driver for Chrome 148)
+[TestNG-tests-2] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\debi2\.cache\selenium\chromedriver\win64\148.0.7778.178\chromedriver.exe
+May 26, 2026 11:51:39 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 148
+May 26, 2026 11:51:39 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 148.0.7778.179. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+[TestNG-tests-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 148.0.7778.178 (resolved driver for Chrome 148)
+[TestNG-tests-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\debi2\.cache\selenium\chromedriver\win64\148.0.7778.178\chromedriver.exe
+May 26, 2026 11:51:42 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+WARNING: Unable to find CDP implementation matching 148
+May 26, 2026 11:51:42 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+WARNING: Unable to find version of CDP to use for 148.0.7778.179. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
+]]></system-err>
+  </testcase>
+  <testcase name="TC_UI_02_CreateNote" classname="tests.UI.CreateNoteTest" time="6.402">
+    <system-out><![CDATA[[TEARDOWN] Browser closed for: NegativeUITest
+===== TC-NEG-06: Login with Wrong Password =====
 Screenshot attached to Allure: TC-UI-02 Note Created
-Screenshot saved to: target/screenshots/TC-UI-02_Note_Created_20260525_221645.png
+Screenshot saved to: target/screenshots/TC-UI-02_Note_Created_20260526_115128.png
 TC-UI-02 PASSED
 ]]></system-out>
     <system-err><![CDATA[[TestNG-tests-3] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 148.0.7778.178 (resolved driver for Chrome 148)
 [TestNG-tests-3] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\debi2\.cache\selenium\chromedriver\win64\148.0.7778.178\chromedriver.exe
-[TestNG-tests-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 148.0.7778.178 (resolved driver for Chrome 148)
-[TestNG-tests-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\debi2\.cache\selenium\chromedriver\win64\148.0.7778.178\chromedriver.exe
-May 25, 2026 10:16:36 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+May 26, 2026 11:51:26 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 148
-May 25, 2026 10:16:36 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 148.0.7778.179. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-May 25, 2026 10:16:36 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 148
-May 25, 2026 10:16:36 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+May 26, 2026 11:51:26 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 148.0.7778.179. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="TC_UI_03_NoteAppearsInList" classname="tests.UI.CreateNoteTest" time="4.069">
-    <system-out><![CDATA[[INFO] Ad iframes removed
-[INFO] Vignette ad removed
-[INFO] Ad iframes removed
-[INFO] Vignette ad removed
-[INFO] JS click performed on: By.xpath: //button[text()='Login']
-Login successful
-[INFO] Ad iframes removed
-[INFO] Vignette ad removed
-[INFO] JS click performed on: By.xpath: //button[contains(text(),'Add Note')]
-[INFO] Ad iframes removed
-[INFO] Vignette ad removed
-[INFO] JS click performed on: By.xpath: //button[@data-testid='note-submit']
-Note created: Automation Note 1779727609241 [Home]
-===== TC-NEG-07: Login with Both Fields Empty =====
-[INFO] Ad iframes removed
+  <testcase name="TC_UI_03_NoteAppearsInList" classname="tests.UI.CreateNoteTest" time="3.964">
+    <system-out><![CDATA[[TEARDOWN] API test - no browser to close for: GetNotesAPITest
 Screenshot attached to Allure: TC-UI-03 Note in List
-Screenshot saved to: target/screenshots/TC-UI-03_Note_in_List_20260525_221724.png
+Screenshot saved to: target/screenshots/TC-UI-03_Note_in_List_20260526_115214.png
 TC-UI-03 PASSED
 ]]></system-out>
   </testcase>
-  <testcase name="TC_NEG_06_WrongPassword" classname="tests.UI.NegativeLoginTest" time="11.603">
-    <system-out><![CDATA[===== TC-NEG-06: Login with Wrong Password =====
-===== TC-NEG-02: Create Note with Empty Description =====
-[TEARDOWN] Browser closed for: CreateNoteTest
-===== TC-UI-03: Newly Created Note Appears in UI List =====
-[INFO] Ad iframes removed
+  <testcase name="TC_NEG_06_WrongPassword" classname="tests.UI.NegativeLoginTest" time="0.363">
+    <system-out><![CDATA[[INFO] Ad iframes removed
 [INFO] Vignette ad removed
 [INFO] Ad iframes removed
 [INFO] Vignette ad removed
 [INFO] JS click performed on: By.xpath: //button[text()='Login']
 Login attempt submitted
-[INFO] Ad iframes removed
-[INFO] Vignette ad removed
-[INFO] Ad iframes removed
-[INFO] Vignette ad removed
-[INFO] JS click performed on: By.xpath: //button[text()='Login']
+===== TC-NEG-02: Create Note with Empty Description =====
 Screenshot attached to Allure: TC-NEG-06 Wrong Password Error
-Screenshot saved to: target/screenshots/TC-NEG-06_Wrong_Password_Error_20260525_221708.png
+Screenshot saved to: target/screenshots/TC-NEG-06_Wrong_Password_Error_20260526_115136.png
 TC-NEG-06 PASSED
 ]]></system-out>
-    <system-err><![CDATA[[TestNG-tests-2] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 148.0.7778.178 (resolved driver for Chrome 148)
-[TestNG-tests-2] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\debi2\.cache\selenium\chromedriver\win64\148.0.7778.178\chromedriver.exe
-May 25, 2026 10:16:52 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 148
-May 25, 2026 10:16:52 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 148.0.7778.179. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
   </testcase>
-  <testcase name="TC_NEG_07_BothFieldsEmpty" classname="tests.UI.NegativeLoginTest" time="11.079">
-    <system-out><![CDATA[[TEARDOWN] Browser closed for: NegativeUITest
-[TEARDOWN] Browser closed for: CreateNoteTest
+  <testcase name="TC_NEG_07_BothFieldsEmpty" classname="tests.UI.NegativeLoginTest" time="5.643">
+    <system-out><![CDATA[[INFO] Ad iframes removed
+===== TC-UI-03: Newly Created Note Appears in UI List =====
 [INFO] Ad iframes removed
+[INFO] Ad iframes removed
+[INFO] Vignette ad removed
+[INFO] Ad iframes removed
+[INFO] Vignette ad removed
 Screenshot attached to Allure: TC-NEG-07 Both Fields Empty
-Screenshot saved to: target/screenshots/TC-NEG-07_Both_Fields_Empty_20260525_221731.png
+Screenshot saved to: target/screenshots/TC-NEG-07_Both_Fields_Empty_20260526_115202.png
 TC-NEG-07 PASSED
 ]]></system-out>
   </testcase>
-  <testcase name="TC_API_03_ResponseTimeUnder2Seconds" classname="tests.API.ResponseTimeAPITest" time="0.587">
-    <system-out><![CDATA[[TEARDOWN] Browser closed for: NegativeLoginTest
-Token generated: 70ef14a5826146d78f1f1bdb76109f638ac0f9273b074a698b55f5225a2a6d16
+  <testcase name="TC_API_01_GetNotes" classname="tests.API.GetNotesAPITest" time="2.769">
+    <system-out><![CDATA[[INFO] JS click performed on: By.xpath: //button[text()='Login']
+Login successful
+[TEARDOWN] Browser closed for: NegativeUITest
+[INFO] Ad iframes removed
+[INFO] Vignette ad removed
+[INFO] JS click performed on: By.xpath: //button[contains(text(),'Add Note')]
+[INFO] Ad iframes removed
+[INFO] Vignette ad removed
+[INFO] JS click performed on: By.xpath: //button[@data-testid='note-submit']
+Note created: Automation Note 1779776498277 [Home]
 Token generated: 70ef14a5826146d78f1f1bdb76109f638ac0f9273b074a698b55f5225a2a6d16
 ===== TC-API-01: GET /notes Returns Notes List =====
-===== TC-API-02: Delete a Note via API =====
-Creating a note to delete...
-Token generated: 70ef14a5826146d78f1f1bdb76109f638ac0f9273b074a698b55f5225a2a6d16
-===== TC-API-03: API Response Time Under 2 Seconds =====
-Create response status: 200
 [RETRY] Success on attempt: 1
-Response Body:
-[RETRY] Success on attempt: 1
-API Response Time: 473ms
-PASS: Response time is within limit
-TC-API-03 PASSED - Response Time: 473ms
-]]></system-out>
-  </testcase>
-  <testcase name="TC_API_01_GetNotes" classname="tests.API.GetNotesAPITest" time="0.816">
-    <system-out><![CDATA[[TEARDOWN] API test - no browser to close for: ResponseTimeAPITest
-===== TC-PERF-01 : 30 USERS TEST =====
-[JMETER] Running: src/test/resources/jmeter/testplan_30_users.jmx
-{
-    "success": true,
-    "status": 200,
-    "message": "Notes successfully retrieved",
-    "data": [
-        {
-            "id": "6a147d15038935029665394a",
-            "title": "Automation Note 1779727609241",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-25T16:47:17.940Z",
-            "updated_at": "2026-05-25T16:47:17.940Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a147ce80389350296653934",
-            "title": "Automation Note 1779727517151",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-25T16:46:32.657Z",
-            "updated_at": "2026-05-25T16:46:32.657Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a147bfb0389350296653821",
-            "title": "Automation Note 1779727340177",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-25T16:42:35.709Z",
-            "updated_at": "2026-05-25T16:42:35.709Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a147b30038935029665373b",
-            "title": "Automation Note 1779727118919",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-25T16:39:12.050Z",
-            "updated_at": "2026-05-25T16:39:12.050Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a147adb03893502966536b7",
-            "title": "Automation Note 1779726990618",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-25T16:37:47.920Z",
-            "updated_at": "2026-05-25T16:37:47.920Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a13f508038935029664aa33",
-            "title": "Automation Note 1779692799746",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-25T07:06:48.961Z",
-            "updated_at": "2026-05-25T07:06:48.961Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a13f4c3038935029664a971",
-            "title": "Automation Note 1779692723547",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-25T07:05:39.379Z",
-            "updated_at": "2026-05-25T07:05:39.379Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a13f499038935029664a929",
-            "title": "Automation Note 1779692597236",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-25T07:04:57.508Z",
-            "updated_at": "2026-05-25T07:04:57.508Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a1348500389350296642fcc",
-            "title": "Automation Note 1779648578648",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-24T18:49:52.099Z",
-            "updated_at": "2026-05-24T18:49:52.099Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a1347b80389350296642f32",
-            "title": "Automation Note 1779648419473",
-            "description": "Created using Selenium",
-            "category": "Work",
-            "completed": false,
-            "created_at": "2026-05-24T18:47:20.672Z",
-            "updated_at": "2026-05-24T18:47:20.672Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a13477e0389350296642f0e",
-            "title": "Automation Note 1779648355210",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-24T18:46:22.393Z",
-            "updated_at": "2026-05-24T18:46:22.393Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a1347310389350296642ef5",
-            "title": "Automation Note 1779648285565",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-24T18:45:05.096Z",
-            "updated_at": "2026-05-24T18:45:05.096Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a133d3203893502966421c5",
-            "title": "Automation Note 1779645736177",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-24T18:02:26.193Z",
-            "updated_at": "2026-05-24T18:02:26.193Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a133cd40389350296642106",
-            "title": "Automation Note 1779645614982",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-24T18:00:52.632Z",
-            "updated_at": "2026-05-24T18:00:52.632Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a133c980389350296642060",
-            "title": "Automation Note 1779645557970",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-24T17:59:52.157Z",
-            "updated_at": "2026-05-24T17:59:52.157Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a1339120389350296641cfc",
-            "title": "Automation Note 1779644682169",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-24T17:44:50.746Z",
-            "updated_at": "2026-05-24T17:44:50.746Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a1338970389350296641c95",
-            "title": "Automation Note 1779644555967",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-24T17:42:47.360Z",
-            "updated_at": "2026-05-24T17:42:47.360Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a13385d0389350296641c51",
-            "title": "Automation Note 1779644461819",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-24T17:41:49.117Z",
-            "updated_at": "2026-05-24T17:41:49.117Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a13359e0389350296641aef",
-            "title": "Automation Note 1779643796184",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-24T17:30:06.906Z",
-            "updated_at": "2026-05-24T17:30:06.906Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a1334e803893502966419ef",
-            "title": "Automation Note 1779643610974",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-24T17:27:04.733Z",
-            "updated_at": "2026-05-24T17:27:04.733Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a1334d403893502966419b4",
-            "title": "Automation Note 1779643582089",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-24T17:26:44.514Z",
-            "updated_at": "2026-05-24T17:26:44.514Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a1332e50389350296641863",
-            "title": "Automation Note 1779643100316",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-24T17:18:29.990Z",
-            "updated_at": "2026-05-24T17:18:29.990Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a133290038935029664180f",
-            "title": "Automation Note 1779642993099",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-24T17:17:04.922Z",
-            "updated_at": "2026-05-24T17:17:04.922Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a13326303893502966417ef",
-            "title": "Automation Note 1779642943255",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-24T17:16:19.602Z",
-            "updated_at": "2026-05-24T17:16:19.602Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a132fe103893502966415dc",
-            "title": "Automation Note 1779642327617",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-24T17:05:37.802Z",
-            "updated_at": "2026-05-24T17:05:37.802Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a132f2903893502966414e0",
-            "title": "Automation Note 1779642119680",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-24T17:02:33.207Z",
-            "updated_at": "2026-05-24T17:02:33.207Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a132eff0389350296641453",
-            "title": "Automation Note 1779642084610",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-24T17:01:51.371Z",
-            "updated_at": "2026-05-24T17:01:51.371Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a132a2b038935029664113e",
-            "title": "Automation Note 1779640865938",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-24T16:41:15.641Z",
-            "updated_at": "2026-05-24T16:41:15.641Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a13299c03893502966410f0",
-            "title": "Automation Note 1779640694378",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-24T16:38:52.957Z",
-            "updated_at": "2026-05-24T16:38:52.957Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a13296c03893502966410df",
-            "title": "Automation Note 1779640626792",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-24T16:38:04.025Z",
-            "updated_at": "2026-05-24T16:38:04.025Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a1319000389350296640b3b",
-            "title": "Automation Note 1779636462946",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-24T15:28:00.641Z",
-            "updated_at": "2026-05-24T15:28:00.641Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a1317ff0389350296640a9a",
-            "title": "Automation Note 1779636196334",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-24T15:23:43.897Z",
-            "updated_at": "2026-05-24T15:23:43.897Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a1317b50389350296640a78",
-            "title": "Automation Note 1779636114429",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-24T15:22:29.085Z",
-            "updated_at": "2026-05-24T15:22:29.085Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a1313c103893502966408e2",
-            "title": "Automation Note 1779635125079",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-24T15:05:37.825Z",
-            "updated_at": "2026-05-24T15:05:37.825Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a1312d3038935029664085d",
-            "title": "Automation Note 1779634890516",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-24T15:01:39.260Z",
-            "updated_at": "2026-05-24T15:01:39.260Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a1312c20389350296640853",
-            "title": "Automation Note 1779634837676",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-24T15:01:22.843Z",
-            "updated_at": "2026-05-24T15:01:22.843Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a130f7e03893502966406eb",
-            "title": "Automation Note 1779634024622",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-24T14:47:26.221Z",
-            "updated_at": "2026-05-24T14:47:26.221Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a130e0d038935029664066d",
-            "title": "Automation Note 1779633646216",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-24T14:41:17.039Z",
-            "updated_at": "2026-05-24T14:41:17.039Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a130de00389350296640658",
-            "title": "Automation Note 1779633605621",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-24T14:40:32.785Z",
-            "updated_at": "2026-05-24T14:40:32.785Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a12ff9c038935029663fb98",
-            "title": "Automation Note 1779629965401",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-24T13:39:40.499Z",
-            "updated_at": "2026-05-24T13:39:40.499Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a12ff03038935029663f8b5",
-            "title": "Automation Note 1779629792983",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-24T13:37:07.121Z",
-            "updated_at": "2026-05-24T13:37:07.121Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a12fea8038935029663f861",
-            "title": "Automation Note 1779629682519",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-24T13:35:36.848Z",
-            "updated_at": "2026-05-24T13:35:36.848Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a117712038935029662fd36",
-            "title": "Automation Note 1779529475536",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-23T09:44:50.119Z",
-            "updated_at": "2026-05-23T09:44:50.119Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a11763e038935029662fcf0",
-            "title": "Automation Note 1779529187482",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-23T09:41:18.185Z",
-            "updated_at": "2026-05-23T09:41:18.185Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a1175d2038935029662fcca",
-            "title": "Automation Note 1779529073347",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-23T09:39:30.947Z",
-            "updated_at": "2026-05-23T09:39:30.947Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a117426038935029662fc8a",
-            "title": "Automation Note 1779528719560",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-23T09:32:22.327Z",
-            "updated_at": "2026-05-23T09:32:22.327Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a1173bd038935029662fc4f",
-            "title": "Automation Note 1779528599408",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-23T09:30:37.739Z",
-            "updated_at": "2026-05-23T09:30:37.739Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a11738d038935029662fc2d",
-            "title": "Automation Note 1779528550848",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-23T09:29:49.201Z",
-            "updated_at": "2026-05-23T09:29:49.201Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a116f96038935029662fbab",
-            "title": "Automation Note 1779527565494",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-23T09:12:54.968Z",
-            "updated_at": "2026-05-23T09:12:54.968Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a116f26038935029662fb83",
-            "title": "Automation Note 1779527403699",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-23T09:11:02.420Z",
-            "updated_at": "2026-05-23T09:11:02.420Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a116edb038935029662fb54",
-            "title": "Automation Note 1779527343188",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-23T09:09:47.195Z",
-            "updated_at": "2026-05-23T09:09:47.195Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a116ca3038935029662fab5",
-            "title": "Automation Note 1779526801558",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-23T09:00:19.394Z",
-            "updated_at": "2026-05-23T09:00:19.394Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a116c0c038935029662fa00",
-            "title": "Automation Note 1779526630032",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-23T08:57:48.118Z",
-            "updated_at": "2026-05-23T08:57:48.118Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a116bd5038935029662f9e5",
-            "title": "Automation Note 1779526563323",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-23T08:56:53.197Z",
-            "updated_at": "2026-05-23T08:56:53.197Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a116941038935029662f91d",
-            "title": "Automation Note 1779525925984",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-23T08:45:53.234Z",
-            "updated_at": "2026-05-23T08:45:53.234Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a116891038935029662f8dc",
-            "title": "Automation Note 1779525753959",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-23T08:42:57.066Z",
-            "updated_at": "2026-05-23T08:42:57.066Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a1156ac038935029662f644",
-            "title": "Automation Note 1779521184408",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-23T07:26:36.408Z",
-            "updated_at": "2026-05-23T07:26:36.408Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a115672038935029662f62e",
-            "title": "Automation Note 1779521126808",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-23T07:25:38.151Z",
-            "updated_at": "2026-05-23T07:25:38.151Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a1154b8038935029662f527",
-            "title": "Automation Note 1779520675930",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-23T07:18:16.117Z",
-            "updated_at": "2026-05-23T07:18:16.117Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a115457038935029662f4b4",
-            "title": "Automation Note 1779520585913",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-23T07:16:39.197Z",
-            "updated_at": "2026-05-23T07:16:39.197Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a1153bd038935029662f45d",
-            "title": "Automation Note 1779520407115",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-23T07:14:05.681Z",
-            "updated_at": "2026-05-23T07:14:05.681Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a1153a1038935029662f453",
-            "title": "Automation Note 1779520382390",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-23T07:13:37.576Z",
-            "updated_at": "2026-05-23T07:13:37.576Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a114e7a038935029662f3c7",
-            "title": "Automation Note 1779519082465",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-23T06:51:38.376Z",
-            "updated_at": "2026-05-23T06:51:38.376Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a114e19038935029662f37c",
-            "title": "Automation Note 1779518972878",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-23T06:50:01.010Z",
-            "updated_at": "2026-05-23T06:50:01.010Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a114df0038935029662f367",
-            "title": "Automation Note 1779518926728",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-23T06:49:20.052Z",
-            "updated_at": "2026-05-23T06:49:20.052Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a114cc2038935029662f333",
-            "title": "Automation Note 1779518638872",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-23T06:44:18.124Z",
-            "updated_at": "2026-05-23T06:44:18.124Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a11410f038935029662f240",
-            "title": "Automation Note 1779515651290",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-23T05:54:23.589Z",
-            "updated_at": "2026-05-23T05:54:23.589Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a1140c5038935029662f205",
-            "title": "Automation Note 1779515567970",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-23T05:53:09.132Z",
-            "updated_at": "2026-05-23T05:53:09.132Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a114095038935029662f1f1",
-            "title": "Automation Note 1779515504982",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-23T05:52:21.729Z",
-            "updated_at": "2026-05-23T05:52:21.729Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a113a33038935029662f0f1",
-            "title": "Automation Note 1779513894345",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-23T05:25:07.548Z",
-            "updated_at": "2026-05-23T05:25:07.548Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a113a21038935029662f0e7",
-            "title": "Automation Note 1779513880277",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-23T05:24:49.579Z",
-            "updated_at": "2026-05-23T05:24:49.579Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a112563038935029662eed3",
-            "title": "Automation Note 1779508533210",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-23T03:56:19.360Z",
-            "updated_at": "2026-05-23T03:56:19.360Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a11245f038935029662ee97",
-            "title": "Automation Note 1779508282002",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-23T03:51:59.229Z",
-            "updated_at": "2026-05-23T03:51:59.229Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a112333038935029662ee3e",
-            "title": "Automation Note 1779507998250",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-23T03:46:59.785Z",
-            "updated_at": "2026-05-23T03:46:59.785Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a112316038935029662ee34",
-            "title": "Automation Note 1779507962664",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-23T03:46:30.205Z",
-            "updated_at": "2026-05-23T03:46:30.205Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a1120a8038935029662edfb",
-            "title": "Automation Note 1779507306569",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-23T03:36:08.564Z",
-            "updated_at": "2026-05-23T03:36:08.564Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a10b596038935029662b3ac",
-            "title": "Automation Note 1779479899958",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-22T19:59:18.855Z",
-            "updated_at": "2026-05-22T19:59:18.855Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a10b4ff038935029662b39e",
-            "title": "Automation Note 1779479794183",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-22T19:56:47.014Z",
-            "updated_at": "2026-05-22T19:56:47.014Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a10b361038935029662b373",
-            "title": "Automation Note 1779479375749",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-22T19:49:53.647Z",
-            "updated_at": "2026-05-22T19:49:53.647Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a10b322038935029662b369",
-            "title": "Automation Note 1779479313249",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-22T19:48:50.307Z",
-            "updated_at": "2026-05-22T19:48:50.307Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a10b1f4038935029662b358",
-            "title": "Automation Note 1779479016813",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-22T19:43:48.749Z",
-            "updated_at": "2026-05-22T19:43:48.749Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a10b1bb038935029662b34d",
-            "title": "Automation Note 1779478949259",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-22T19:42:51.230Z",
-            "updated_at": "2026-05-22T19:42:51.230Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a10b118038935029662b33f",
-            "title": "Automation Note 1779478792521",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-22T19:40:08.220Z",
-            "updated_at": "2026-05-22T19:40:08.220Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a10aee3038935029662b2e0",
-            "title": "Automation Note 1779478125096",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-22T19:30:43.562Z",
-            "updated_at": "2026-05-22T19:30:43.562Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a10ac84038935029662b2a8",
-            "title": "Automation Note 1779477620655",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-22T19:20:36.035Z",
-            "updated_at": "2026-05-22T19:20:36.035Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a10ab62038935029662b26c",
-            "title": "Automation Note 1779477249332",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-22T19:15:46.254Z",
-            "updated_at": "2026-05-22T19:15:46.254Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a10a9c8038935029662b24e",
-            "title": "Automation Note 1779476922630",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-22T19:08:56.676Z",
-            "updated_at": "2026-05-22T19:08:56.676Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a10a90d038935029662b225",
-            "title": "Automation Note 1779476728121",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-22T19:05:49.941Z",
-            "updated_at": "2026-05-22T19:05:49.941Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        },
-        {
-            "id": "6a10a87c038935029662b1fc",
-            "title": "Automation Note 1779476523017",
-            "description": "Created using Selenium",
-            "category": "Home",
-            "completed": false,
-            "created_at": "2026-05-22T19:03:24.726Z",
-            "updated_at": "2026-05-22T19:03:24.726Z",
-            "user_id": "6a0e9ce70389350296616e63"
-        }
-    ]
-}
 Status Code: 200
-[SCHEMA] Validation passed for: create_note_schema.json
-Note created with ID: 6a147d240389350296653958
-Sending DELETE request for note ID: 6a147d240389350296653958
 [SCHEMA] Validation passed for: get_notes_schema.json
 TC-API-01 PASSED
 ]]></system-out>
   </testcase>
-  <testcase name="TC_API_02_DeleteNote" classname="tests.API.DeleteNoteAPITest" time="1.712">
-    <system-out><![CDATA[[TEARDOWN] API test - no browser to close for: GetNotesAPITest
+  <testcase name="TC_API_02_DeleteNote" classname="tests.API.DeleteNoteAPITest" time="0.15">
+    <system-out><![CDATA[Token generated: 70ef14a5826146d78f1f1bdb76109f638ac0f9273b074a698b55f5225a2a6d16
+===== TC-API-02: Delete a Note via API =====
+Creating a note to delete...
+Create response status: 200
+[SCHEMA] Validation passed for: create_note_schema.json
+Note created with ID: 6a153c1553916b0295ccb49f
+Sending DELETE request for note ID: 6a153c1553916b0295ccb49f
+[TEARDOWN] Browser closed for: NegativeLoginTest
+Token generated: 70ef14a5826146d78f1f1bdb76109f638ac0f9273b074a698b55f5225a2a6d16
+===== TC-API-03: API Response Time Under 2 Seconds =====
 Delete response status: 200
 Delete response body: {"success":true,"status":200,"message":"Note successfully deleted"}
 TC-API-02 PASSED
 ]]></system-out>
   </testcase>
-  <testcase name="TC_NEG_03_CreateNoteWithoutToken" classname="tests.API.NegativeAPITest" time="1.977">
+  <testcase name="TC_API_03_ResponseTimeUnder2Seconds" classname="tests.API.ResponseTimeAPITest" time="2.665">
+    <failure message="expected [true] but found [false]" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertTrue(Assert.java:57)
+	at org.testng.Assert.assertTrue(Assert.java:67)
+	at tests.API.ResponseTimeAPITest.TC_API_03_ResponseTimeUnder2Seconds(ResponseTimeAPITest.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:819)
+	at org.testng.TestRunner.run(TestRunner.java:619)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:481)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+	at java.base/java.lang.Thread.run(Thread.java:842)
+]]></failure>
     <system-out><![CDATA[[TEARDOWN] API test - no browser to close for: DeleteNoteAPITest
+===== TC-PERF-01 : 30 USERS TEST =====
+[JMETER] Running: src/test/resources/jmeter/testplan_30_users.jmx
+[TEARDOWN] Browser closed for: CreateNoteTest
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
+[RETRY] Success on attempt: 1
+API Response Time: 2260ms
+WARNING: Response time 2260ms exceeded limit of 2000ms
+]]></system-out>
+  </testcase>
+  <testcase name="TC_NEG_03_CreateNoteWithoutToken" classname="tests.API.NegativeAPITest" time="3.301">
+    <system-out><![CDATA[[TEARDOWN] API test - no browser to close for: ResponseTimeAPITest
 Token generated: 70ef14a5826146d78f1f1bdb76109f638ac0f9273b074a698b55f5225a2a6d16
 ===== TC-NEG-03: Create Note via API without Token =====
-WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
-WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
-WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
-WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
 Status: 401
 TC-NEG-03 PASSED
 ]]></system-out>
-    <system-err><![CDATA[[TestNG-tests-2] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 148.0.7778.178 (resolved driver for Chrome 148)
-[TestNG-tests-2] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\debi2\.cache\selenium\chromedriver\win64\148.0.7778.178\chromedriver.exe
-May 25, 2026 10:17:37 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
+    <system-err><![CDATA[[TestNG-tests-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 148.0.7778.178 (resolved driver for Chrome 148)
+[TestNG-tests-1] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\debi2\.cache\selenium\chromedriver\win64\148.0.7778.178\chromedriver.exe
+May 26, 2026 11:52:22 AM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
 WARNING: Unable to find CDP implementation matching 148
-May 25, 2026 10:17:37 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
+May 26, 2026 11:52:22 AM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
 WARNING: Unable to find version of CDP to use for 148.0.7778.179. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
 ]]></system-err>
   </testcase>
-  <testcase name="TC_NEG_04_InvalidToken" classname="tests.API.NegativeAPITest" time="0.689">
+  <testcase name="TC_NEG_04_InvalidToken" classname="tests.API.NegativeAPITest" time="1.383">
     <system-out><![CDATA[[TEARDOWN] API test - no browser to close for: NegativeAPITest
 ===== TC-NEG-04: GET /notes with Invalid Token =====
 Status: 401
 TC-NEG-04 PASSED
 ]]></system-out>
   </testcase>
-  <testcase name="TC_NEG_05_DeleteWrongNoteId" classname="tests.API.NegativeAPITest" time="0.712">
+  <testcase name="TC_NEG_05_DeleteWrongNoteId" classname="tests.API.NegativeAPITest" time="1.043">
     <system-out><![CDATA[[TEARDOWN] API test - no browser to close for: NegativeAPITest
 ===== TC-NEG-05: DELETE Note with Wrong Note ID =====
 Status: 400
 TC-NEG-05 PASSED
 ]]></system-out>
   </testcase>
-  <testcase name="TC_PERF_01_30Users" classname="tests.API.JMeterTest" time="8.945">
+  <testcase name="TC_PERF_01_30Users" classname="tests.API.JMeterTest" time="10.823">
     <system-out><![CDATA[[TEARDOWN] API test - no browser to close for: NegativeAPITest
 Creating summariser <summary>
 Created the tree successfully using src/test/resources/jmeter/testplan_30_users.jmx
-Starting standalone test @ 2026 May 25 22:17:40 IST (1779727660030)
+Starting standalone test @ 2026 May 26 11:52:27 IST (1779776547515)
 Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445
-===== TC-E2E-01: UI Created Note Visible in API =====
+summary +      6 in 00:00:03 =    2.3/s Avg:  1115 Min:   646 Max:  1714 Err:     0 (0.00%) Active: 8 Started: 8 Finished: 0
+===== TC-E2E-01: Complete End to End Flow =====
+[STEP 1] FR-01: Login via UI
 [INFO] Ad iframes removed
 [INFO] Vignette ad removed
 [INFO] Ad iframes removed
 [INFO] Vignette ad removed
 [INFO] JS click performed on: By.xpath: //button[text()='Login']
+summary +     54 in 00:00:14 =    4.0/s Avg:  1443 Min:   507 Max:  6136 Err:     0 (0.00%) Active: 0 Started: 30 Finished: 30
+summary =     60 in 00:00:16 =    3.7/s Avg:  1410 Min:   507 Max:  6136 Err:     0 (0.00%)
+Tidying up ...    @ 2026 May 26 11:52:43 IST (1779776563991)
+... end of run
 Login successful
+Screenshot attached to Allure: Step1 - Login Success
+Screenshot saved to: target/screenshots/Step1_-_Login_Success_20260526_115244.png
+[STEP 1] FR-01 PASSED
+[STEP 2] FR-02: Create note via UI
 [INFO] Ad iframes removed
 [INFO] Vignette ad removed
 [INFO] JS click performed on: By.xpath: //button[contains(text(),'Add Note')]
-summary =     60 in 00:00:12 =    5.1/s Avg:   976 Min:   543 Max:  3187 Err:    60 (100.00%)
-Tidying up ...    @ 2026 May 25 22:17:52 IST (1779727672214)
-... end of run
-[INFO] Ad iframes removed
-[INFO] Vignette ad removed
-[INFO] JS click performed on: By.xpath: //button[@data-testid='note-submit']
-Note created: Automation Note 1779727656247 [Home]
 [JMETER] Done. Results saved at: target/jmeter/30_users_results.jtl
 [JMETER] PERFORMANCE SUMMARY : 30 USERS
 Total Requests : 60
-Average Time   : 976 ms
-Min Time       : 543 ms
-Max Time       : 3187 ms
+Average Time   : 1410 ms
+Min Time       : 507 ms
+Max Time       : 6136 ms
 TC-PERF-01 PASSED
 ]]></system-out>
   </testcase>
-  <testcase name="TC_PERF_02_50Users" classname="tests.API.JMeterTest" time="2.485">
-    <system-out><![CDATA[summary +      1 in 00:00:04 =    0.2/s Avg:  3283 Min:  3283 Max:  3283 Err:     1 (100.00%) Active: 20 Started: 20 Finished: 0
-[TEARDOWN] Browser closed for: EndToEndTest
-===== TC-E2E-02: API Deleted Note Disappears from UI =====
-summary +     99 in 00:00:07 =   13.6/s Avg:   863 Min:   537 Max:  3545 Err:    99 (100.00%) Active: 0 Started: 50 Finished: 50
-summary =    100 in 00:00:11 =    8.7/s Avg:   887 Min:   537 Max:  3545 Err:   100 (100.00%)
-Tidying up ...    @ 2026 May 25 22:18:10 IST (1779727690779)
-... end of run
-Token generated: 70ef14a5826146d78f1f1bdb76109f638ac0f9273b074a698b55f5225a2a6d16
-Delete Status: 200
-[JMETER] Done. Results saved at: target/jmeter/50_users_results.jtl
-[JMETER] PERFORMANCE SUMMARY : 50 USERS
-Total Requests : 100
-Average Time   : 887 ms
-Min Time       : 537 ms
-Max Time       : 3545 ms
-TC-PERF-02 PASSED
-]]></system-out>
-    <system-err><![CDATA[[TestNG-tests-2] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 148.0.7778.178 (resolved driver for Chrome 148)
-[TestNG-tests-2] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\debi2\.cache\selenium\chromedriver\win64\148.0.7778.178\chromedriver.exe
-May 25, 2026 10:18:05 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 148
-May 25, 2026 10:18:05 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 148.0.7778.179. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
-  </testcase>
-  <testcase name="TC_E2E_01_UICreatedNoteVisibleInAPI" classname="tests.E2E.EndToEndTest" time="8.175">
+  <testcase name="TC_PERF_02_50Users" classname="tests.API.JMeterTest" time="20.61">
     <system-out><![CDATA[[TEARDOWN] API test - no browser to close for: JMeterTest
 ===== TC-PERF-02 : 50 USERS TEST =====
 [JMETER] Running: src/test/resources/jmeter/testplan_50_users.jmx
+[INFO] Ad iframes removed
+[INFO] Vignette ad removed
+[INFO] JS click performed on: By.xpath: //button[@data-testid='note-submit']
+Note created: Automation Note 1779776541031 [Home]
+Screenshot attached to Allure: Step2 - Note Created
+Screenshot saved to: target/screenshots/Step2_-_Note_Created_20260526_115246.png
+[STEP 2] FR-02 PASSED
+[STEP 3] FR-03: Verify note appears in UI list
 WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
 WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
 WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
 WARN StatusConsoleListener The use of package scanning to locate plugins is deprecated and will be removed in a future release
 Creating summariser <summary>
 Created the tree successfully using src/test/resources/jmeter/testplan_50_users.jmx
-Starting standalone test @ 2026 May 25 22:17:58 IST (1779727678890)
-Screenshot attached to Allure: TC-E2E-01 Note in UI
+Starting standalone test @ 2026 May 26 11:52:50 IST (1779776570153)
 Waiting for possible Shutdown/StopTestNow/HeapDump/ThreadDump message on port 4445
-Screenshot saved to: target/screenshots/TC-E2E-01_Note_in_UI_20260525_221758.png
+Screenshot attached to Allure: Step3 - Note Visible in UI
+Screenshot saved to: target/screenshots/Step3_-_Note_Visible_in_UI_20260526_115256.png
+[STEP 3] FR-03 PASSED
+[STEP 4] FR-04: GET /notes API returns list
+summary +     75 in 00:00:09 =    8.0/s Avg:  1447 Min:   583 Max:  4048 Err:     0 (0.00%) Active: 15 Started: 47 Finished: 32
 Token generated: 70ef14a5826146d78f1f1bdb76109f638ac0f9273b074a698b55f5225a2a6d16
-Note found in API - ID: 6a147d370389350296653969
-TC-E2E-01 PASSED
+summary +     25 in 00:00:05 =    5.3/s Avg:  1956 Min:   838 Max:  6238 Err:     0 (0.00%) Active: 0 Started: 50 Finished: 50
+summary =    100 in 00:00:14 =    7.1/s Avg:  1574 Min:   583 Max:  6238 Err:     0 (0.00%)
+Tidying up ...    @ 2026 May 26 11:53:04 IST (1779776584705)
+... end of run
+[STEP 4] FR-04 PASSED
+[STEP 5] FR-05: UI created note visible in API
+Note ID: 6a153c3453916b0295ccb580
+UI Title: Automation Note 1779776541031 API Title: Automation Note 1779776541031
+[STEP 5] FR-05 PASSED
+[STEP 6] FR-06: Delete note via API
+[JMETER] Done. Results saved at: target/jmeter/50_users_results.jtl
+[JMETER] PERFORMANCE SUMMARY : 50 USERS
+Total Requests : 100
+Average Time   : 1574 ms
+Min Time       : 583 ms
+Max Time       : 6238 ms
+TC-PERF-02 PASSED
 ]]></system-out>
   </testcase>
-  <testcase name="TC_E2E_02_APIDeletedNoteGoneFromUI" classname="tests.E2E.EndToEndTest" time="14.054">
+  <testcase name="TC_E2E_01_CompleteFlow" classname="tests.E2E.EndToEndTest" time="28.557">
     <system-out><![CDATA[[TEARDOWN] API test - no browser to close for: JMeterTest
-[INFO] Ad iframes removed
-[INFO] Vignette ad removed
-[INFO] Ad iframes removed
-[INFO] Vignette ad removed
-[INFO] JS click performed on: By.xpath: //button[text()='Login']
-Login successful
-Screenshot attached to Allure: TC-E2E-02 Note Deleted from UI
-Screenshot saved to: target/screenshots/TC-E2E-02_Note_Deleted_from_UI_20260525_221823.png
-TC-E2E-02 PASSED
+[STEP 6] FR-06 PASSED
+[STEP 7] FR-07: Deleted note disappears from UI
+Screenshot attached to Allure: Step7 - Note Gone from UI
+Screenshot saved to: target/screenshots/Step7_-_Note_Gone_from_UI_20260526_115314.png
+[STEP 7] FR-07 PASSED
+===== TC-E2E-01: ALL STEPS PASSED =====
 ]]></system-out>
-  </testcase>
-  <testcase name="TC_E2E_03_UIAPIDataConsistency" classname="tests.E2E.EndToEndTest" time="14.588">
-    <system-out><![CDATA[[TEARDOWN] Browser closed for: EndToEndTest
-===== TC-E2E-03: UI and API Data Consistency Check =====
-[INFO] Ad iframes removed
-[INFO] Vignette ad removed
-[INFO] Ad iframes removed
-[INFO] Vignette ad removed
-[INFO] JS click performed on: By.xpath: //button[text()='Login']
-Login successful
-[INFO] Ad iframes removed
-[INFO] Vignette ad removed
-[INFO] JS click performed on: By.xpath: //button[contains(text(),'Add Note')]
-[INFO] Ad iframes removed
-[INFO] Vignette ad removed
-[INFO] JS click performed on: By.xpath: //button[@data-testid='note-submit']
-Note created: Automation Note 1779727704929 [Home]
-UI Title: Automation Note 1779727704929
-Screenshot attached to Allure: TC-E2E-03 UI Note Data
-Screenshot saved to: target/screenshots/TC-E2E-03_UI_Note_Data_20260525_221845.png
-Token generated: 70ef14a5826146d78f1f1bdb76109f638ac0f9273b074a698b55f5225a2a6d16
-API Title: Automation Note 1779727704929
-API Description: Created using Selenium
-All fields matched between UI and API
-TC-E2E-03 PASSED
-]]></system-out>
-    <system-err><![CDATA[[TestNG-tests-2] INFO io.github.bonigarcia.wdm.WebDriverManager - Using chromedriver 148.0.7778.178 (resolved driver for Chrome 148)
-[TestNG-tests-2] INFO io.github.bonigarcia.wdm.WebDriverManager - Exporting webdriver.chrome.driver as C:\Users\debi2\.cache\selenium\chromedriver\win64\148.0.7778.178\chromedriver.exe
-May 25, 2026 10:18:26 PM org.openqa.selenium.devtools.CdpVersionFinder findNearestMatch
-WARNING: Unable to find CDP implementation matching 148
-May 25, 2026 10:18:26 PM org.openqa.selenium.chromium.ChromiumDriver lambda$new$5
-WARNING: Unable to find version of CDP to use for 148.0.7778.179. You may need to include a dependency on a specific version of the CDP using something similar to `org.seleniumhq.selenium:selenium-devtools-v86:4.18.1` where the version ("v86") matches the version of the chromium-based browser you're using and the version number of the artifact is the same as Selenium's.
-]]></system-err>
   </testcase>
 </testsuite>
