@@ -41,23 +41,6 @@
 
       <hashTree>
 
-        <!-- CSV DATA SET CONFIG -->
-        <CSVDataSet guiclass="TestBeanGUI"
-                    testclass="CSVDataSet"
-                    testname="Login CSV Data"
-                    enabled="true">
-          <stringProp name="filename">src/test/resources/testdata/testdata.csv</stringProp>
-          <stringProp name="variableNames">type,email,password</stringProp>
-          <stringProp name="delimiter">,</stringProp>
-          <boolProp name="quotedData">false</boolProp>
-          <boolProp name="recycle">true</boolProp>
-          <boolProp name="stopThread">false</boolProp>
-          <stringProp name="shareMode">shareMode.all</stringProp>
-          <boolProp name="ignoreFirstLine">true</boolProp>
-        </CSVDataSet>
-
-        <hashTree/>
-
         <!-- LOGIN API -->
         <HTTPSamplerProxy guiclass="HttpTestSampleGui"
                           testclass="HTTPSamplerProxy"
@@ -73,12 +56,7 @@
             <collectionProp name="Arguments.arguments">
               <elementProp name="" elementType="HTTPArgument">
                 <boolProp name="HTTPArgument.always_encode">false</boolProp>
-                <stringProp name="Argument.value">
-{
-  "email":"${email}",
-  "password":"${password}"
-}
-                </stringProp>
+                <stringProp name="Argument.value">{"email":"abc9237@mail.com","password":"abc@123"}</stringProp>
                 <stringProp name="Argument.metadata">=</stringProp>
               </elementProp>
             </collectionProp>
@@ -87,15 +65,29 @@
 
         <hashTree>
 
-          <!-- TOKEN EXTRACTOR -->
+          <!-- CONTENT TYPE HEADER FOR LOGIN -->
+          <HeaderManager guiclass="HeaderPanel"
+                         testclass="HeaderManager"
+                         testname="Login Header"
+                         enabled="true">
+            <collectionProp name="HeaderManager.headers">
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
+            </collectionProp>
+          </HeaderManager>
+          <hashTree/>
+
+          <!-- EXTRACT TOKEN FROM LOGIN RESPONSE -->
           <JSONPostProcessor guiclass="JSONPostProcessorGui"
                              testclass="JSONPostProcessor"
                              testname="Extract Token"
                              enabled="true">
             <stringProp name="JSONPostProcessor.referenceNames">token</stringProp>
             <stringProp name="JSONPostProcessor.jsonPathExprs">$.data.token</stringProp>
+            <stringProp name="JSONPostProcessor.defaultValues">TOKEN_NOT_FOUND</stringProp>
           </JSONPostProcessor>
-
           <hashTree/>
 
         </hashTree>
@@ -109,11 +101,13 @@
           <stringProp name="HTTPSampler.protocol">https</stringProp>
           <stringProp name="HTTPSampler.path">/notes/api/notes</stringProp>
           <stringProp name="HTTPSampler.method">GET</stringProp>
+          <boolProp name="HTTPSampler.follow_redirects">true</boolProp>
+          <boolProp name="HTTPSampler.use_keepalive">true</boolProp>
         </HTTPSamplerProxy>
 
         <hashTree>
 
-          <!-- AUTH HEADER -->
+          <!-- AUTH HEADER USING EXTRACTED TOKEN -->
           <HeaderManager guiclass="HeaderPanel"
                          testclass="HeaderManager"
                          testname="Authorization Header"
@@ -123,12 +117,24 @@
                 <stringProp name="Header.name">x-auth-token</stringProp>
                 <stringProp name="Header.value">${token}</stringProp>
               </elementProp>
+              <elementProp name="" elementType="Header">
+                <stringProp name="Header.name">Content-Type</stringProp>
+                <stringProp name="Header.value">application/json</stringProp>
+              </elementProp>
             </collectionProp>
           </HeaderManager>
-
           <hashTree/>
 
         </hashTree>
+
+        <!-- RESULT FILE -->
+        <ResultCollector guiclass="SimpleDataWriter"
+                         testclass="ResultCollector"
+                         testname="CSV Writer"
+                         enabled="true">
+          <stringProp name="filename">target/jmeter/30_users_results.jtl</stringProp>
+        </ResultCollector>
+        <hashTree/>
 
       </hashTree>
 
