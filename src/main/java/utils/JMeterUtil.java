@@ -1,78 +1,117 @@
 package utils;
 
+import io.qameta.allure.Allure;
+
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.InputStreamReader;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.List;
 
+import config.ConfigReader;
+
 public class JMeterUtil {
 
-        // Absolute path to the JMeter executable used by the runner.
-        static String JMETER_PATH = "C:\\Users\\debi2\\Downloads\\apache-jmeter-5.6.3\\bin\\jmeter.bat";
+        static String JMETER_PATH = ConfigReader.get("jmeter.path");
 
-        public static void runJMeter(String testPlan, String resultFile) throws Exception {
+        public static void runJMeter(String testPlan, String resultFile, String reportDir) throws Exception {
 
-                // Ensure the output directory exists before launching JMeter.
                 Files.createDirectories(Paths.get("target/jmeter"));
+
+                // delete old jtl file if exists
+                File jtlFile = new File(resultFile);
+                if (jtlFile.exists()) {
+                        jtlFile.delete();
+                        System.out.println("[JMETER] Deleted old result file: " + resultFile);
+                }
+
+                // delete old report folder if exists
+                File reportFolder = new File(reportDir);
+                if (reportFolder.exists()) {
+                        deleteFolder(reportFolder);
+                        System.out.println("[JMETER] Deleted old report folder: " + reportDir);
+                }
+                Files.createDirectories(Paths.get(reportDir));
+
                 System.out.println("[JMETER] Running: " + testPlan);
 
-                // Build the command to execute JMeter in non-GUI mode with the specified test
-                // plan and result file.
                 ProcessBuilder pb = new ProcessBuilder(
                                 JMETER_PATH,
                                 "-n",
                                 "-t", testPlan,
-                                "-l", resultFile);
+                                "-l", resultFile,
+                                "-e",
+                                "-o", reportDir);
 
                 pb.redirectErrorStream(true);
                 Process process = pb.start();
-                // Capture and print JMeter's console output in real-time for better visibility.
-                BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+
+                BufferedReader reader = new BufferedReader(
+                                new InputStreamReader(process.getInputStream()));
                 String line;
                 while ((line = reader.readLine()) != null) {
                         System.out.println(line);
                 }
+
                 if (process.waitFor() != 0) {
                         throw new RuntimeException("[JMETER] Execution failed!");
                 }
-                System.out.println("[JMETER] Done. Results saved at: " + resultFile);
+
+                System.out.println("[JMETER] Done. Results: " + resultFile);
+                System.out.println("[JMETER] HTML Report: " + reportDir + "/index.html");
         }
 
-        public static void printPerformanceSummary(
-                        String resultFile,
-                        String label) throws Exception {
+        private static void deleteFolder(File folder) {
+                if (folder.listFiles() != null) {
+                        for (File f : folder.listFiles()) {
+                                if (f.isDirectory())
+                                        deleteFolder(f);
+                                else
+                                        f.delete();
+                        }
+                }
+                folder.delete();
+        }
 
-                // Read the JMeter results file and parse each CSV line.
+        public static void printPerformanceSummary(String resultFile, String label) throws Exception {
+
                 List<String> lines = Files.readAllLines(Paths.get(resultFile));
-                // Calculate total, min, max, and average response times.
+
                 long total = 0;
                 long min_time = Long.MAX_VALUE;
                 long max_time = Long.MIN_VALUE;
                 int count = 0;
+                int errors = 0;
 
                 for (String line : lines) {
-                        // Skip header rows and empty lines to avoid parsing errors.
-                        if (line.contains("elapsed") || line.trim().isEmpty()) {
+                        if (line.contains("elapsed") || line.trim().isEmpty())
                                 continue;
-                        }
                         String[] data = line.split(",");
                         long responseTime = Long.parseLong(data[1]);
+                        boolean success = data[7].equals("true");
                         total += responseTime;
-                        if (responseTime < min_time) {
+                        if (responseTime < min_time)
                                 min_time = responseTime;
-                        }
-                        if (responseTime > max_time) {
+                        if (responseTime > max_time)
                                 max_time = responseTime;
-                        }
+                        if (!success)
+                                errors++;
                         count++;
                 }
+
                 long avg = count > 0 ? total / count : 0;
-                // Print a clear performance summary to the console for quick analysis.
-                System.out.println("[JMETER] PERFORMANCE SUMMARY : " + label);
-                System.out.println("Total Requests : " + count);
-                System.out.println("Average Time   : " + avg + " ms");
-                System.out.println("Min Time       : " + min_time + " ms");
-                System.out.println("Max Time       : " + max_time + " ms");
+
+                String summary = "[JMETER] PERFORMANCE SUMMARY : " + label + "\n"
+                                + "Total Requests : " + count + "\n"
+                                + "Average Time   : " + avg + " ms\n"
+                                + "Min Time       : " + min_time + " ms\n"
+                                + "Max Time       : " + max_time + " ms\n"
+                                + "Error Count    : " + errors + "\n"
+                                + "Error Rate     : " + (count > 0 ? (errors * 100 / count) : 0) + "%\n";
+
+                System.out.println(summary);
+
+                Allure.addAttachment(label + " JMeter Summary", "text/plain", summary, ".txt");
         }
 }

@@ -46,6 +46,24 @@ pipeline {
                     reportBuildPolicy: 'ALWAYS',
                     results: [[path: 'target/allure-results']]
                 ])
+
+                publishHTML([
+                    reportDir: 'target/jmeter/report_30users',
+                    reportFiles: 'index.html',
+                    reportName: 'JMeter 30 Users Report',
+                    keepAll: true,
+                    alwaysLinkToLastBuild: true,
+                    allowMissing: true
+                ])
+
+                publishHTML([
+                    reportDir: 'target/jmeter/report_50users',
+                    reportFiles: 'index.html',
+                    reportName: 'JMeter 50 Users Report',
+                    keepAll: true,
+                    alwaysLinkToLastBuild: true,
+                    allowMissing: true
+                ])
             }
         }
 

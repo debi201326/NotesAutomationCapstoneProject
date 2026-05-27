@@ -1,0 +1,7 @@
+[JMETER] PERFORMANCE SUMMARY : 50 USERS
+Total Requests : 100
+Average Time   : 803 ms
+Min Time       : 420 ms
+Max Time       : 1659 ms
+Error Count    : 0
+Error Rate     : 0%
