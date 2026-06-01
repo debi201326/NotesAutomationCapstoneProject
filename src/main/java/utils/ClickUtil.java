@@ -6,20 +6,17 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class ClickUtil {
 
     public static void click(WebDriver driver, WebDriverWait wait, By locator) {
-
         int attempts = 0;
-
+        // Try normal click with retries if intercepted, then fallback to JS click
         while (attempts < 3) {
             try {
                 WebElement element = WaitUtil.waitForPresence(wait, locator);
                 ((JavascriptExecutor) driver).executeScript(
                         "arguments[0].scrollIntoView({block: 'center', inline: 'nearest'});",
                         element);
-
                 WaitUtil.waitForClickable(wait, locator);
                 element.click();
                 return;
-
             } catch (ElementClickInterceptedException e) {
                 attempts++;
                 System.out.println("[WARN] Click intercepted. Retry: " + attempts);
@@ -30,7 +27,6 @@ public class ClickUtil {
 
             }
         }
-
         System.out.println("[WARN] Normal click failed. Trying JS click: " + locator);
         jsClick(driver, wait, locator);
     }

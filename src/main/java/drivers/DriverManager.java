@@ -13,6 +13,7 @@ public class DriverManager {
         return driver.get();
     }
     
+    // Initializes the WebDriver instance for the current thread
     public static void initDriver() {
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();

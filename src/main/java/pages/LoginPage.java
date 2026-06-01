@@ -17,7 +17,6 @@ public class LoginPage {
     private By emailField  = By.id("email");
     private By passField   = By.id("password");
     private By loginButton = By.xpath("//button[text()='Login']");
-    private By dashboard   = By.cssSelector("[data-testid='logout']");
 
     // Constructor to initialize WebDriver and WebDriverWait
     public LoginPage(WebDriver driver, WebDriverWait wait) {
@@ -35,20 +34,7 @@ public class LoginPage {
         AdHandler.dismissAd(driver);
         AdHandler.dismissVignetteAd(driver);
         ClickUtil.jsClick(driver, wait, loginButton);
-        WaitUtil.waitForVisible(wait, dashboard);
         System.out.println("Login successful");
     }
 
-    // Similar to login method but does not wait for dashboard 
-    public void loginWithoutWait(String email, String password) {
-        ClickUtil.click(driver, wait, loginLink);
-        AdHandler.dismissAd(driver);
-        AdHandler.dismissVignetteAd(driver);
-        WaitUtil.waitForVisible(wait, emailField).sendKeys(email);
-        driver.findElement(passField).sendKeys(password);
-        AdHandler.dismissAd(driver);
-        AdHandler.dismissVignetteAd(driver);
-        ClickUtil.jsClick(driver, wait, loginButton);
-        System.out.println("Login attempt submitted");
-    }
 }

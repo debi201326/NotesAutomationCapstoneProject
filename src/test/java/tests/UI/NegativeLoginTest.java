@@ -25,7 +25,7 @@ public class NegativeLoginTest extends BaseTest {
                         String wrongEmail = invalidData.get("email");
                         String wrongPassword = invalidData.get("password");
                         LoginPage loginPage = new LoginPage(driver, wait);
-                        loginPage.loginWithoutWait(wrongEmail, wrongPassword);
+                        loginPage.login(wrongEmail, wrongPassword);
                         Thread.sleep(2000);
                         String pageSource = driver.getPageSource();
                         boolean errorShown = pageSource.contains("Incorrect");

@@ -15,7 +15,7 @@ import config.ConfigReader;
 
 public class ScreenshotUtil {
     private static final String SCREENSHOT_DIR = ConfigReader.get("screenshot_dir");
-
+    // Captures a screenshot, attaches it to Allure, and saves it to a folder with a timestamped filename
     public static void captureAndAttach(WebDriver driver, String name) {
         try {
             byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
