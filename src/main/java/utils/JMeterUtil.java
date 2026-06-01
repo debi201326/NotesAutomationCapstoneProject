@@ -74,9 +74,7 @@ public class JMeterUtil {
         }
 
         public static void printPerformanceSummary(String resultFile, String label) throws Exception {
-
                 List<String> lines = Files.readAllLines(Paths.get(resultFile));
-
                 long total = 0;
                 long min_time = Long.MAX_VALUE;
                 long max_time = Long.MIN_VALUE;
