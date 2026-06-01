@@ -173,7 +173,7 @@ $(document).ready(function() {
     });
 
     // Creates APDEX table
-    createTable($("#apdexTable"), {"supportsControllersDiscrimination": true, "overall": {"data": [0.39, 500, 1500, "Total"], "isController": false}, "titles": ["Apdex", "T (Toleration threshold)", "F (Frustration threshold)", "Label"], "items": [{"data": [0.37, 500, 1500, "Get Notes API"], "isController": false}, {"data": [0.41, 500, 1500, "Login API"], "isController": false}]}, function(index, item){
+    createTable($("#apdexTable"), {"supportsControllersDiscrimination": true, "overall": {"data": [0.275, 500, 1500, "Total"], "isController": false}, "titles": ["Apdex", "T (Toleration threshold)", "F (Frustration threshold)", "Label"], "items": [{"data": [0.28, 500, 1500, "Get Notes API"], "isController": false}, {"data": [0.27, 500, 1500, "Login API"], "isController": false}]}, function(index, item){
         switch(index){
             case 0:
                 item = item.toFixed(3);
@@ -187,7 +187,7 @@ $(document).ready(function() {
     }, [[0, 0]], 3);
 
     // Create statistics table
-    createTable($("#statisticsTable"), {"supportsControllersDiscrimination": true, "overall": {"data": ["Total", 100, 0, 0.0, 1347.1699999999994, 403, 4482, 1045.0, 2679.600000000001, 3702.7499999999995, 4481.94, 9.707795359673819, 146.83988508397243, 2.384287629841763], "isController": false}, "titles": ["Label", "#Samples", "FAIL", "Error %", "Average", "Min", "Max", "Median", "90th pct", "95th pct", "99th pct", "Transactions/s", "Received", "Sent"], "items": [{"data": ["Get Notes API", 50, 0, 0.0, 1203.1, 464, 2737, 1111.0, 2091.8999999999996, 2520.2999999999997, 2737.0, 6.826870562534134, 201.33267980270344, 1.7067176406335336], "isController": false}, {"data": ["Login API", 50, 0, 0.0, 1491.2400000000002, 403, 4482, 980.0, 3700.5, 4368.199999999999, 4482.0, 5.170096163788647, 3.9331102652259333, 1.2470837426326131], "isController": false}]}, function(index, item){
+    createTable($("#statisticsTable"), {"supportsControllersDiscrimination": true, "overall": {"data": ["Total", 100, 0, 0.0, 1784.9299999999996, 499, 7572, 1386.0, 3548.100000000001, 4925.199999999999, 7567.589999999997, 6.258213905751299, 106.72687101038863, 1.537051559859816], "isController": false}, "titles": ["Label", "#Samples", "FAIL", "Error %", "Average", "Min", "Max", "Median", "90th pct", "95th pct", "99th pct", "Transactions/s", "Received", "Sent"], "items": [{"data": ["Get Notes API", 50, 0, 0.0, 1921.56, 499, 7572, 1418.0, 4826.599999999999, 6346.149999999994, 7572.0, 3.875368159975198, 129.2320231359479, 0.9688420399937995], "isController": false}, {"data": ["Login API", 50, 0, 0.0, 1648.2999999999997, 516, 4929, 1232.5, 3265.3999999999996, 3651.2499999999995, 4929.0, 4.4955943175687825, 3.4199882552598453, 1.0843865199604388], "isController": false}]}, function(index, item){
         switch(index){
             // Errors pct
             case 3:

@@ -20,21 +20,15 @@ public class NegativeLoginTest extends BaseTest {
         @Severity(SeverityLevel.NORMAL)
         public void TC_NEG_06_WrongPassword() {
                 try {
-                        System.out.println("===== TC-NEG-06: Login with Wrong Password =====");
+                        System.out.println("TC-NEG-06: Login with Wrong Password");
                         Map<String, String> invalidData = CSVReader.getRowByType("invalid_user");
                         String wrongEmail = invalidData.get("email");
                         String wrongPassword = invalidData.get("password");
                         LoginPage loginPage = new LoginPage(driver, wait);
                         loginPage.loginWithoutWait(wrongEmail, wrongPassword);
-
                         Thread.sleep(2000);
                         String pageSource = driver.getPageSource();
-                        boolean errorShown = pageSource.contains("Invalid")
-                                        || pageSource.contains("incorrect")
-                                        || pageSource.contains("wrong")
-                                        || pageSource.contains("failed")
-                                        || pageSource.contains("Incorrect");
-
+                        boolean errorShown = pageSource.contains("Incorrect");
                         ScreenshotUtil.captureAndAttach(driver, "TC-NEG-06 Wrong Password Error");
                         Assert.assertTrue(errorShown, "Error message not shown for wrong password");
                         System.out.println("TC-NEG-06 PASSED");
@@ -50,19 +44,14 @@ public class NegativeLoginTest extends BaseTest {
         public void TC_NEG_07_BothFieldsEmpty() {
 
                 try {
-                        System.out.println("===== TC-NEG-07: Login with Both Fields Empty =====");
+                        System.out.println("TC-NEG-07: Login with Both Fields Empty");
                         AdHandler.dismissAd(driver);
                         ClickUtil.click(driver, wait, By.linkText("Login"));
                         WaitUtil.waitForVisible(wait, By.id("email"));
                         AdHandler.dismissAd(driver);
                         ClickUtil.click(driver, wait, By.xpath("//button[text()='Login']"));
                         Thread.sleep(1500);
-
-                        boolean validationShown = driver.getPageSource().contains("required")
-                                        || driver.getPageSource().contains("enter")
-                                        || driver.getPageSource().contains("empty")
-                                        || driver.getPageSource().contains("valid");
-
+                        boolean validationShown = WaitUtil.waitForVisible(wait, By.className("invalid-feedback")).isDisplayed();
                         ScreenshotUtil.captureAndAttach(driver, "TC-NEG-07 Both Fields Empty");
                         Assert.assertTrue(validationShown, "Validation not shown when both fields are empty");
                         System.out.println("TC-NEG-07 PASSED");

@@ -15,7 +15,7 @@ public class CreateNoteTest extends BaseTest {
     @Severity(SeverityLevel.CRITICAL)
     public void TC_UI_02_CreateNote() {
         try {
-            System.out.println("===== TC-UI-02: Create a New Note via UI and Verify it appears in UI List =====");
+            System.out.println("TC-UI-02: Create a New Note via UI");
             LoginPage loginPage = new LoginPage(driver, wait);
             loginPage.login(email, password);
             NotesPage notesPage = new NotesPage(driver, wait);
@@ -35,7 +35,7 @@ public class CreateNoteTest extends BaseTest {
     @Severity(SeverityLevel.CRITICAL)
     public void TC_UI_03_NoteAppearsInList() {
         try {
-            System.out.println("===== TC-UI-03: Newly Created Note Appears in UI List =====");
+            System.out.println("TC-UI-03: Newly Created Note Appears in UI List");
             LoginPage loginPage = new LoginPage(driver, wait);
             loginPage.login(email, password);
             NotesPage notesPage = new NotesPage(driver, wait);

@@ -8,7 +8,6 @@ import utils.CSVReader;
 import java.util.Map;
 
 public class APIAuthentication {
-    // shared token used by authenticated API requests
     public static String token;
 
     // reads valid credentials from CSV data and logs in to get an auth token
@@ -29,18 +28,16 @@ public class APIAuthentication {
     }
 
     public static RequestSpecification getBaseSpec() {
-        // Build a standard request specification with auth header and JSON content type
         return RestAssured.given()
                 .baseUri(ConfigReader.get("api.base.url"))
                 .header("x-auth-token", token)
                 .contentType("application/json");
     }
 
-    // Helper for retries in case a transient error occurs while fetching an endpoint
+    //retry logic for GET requests
     public static Response getWithRetry(String endpoint, int maxRetries) {
         int attempts = 0;
         Response response = null;
-        // Loop until we get a successful response or exceed retries
         while (attempts < maxRetries) {
             response = getBaseSpec().get(endpoint);
             attempts++;

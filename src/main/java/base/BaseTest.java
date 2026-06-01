@@ -24,6 +24,7 @@ public class BaseTest {
     @BeforeMethod
     // Initializes WebDriver and loads test data before each test method
     public void setUp(Method method) {
+        
         // Load test data from login CSV and assign to variables
         Map<String, String> loginData = CSVReader.getRowByType("valid_user");
         email = loginData.get("email");

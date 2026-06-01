@@ -2,50 +2,50 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-05-27T08:46:16 IST" name="Surefire suite" finished-at="2026-05-27T08:46:57 IST" duration-ms="41152">
+  <suite started-at="2026-06-01T18:00:05 IST" name="Surefire suite" finished-at="2026-06-01T18:00:48 IST" duration-ms="43122">
     <groups>
     </groups>
-    <test started-at="2026-05-27T08:46:16 IST" name="Surefire test" finished-at="2026-05-27T08:46:57 IST" duration-ms="41152">
-      <class name="tests.API.JMeterTest">
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.API.JMeterTest@26e356f0]" started-at="2026-05-27T08:46:16 IST" name="setUp" finished-at="2026-05-27T08:46:16 IST" duration-ms="51" status="PASS">
+    <test started-at="2026-06-01T18:00:05 IST" name="Surefire test" finished-at="2026-06-01T18:00:48 IST" duration-ms="43122">
+      <class name="tests.UI.NegativeUITest">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.UI.NegativeUITest@54a7079e]" started-at="2026-06-01T18:00:05 IST" name="setUp" finished-at="2026-06-01T18:00:09 IST" duration-ms="3895" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void tests.API.JMeterTest.TC_PERF_01_30Users() throws java.lang.Exception]]>
+                <![CDATA[public void tests.UI.NegativeUITest.TC_NEG_01_CreateNoteEmptyTitle()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TC_PERF_01_30Users()[pri:0, instance:tests.API.JMeterTest@26e356f0]" started-at="2026-05-27T08:46:16 IST" name="TC_PERF_01_30Users" description="Performance Test - 30 Users" finished-at="2026-05-27T08:46:37 IST" duration-ms="21518" status="PASS">
+        <test-method signature="TC_NEG_01_CreateNoteEmptyTitle()[pri:0, instance:tests.UI.NegativeUITest@54a7079e]" started-at="2026-06-01T18:00:10 IST" name="TC_NEG_01_CreateNoteEmptyTitle" description="TC-NEG-01: Create Note with Empty Title" finished-at="2026-06-01T18:00:28 IST" duration-ms="18277" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_PERF_01_30Users -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.API.JMeterTest@26e356f0]" started-at="2026-05-27T08:46:37 IST" name="tearDown" finished-at="2026-05-27T08:46:37 IST" duration-ms="10" status="PASS">
+        </test-method> <!-- TC_NEG_01_CreateNoteEmptyTitle -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.UI.NegativeUITest@54a7079e]" started-at="2026-06-01T18:00:28 IST" name="tearDown" finished-at="2026-06-01T18:00:29 IST" duration-ms="1365" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.API.JMeterTest@26e356f0]" started-at="2026-05-27T08:46:37 IST" name="setUp" finished-at="2026-05-27T08:46:37 IST" duration-ms="6" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.UI.NegativeUITest@54a7079e]" started-at="2026-06-01T18:00:29 IST" name="setUp" finished-at="2026-06-01T18:00:38 IST" duration-ms="8327" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void tests.API.JMeterTest.TC_PERF_02_50Users() throws java.lang.Exception]]>
+                <![CDATA[public void tests.UI.NegativeUITest.TC_NEG_02_CreateNoteEmptyDescription()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TC_PERF_02_50Users()[pri:0, instance:tests.API.JMeterTest@26e356f0]" started-at="2026-05-27T08:46:37 IST" name="TC_PERF_02_50Users" description="Performance Test - 50 Users" finished-at="2026-05-27T08:46:57 IST" duration-ms="19255" status="PASS">
+        <test-method signature="TC_NEG_02_CreateNoteEmptyDescription()[pri:0, instance:tests.UI.NegativeUITest@54a7079e]" started-at="2026-06-01T18:00:38 IST" name="TC_NEG_02_CreateNoteEmptyDescription" description="TC-NEG-02: Create Note with Empty Description" finished-at="2026-06-01T18:00:48 IST" duration-ms="9885" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_PERF_02_50Users -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.API.JMeterTest@26e356f0]" started-at="2026-05-27T08:46:57 IST" name="tearDown" finished-at="2026-05-27T08:46:57 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- TC_NEG_02_CreateNoteEmptyDescription -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.UI.NegativeUITest@54a7079e]" started-at="2026-06-01T18:00:48 IST" name="tearDown" finished-at="2026-06-01T18:00:48 IST" duration-ms="733" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- tests.API.JMeterTest -->
+      </class> <!-- tests.UI.NegativeUITest -->
     </test> <!-- Surefire test -->
   </suite> <!-- Surefire suite -->
 </testng-results>

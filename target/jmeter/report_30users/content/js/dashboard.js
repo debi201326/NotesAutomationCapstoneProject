@@ -133,7 +133,7 @@ $(document).ready(function() {
         widgets: ['zebra']
     });
 
-    var data = {"OkPercent": 100.0, "KoPercent": 0.0};
+    var data = {"OkPercent": 83.33333333333333, "KoPercent": 16.666666666666668};
     var dataset = [
         {
             "label" : "FAIL",
@@ -173,7 +173,7 @@ $(document).ready(function() {
     });
 
     // Creates APDEX table
-    createTable($("#apdexTable"), {"supportsControllersDiscrimination": true, "overall": {"data": [0.5416666666666666, 500, 1500, "Total"], "isController": false}, "titles": ["Apdex", "T (Toleration threshold)", "F (Frustration threshold)", "Label"], "items": [{"data": [0.48333333333333334, 500, 1500, "Get Notes API"], "isController": false}, {"data": [0.6, 500, 1500, "Login API"], "isController": false}]}, function(index, item){
+    createTable($("#apdexTable"), {"supportsControllersDiscrimination": true, "overall": {"data": [0.10833333333333334, 500, 1500, "Total"], "isController": false}, "titles": ["Apdex", "T (Toleration threshold)", "F (Frustration threshold)", "Label"], "items": [{"data": [0.16666666666666666, 500, 1500, "Get Notes API"], "isController": false}, {"data": [0.05, 500, 1500, "Login API"], "isController": false}]}, function(index, item){
         switch(index){
             case 0:
                 item = item.toFixed(3);
@@ -187,7 +187,7 @@ $(document).ready(function() {
     }, [[0, 0]], 3);
 
     // Create statistics table
-    createTable($("#statisticsTable"), {"supportsControllersDiscrimination": true, "overall": {"data": ["Total", 60, 0, 0.0, 805.8499999999999, 413, 1608, 720.5, 1383.4, 1487.2999999999995, 1608.0, 5.62957402889848, 85.15280481797711, 1.3826541682304374], "isController": false}, "titles": ["Label", "#Samples", "FAIL", "Error %", "Average", "Min", "Max", "Median", "90th pct", "95th pct", "99th pct", "Transactions/s", "Received", "Sent"], "items": [{"data": ["Get Notes API", 30, 0, 0.0, 931.3, 501, 1608, 810.5, 1482.4, 1547.5, 1608.0, 3.1635558367605188, 93.29709249446377, 0.7908889591901297], "isController": false}, {"data": ["Login API", 30, 0, 0.0, 680.4, 413, 1398, 614.5, 1024.2, 1244.5499999999997, 1398.0, 3.0241935483870965, 2.300631615423387, 0.7294685609879032], "isController": false}]}, function(index, item){
+    createTable($("#statisticsTable"), {"supportsControllersDiscrimination": true, "overall": {"data": ["Total", 60, 10, 16.666666666666668, 3358.316666666667, 898, 22792, 2061.0, 6665.5999999999985, 7769.599999999999, 22792.0, 2.0475020475020473, 29.529818348177724, 0.45355636175948677], "isController": false}, "titles": ["Label", "#Samples", "FAIL", "Error %", "Average", "Min", "Max", "Median", "90th pct", "95th pct", "99th pct", "Transactions/s", "Received", "Sent"], "items": [{"data": ["Get Notes API", 30, 5, 16.666666666666668, 1647.6, 898, 2303, 1684.5, 2118.3, 2299.15, 2303.0, 1.3497705390083687, 37.383854705637546, 0.32667786320075587], "isController": false}, {"data": ["Login API", 30, 5, 16.666666666666668, 5069.033333333333, 1042, 22792, 5097.5, 7763.200000000001, 15057.89999999999, 22792.0, 1.087863074301048, 1.2491656883453601, 0.2186703933531566], "isController": false}]}, function(index, item){
         switch(index){
             // Errors pct
             case 3:
@@ -217,7 +217,7 @@ $(document).ready(function() {
     }, [[0, 0]], 0, summaryTableHeader);
 
     // Create error table
-    createTable($("#errorsTable"), {"supportsControllersDiscrimination": false, "titles": ["Type of error", "Number of errors", "% in errors", "% in all samples"], "items": []}, function(index, item){
+    createTable($("#errorsTable"), {"supportsControllersDiscrimination": false, "titles": ["Type of error", "Number of errors", "% in errors", "% in all samples"], "items": [{"data": ["401/Unauthorized", 5, 50.0, 8.333333333333334], "isController": false}, {"data": ["Non HTTP response code: javax.net.ssl.SSLHandshakeException/Non HTTP response message: Remote host terminated the handshake", 5, 50.0, 8.333333333333334], "isController": false}]}, function(index, item){
         switch(index){
             case 2:
             case 3:
@@ -228,7 +228,7 @@ $(document).ready(function() {
     }, [[1, 1]]);
 
         // Create top5 errors by sampler
-    createTable($("#top5ErrorsBySamplerTable"), {"supportsControllersDiscrimination": false, "overall": {"data": ["Total", 60, 0, "", "", "", "", "", "", "", "", "", ""], "isController": false}, "titles": ["Sample", "#Samples", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors"], "items": [{"data": [], "isController": false}, {"data": [], "isController": false}]}, function(index, item){
+    createTable($("#top5ErrorsBySamplerTable"), {"supportsControllersDiscrimination": false, "overall": {"data": ["Total", 60, 10, "401/Unauthorized", 5, "Non HTTP response code: javax.net.ssl.SSLHandshakeException/Non HTTP response message: Remote host terminated the handshake", 5, "", "", "", "", "", ""], "isController": false}, "titles": ["Sample", "#Samples", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors", "Error", "#Errors"], "items": [{"data": ["Get Notes API", 30, 5, "401/Unauthorized", 5, "", "", "", "", "", "", "", ""], "isController": false}, {"data": ["Login API", 30, 5, "Non HTTP response code: javax.net.ssl.SSLHandshakeException/Non HTTP response message: Remote host terminated the handshake", 5, "", "", "", "", "", "", "", ""], "isController": false}]}, function(index, item){
         return item;
     }, [[0, 0]], 0);
 

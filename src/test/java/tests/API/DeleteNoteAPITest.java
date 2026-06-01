@@ -24,8 +24,9 @@ public class DeleteNoteAPITest extends BaseTest {
         @Severity(SeverityLevel.CRITICAL)
         public void TC_API_02_DeleteNote() {
 
-                System.out.println("===== TC-API-02: Delete a Note via API =====");
+                System.out.println("TC-API-02: Delete a Note via API");
                 System.out.println("Creating a note to delete...");
+
                 Response createResponse = APIAuthentication.getBaseSpec()
                                 .body("{\"title\":\"API Delete Test Note\","
                                                 + "\"description\":\"created to be deleted\","
@@ -38,10 +39,13 @@ public class DeleteNoteAPITest extends BaseTest {
                 System.out.println("Note created with ID: " + noteIdToDelete);
                 Assert.assertNotNull(noteIdToDelete, "Note ID is null - note was not created");
                 System.out.println("Sending DELETE request for note ID: " + noteIdToDelete);
-                Response deleteResponse = APIAuthentication.getBaseSpec().delete("/notes/" + noteIdToDelete);
-                System.out.println("Delete response status: " + deleteResponse.statusCode());
-                System.out.println("Delete response body: " + deleteResponse.getBody().asString());
-                Assert.assertEquals(deleteResponse.statusCode(), 200, "Expected 200 but got: " + deleteResponse.statusCode());
+
+                Response deleteResponse = APIAuthentication.getBaseSpec()
+                                .delete("/notes/" + noteIdToDelete);
+
+                int statusCode = deleteResponse.getStatusCode();
+                System.out.println("Delete response status: " + statusCode);
+                Assert.assertEquals(statusCode, 200, "Expected 200 but got: " + statusCode);
                 System.out.println("TC-API-02 PASSED");
         }
 }

@@ -33,7 +33,6 @@ public class CSVReader {
     }
 
     // Reads notes data from CSV, appends timestamp to noteTitle, and returns a map
-    // for the specified type
     public static Map<String, String> getNotesRowByType(String type) {
 
         String csvPath = ConfigReader.get("notesDataPath");

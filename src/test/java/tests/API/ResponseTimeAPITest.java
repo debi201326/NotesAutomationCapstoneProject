@@ -10,7 +10,6 @@ import io.restassured.response.Response;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
-import utils.PerformanceUtil;
 
 public class ResponseTimeAPITest extends BaseTest {
 
@@ -23,13 +22,14 @@ public class ResponseTimeAPITest extends BaseTest {
         @Test(description = "TC-API-03: API Response Time is Under 2 Seconds")
         @Severity(SeverityLevel.NORMAL)
         public void TC_API_03_ResponseTimeUnder2Seconds() {
-                System.out.println("===== TC-API-03: API Response Time Under 2 Seconds =====");
-                long start = System.currentTimeMillis();
+                System.out.println("TC-API-03: API Response Time Under 2 Seconds");
                 Response response = APIAuthentication.getWithRetry("/notes", 3);
-                long responseTime = System.currentTimeMillis() - start;
-                PerformanceUtil.checkApiResponseTime(responseTime, 2000);
-                Assert.assertEquals(response.statusCode(), 200);
-                Assert.assertTrue(responseTime < 2000);
-                System.out.println("TC-API-03 PASSED - Response Time: " + responseTime + "ms");
+                Assert.assertNotNull(response, "API response is null. Request failed after retries.");
+                int statusCode = response.getStatusCode();
+                Assert.assertEquals(statusCode, 200, "Expected status code 200 but received " + statusCode);
+                long responseTime = response.getTime();
+                System.out.println("API Response Time: " + responseTime + "ms");
+                Assert.assertTrue(responseTime < 2000, "Response time exceeded the 2000ms threshold.");
+                System.out.println("TC-API-03 PASSED");
         }
 }

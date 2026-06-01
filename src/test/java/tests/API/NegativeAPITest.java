@@ -22,7 +22,7 @@ public class NegativeAPITest extends BaseTest {
         @Test(description = "TC-NEG-03: Create Note via API without Token")
         @Severity(SeverityLevel.NORMAL)
         public void TC_NEG_03_CreateNoteWithoutToken() {
-                System.out.println("===== TC-NEG-03: Create Note via API without Token =====");
+                System.out.println("TC-NEG-03: Create Note via API without Token");
                 Response response = RestAssured
                                 .given()
                                 .contentType("application/json")
@@ -40,7 +40,7 @@ public class NegativeAPITest extends BaseTest {
         @Test(description = "TC-NEG-04: GET /notes with Invalid Token")
         @Severity(SeverityLevel.NORMAL)
         public void TC_NEG_04_InvalidToken() {
-                System.out.println("===== TC-NEG-04: GET /notes with Invalid Token =====");
+                System.out.println("TC-NEG-04: GET /notes with Invalid Token");
                 Response response = RestAssured
                                 .given()
                                 .header("x-auth-token", "invalidtoken123abc")
@@ -53,7 +53,7 @@ public class NegativeAPITest extends BaseTest {
         @Test(description = "TC-NEG-05: DELETE Note with Wrong Note ID")
         @Severity(SeverityLevel.NORMAL)
         public void TC_NEG_05_DeleteWrongNoteId() {
-                System.out.println("===== TC-NEG-05: DELETE Note with Wrong Note ID =====");
+                System.out.println("TC-NEG-05: DELETE Note with Wrong Note ID");
                 Response response = APIAuthentication.getBaseSpec()
                                 .delete("/notes/wrongid000abc");
                 int status = response.statusCode();

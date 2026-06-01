@@ -8,7 +8,6 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import utils.WaitUtil;
 import pages.LoginPage;
-import utils.PerformanceUtil;
 import utils.ScreenshotUtil;
 
 public class LoginTest extends BaseTest {
@@ -17,9 +16,7 @@ public class LoginTest extends BaseTest {
     @Severity(SeverityLevel.CRITICAL)
     public void TC_UI_01_ValidLogin() {
         try {
-            System.out.println("===== TC-UI-01: Login with Valid Credentials =====");
-            long pageLoadTime = PerformanceUtil.getPageLoadTime(driver);
-            System.out.println("Page load time: " + pageLoadTime + "ms");
+            System.out.println("TC-UI-01: Login with Valid Credentials");
             LoginPage loginPage = new LoginPage(driver, wait);
             loginPage.login(email, password);
             boolean loaded = WaitUtil.waitForVisible(wait, By.cssSelector("[data-testid='logout']")).isDisplayed();

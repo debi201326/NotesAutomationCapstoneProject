@@ -11,4 +11,3 @@ utils\CSVReader.class
 utils\AdHandler.class
 utils\ScreenshotUtil.class
 pages\NotesPage.class
-utils\PerformanceUtil.class

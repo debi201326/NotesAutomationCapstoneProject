@@ -20,12 +20,12 @@ public class EndToEndTest extends BaseTest {
     @Test(description = "TC-E2E-01: Complete UI and API Note Lifecycle Validation")
     @Severity(SeverityLevel.BLOCKER)
     public void TC_E2E_01_CompleteFlow() {
-        System.out.println("===== TC-E2E-01: Complete UI and API Note Lifecycle Validation =====");
+        System.out.println("TC-E2E-01: Complete UI and API Note Lifecycle Validation");
 
         try {
 
             // FR-01 UI LOGIN
-            System.out.println("FR-01: Login via UI");
+            System.out.println("FR-01:Login via UI");
             LoginPage loginPage = new LoginPage(driver, wait);
             loginPage.login(email, password);
             boolean loggedIn = WaitUtil.waitForVisible(wait,
@@ -101,7 +101,7 @@ public class EndToEndTest extends BaseTest {
                 "FR-07 Failed: Deleted note still appears in UI");
             System.out.println("FR-07 PASSED");
 
-            System.out.println("===== TC-E2E-01: ALL STEPS PASSED =====");
+            System.out.println("TC-E2E-01: ALL STEPS PASSED");
 
         } catch (Exception e) {
             ScreenshotUtil.captureAndAttach(driver, "TC-E2E-01 FAILED");

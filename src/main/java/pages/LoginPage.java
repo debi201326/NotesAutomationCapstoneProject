@@ -25,7 +25,7 @@ public class LoginPage {
         this.wait   = wait;
     }
 
-   // Logs in using the provided email and password, with ad handling and waiting for dashboard visibility to confirm successful login
+   // Logs in using the provided email and password, handlesads, and uses waits
     public void login(String email, String password) {
         ClickUtil.click(driver, wait, loginLink);
         AdHandler.dismissAd(driver);
@@ -39,7 +39,7 @@ public class LoginPage {
         System.out.println("Login successful");
     }
 
-    // Similar to login method but does not wait for dashboard visibility, useful for performance testing
+    // Similar to login method but does not wait for dashboard 
     public void loginWithoutWait(String email, String password) {
         ClickUtil.click(driver, wait, loginLink);
         AdHandler.dismissAd(driver);

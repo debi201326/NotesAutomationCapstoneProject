@@ -18,7 +18,7 @@ public class JMeterTest extends BaseTest {
     @Test(description = "Performance Test - 30 Users")
     @Severity(SeverityLevel.NORMAL)
     public void TC_PERF_01_30Users() throws Exception {
-        System.out.println("===== TC-PERF-01 : 30 USERS TEST =====");
+        System.out.println("TC-PERF-01 : 30 USERS TEST");
         JMeterUtil.runJMeter(PLAN_30, RESULT_30, REPORT_30);
         JMeterUtil.printPerformanceSummary(RESULT_30, "30 USERS");
         System.out.println("TC-PERF-01 PASSED");
@@ -27,7 +27,7 @@ public class JMeterTest extends BaseTest {
     @Test(description = "Performance Test - 50 Users")
     @Severity(SeverityLevel.NORMAL)
     public void TC_PERF_02_50Users() throws Exception {
-        System.out.println("===== TC-PERF-02 : 50 USERS TEST =====");
+        System.out.println("TC-PERF-02 : 50 USERS TEST");
         JMeterUtil.runJMeter(PLAN_50, RESULT_50, REPORT_50);
         JMeterUtil.printPerformanceSummary(RESULT_50, "50 USERS");
         System.out.println("TC-PERF-02 PASSED");

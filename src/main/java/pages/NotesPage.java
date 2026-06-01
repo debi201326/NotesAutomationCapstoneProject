@@ -25,7 +25,7 @@ public class NotesPage {
         this.driver = driver;
         this.wait = wait;
     }
-    // Creates a new note with the given title, description, and category. Handles ads before interacting with the page elements.
+    // Creates a new note with the given title, description, and category.
     public void createNote(String title, String description, String category) {
         WaitUtil.waitForVisible(wait, addNoteBtn);
         AdHandler.dismissAd(driver);
@@ -52,7 +52,7 @@ public class NotesPage {
         }
     }
 
-    // Refreshes the page and checks if a note with the given title is no longer present in the page source
+    // Refreshes the page and checks if a note with the given title is gone
     public boolean isNoteGoneAfterRefresh(WebDriver driver, String title) {
         driver.navigate().refresh();
         return !driver.getPageSource().contains(title);

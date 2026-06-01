@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: tests.API.JMeterTest
--------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 42.20 s -- in tests.API.JMeterTest
