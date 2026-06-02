@@ -34,7 +34,7 @@ public class DeleteNoteAPITest extends BaseTest {
                                 .post("/notes");
 
                 System.out.println("Create response status: " + createResponse.statusCode());
-                SchemaValidator.validate(createResponse, "create_note_schema.json");
+                SchemaValidator.validate(createResponse, ConfigReader.get("create_notes_schema_path"));
                 String noteIdToDelete = createResponse.jsonPath().getString("data.id");
                 System.out.println("Note created with ID: " + noteIdToDelete);
                 Assert.assertNotNull(noteIdToDelete, "Note ID is null - note was not created");
@@ -45,6 +45,7 @@ public class DeleteNoteAPITest extends BaseTest {
 
                 int statusCode = deleteResponse.getStatusCode();
                 System.out.println("Delete response status: " + statusCode);
+                SchemaValidator.validate(deleteResponse, ConfigReader.get("delete_notes_schema_path"));
                 Assert.assertEquals(statusCode, 200, "Expected 200 but got: " + statusCode);
                 System.out.println("TC-API-02 PASSED");
         }

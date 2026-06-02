@@ -4,14 +4,11 @@ import base.BaseTest;
 import io.qameta.allure.Severity;
 import io.qameta.allure.SeverityLevel;
 import java.util.Map;
-
-import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import pages.LoginPage;
 import pages.NotesPage;
 import utils.ScreenshotUtil;
-import utils.WaitUtil;
 import utils.CSVReader;
 
 public class NegativeUITest extends BaseTest {

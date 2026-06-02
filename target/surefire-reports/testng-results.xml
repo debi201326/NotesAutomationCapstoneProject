@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="16" passed="16" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2026-06-01T23:31:10 IST" name="NotesApp Test Suite" finished-at="2026-06-01T23:33:14 IST" duration-ms="124136">
+  <suite started-at="2026-06-02T09:40:00 IST" name="NotesApp Test Suite" finished-at="2026-06-02T09:42:43 IST" duration-ms="162948">
     <groups>
     </groups>
-    <test started-at="2026-06-01T23:31:10 IST" name="Login UI Tests" finished-at="2026-06-01T23:31:47 IST" duration-ms="37197">
+    <test started-at="2026-06-02T09:40:00 IST" name="Login UI Tests" finished-at="2026-06-02T09:40:29 IST" duration-ms="28499">
       <class name="tests.UI.LoginTest">
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.UI.LoginTest@5524cca1]" started-at="2026-06-01T23:31:10 IST" name="setUp" finished-at="2026-06-01T23:31:15 IST" duration-ms="5096" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.UI.LoginTest@5524cca1]" started-at="2026-06-02T09:40:00 IST" name="setUp" finished-at="2026-06-02T09:40:06 IST" duration-ms="6160" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,19 +18,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TC_UI_01_ValidLogin()[pri:0, instance:tests.UI.LoginTest@5524cca1]" started-at="2026-06-01T23:31:15 IST" name="TC_UI_01_ValidLogin" description="TC-UI-01: Login with Valid Credentials" finished-at="2026-06-01T23:31:41 IST" duration-ms="25261" status="PASS">
+        <test-method signature="TC_UI_01_ValidLogin()[pri:0, instance:tests.UI.LoginTest@5524cca1]" started-at="2026-06-02T09:40:07 IST" name="TC_UI_01_ValidLogin" description="TC-UI-01: Login with Valid Credentials" finished-at="2026-06-02T09:40:24 IST" duration-ms="17063" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_UI_01_ValidLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.UI.LoginTest@5524cca1]" started-at="2026-06-01T23:31:41 IST" name="tearDown" finished-at="2026-06-01T23:31:47 IST" duration-ms="6588" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.UI.LoginTest@5524cca1]" started-at="2026-06-02T09:40:24 IST" name="tearDown" finished-at="2026-06-02T09:40:29 IST" duration-ms="4451" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.UI.LoginTest -->
     </test> <!-- Login UI Tests -->
-    <test started-at="2026-06-01T23:31:10 IST" name="Negative UI Tests" finished-at="2026-06-01T23:32:20 IST" duration-ms="69865">
+    <test started-at="2026-06-02T09:40:00 IST" name="Negative UI Tests" finished-at="2026-06-02T09:41:15 IST" duration-ms="74498">
       <class name="tests.UI.NegativeUITest">
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.UI.NegativeUITest@6e535154]" started-at="2026-06-01T23:31:10 IST" name="setUp" finished-at="2026-06-01T23:31:19 IST" duration-ms="8821" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.UI.NegativeUITest@6e535154]" started-at="2026-06-02T09:40:00 IST" name="setUp" finished-at="2026-06-02T09:40:06 IST" duration-ms="6198" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -41,15 +41,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TC_NEG_01_CreateNoteEmptyTitle()[pri:0, instance:tests.UI.NegativeUITest@6e535154]" started-at="2026-06-01T23:31:19 IST" name="TC_NEG_01_CreateNoteEmptyTitle" description="TC-NEG-01: Create Note with Empty Title" finished-at="2026-06-01T23:31:45 IST" duration-ms="26177" status="PASS">
+        <test-method signature="TC_NEG_01_CreateNoteEmptyTitle()[pri:0, instance:tests.UI.NegativeUITest@6e535154]" started-at="2026-06-02T09:40:07 IST" name="TC_NEG_01_CreateNoteEmptyTitle" description="TC-NEG-01: Create Note with Empty Title" finished-at="2026-06-02T09:40:27 IST" duration-ms="19748" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_NEG_01_CreateNoteEmptyTitle -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.UI.NegativeUITest@6e535154]" started-at="2026-06-01T23:31:45 IST" name="tearDown" finished-at="2026-06-01T23:31:47 IST" duration-ms="2035" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.UI.NegativeUITest@6e535154]" started-at="2026-06-02T09:40:27 IST" name="tearDown" finished-at="2026-06-02T09:40:29 IST" duration-ms="1797" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.UI.NegativeUITest@6e535154]" started-at="2026-06-01T23:31:47 IST" name="setUp" finished-at="2026-06-01T23:32:08 IST" duration-ms="20513" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.UI.NegativeUITest@6e535154]" started-at="2026-06-02T09:40:29 IST" name="setUp" finished-at="2026-06-02T09:40:42 IST" duration-ms="13553" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -60,46 +60,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TC_NEG_02_CreateNoteEmptyDescription()[pri:0, instance:tests.UI.NegativeUITest@6e535154]" started-at="2026-06-01T23:32:08 IST" name="TC_NEG_02_CreateNoteEmptyDescription" description="TC-NEG-02: Create Note with Empty Description" finished-at="2026-06-01T23:32:18 IST" duration-ms="9988" status="PASS">
+        <test-method signature="TC_NEG_02_CreateNoteEmptyDescription()[pri:0, instance:tests.UI.NegativeUITest@6e535154]" started-at="2026-06-02T09:40:42 IST" name="TC_NEG_02_CreateNoteEmptyDescription" description="TC-NEG-02: Create Note with Empty Description" finished-at="2026-06-02T09:41:05 IST" duration-ms="22749" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_NEG_02_CreateNoteEmptyDescription -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.UI.NegativeUITest@6e535154]" started-at="2026-06-01T23:32:18 IST" name="tearDown" finished-at="2026-06-01T23:32:20 IST" duration-ms="2116" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.UI.NegativeUITest@6e535154]" started-at="2026-06-02T09:41:05 IST" name="tearDown" finished-at="2026-06-02T09:41:15 IST" duration-ms="9681" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.UI.NegativeUITest -->
     </test> <!-- Negative UI Tests -->
-    <test started-at="2026-06-01T23:32:20 IST" name="GET API Tests" finished-at="2026-06-01T23:32:32 IST" duration-ms="12323">
-      <class name="tests.API.GetNotesAPITest">
-        <test-method is-config="true" signature="apiSetup()[pri:0, instance:tests.API.GetNotesAPITest@1c742ed4]" started-at="2026-06-01T23:32:20 IST" name="apiSetup" finished-at="2026-06-01T23:32:28 IST" duration-ms="8272" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- apiSetup -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.API.GetNotesAPITest@1c742ed4]" started-at="2026-06-01T23:32:28 IST" name="setUp" finished-at="2026-06-01T23:32:28 IST" duration-ms="2" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.API.GetNotesAPITest.TC_API_01_GetNotes()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="TC_API_01_GetNotes()[pri:0, instance:tests.API.GetNotesAPITest@1c742ed4]" started-at="2026-06-01T23:32:28 IST" name="TC_API_01_GetNotes" description="TC-API-01: GET /notes Returns Notes List" finished-at="2026-06-01T23:32:32 IST" duration-ms="4032" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_API_01_GetNotes -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.API.GetNotesAPITest@1c742ed4]" started-at="2026-06-01T23:32:32 IST" name="tearDown" finished-at="2026-06-01T23:32:32 IST" duration-ms="2" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- tests.API.GetNotesAPITest -->
-    </test> <!-- GET API Tests -->
-    <test started-at="2026-06-01T23:31:47 IST" name="Negative Login Tests" finished-at="2026-06-01T23:32:36 IST" duration-ms="48220">
+    <test started-at="2026-06-02T09:40:29 IST" name="Negative Login Tests" finished-at="2026-06-02T09:41:23 IST" duration-ms="54223">
       <class name="tests.UI.NegativeLoginTest">
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.UI.NegativeLoginTest@55cb6996]" started-at="2026-06-01T23:31:47 IST" name="setUp" finished-at="2026-06-01T23:31:56 IST" duration-ms="8130" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.UI.NegativeLoginTest@55cb6996]" started-at="2026-06-02T09:40:29 IST" name="setUp" finished-at="2026-06-02T09:40:43 IST" duration-ms="14192" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -110,15 +83,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TC_NEG_06_WrongPassword()[pri:0, instance:tests.UI.NegativeLoginTest@55cb6996]" started-at="2026-06-01T23:31:56 IST" name="TC_NEG_06_WrongPassword" description="TC-NEG-06: Login with Wrong Password" finished-at="2026-06-01T23:32:14 IST" duration-ms="18499" status="PASS">
+        <test-method signature="TC_NEG_06_WrongPassword()[pri:0, instance:tests.UI.NegativeLoginTest@55cb6996]" started-at="2026-06-02T09:40:43 IST" name="TC_NEG_06_WrongPassword" description="TC-NEG-06: Login with Wrong Password" finished-at="2026-06-02T09:41:01 IST" duration-ms="18486" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_NEG_06_WrongPassword -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.UI.NegativeLoginTest@55cb6996]" started-at="2026-06-01T23:32:14 IST" name="tearDown" finished-at="2026-06-01T23:32:19 IST" duration-ms="4361" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.UI.NegativeLoginTest@55cb6996]" started-at="2026-06-02T09:41:01 IST" name="tearDown" finished-at="2026-06-02T09:41:06 IST" duration-ms="4718" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.UI.NegativeLoginTest@55cb6996]" started-at="2026-06-01T23:32:19 IST" name="setUp" finished-at="2026-06-01T23:32:26 IST" duration-ms="7026" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.UI.NegativeLoginTest@55cb6996]" started-at="2026-06-02T09:41:06 IST" name="setUp" finished-at="2026-06-02T09:41:13 IST" duration-ms="7224" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -129,50 +102,50 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TC_NEG_07_BothFieldsEmpty()[pri:0, instance:tests.UI.NegativeLoginTest@55cb6996]" started-at="2026-06-01T23:32:26 IST" name="TC_NEG_07_BothFieldsEmpty" description="TC-NEG-07: Login with Both Fields Empty" finished-at="2026-06-01T23:32:34 IST" duration-ms="8384" status="PASS">
+        <test-method signature="TC_NEG_07_BothFieldsEmpty()[pri:0, instance:tests.UI.NegativeLoginTest@55cb6996]" started-at="2026-06-02T09:41:13 IST" name="TC_NEG_07_BothFieldsEmpty" description="TC-NEG-07: Login with Both Fields Empty" finished-at="2026-06-02T09:41:20 IST" duration-ms="6601" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_NEG_07_BothFieldsEmpty -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.UI.NegativeLoginTest@55cb6996]" started-at="2026-06-01T23:32:34 IST" name="tearDown" finished-at="2026-06-01T23:32:36 IST" duration-ms="1698" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.UI.NegativeLoginTest@55cb6996]" started-at="2026-06-02T09:41:20 IST" name="tearDown" finished-at="2026-06-02T09:41:23 IST" duration-ms="2974" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.UI.NegativeLoginTest -->
     </test> <!-- Negative Login Tests -->
-    <test started-at="2026-06-01T23:32:32 IST" name="DELETE API Tests" finished-at="2026-06-01T23:32:36 IST" duration-ms="3483">
-      <class name="tests.API.DeleteNoteAPITest">
-        <test-method is-config="true" signature="apiSetup()[pri:0, instance:tests.API.DeleteNoteAPITest@69c81773]" started-at="2026-06-01T23:32:32 IST" name="apiSetup" finished-at="2026-06-01T23:32:35 IST" duration-ms="2277" status="PASS">
+    <test started-at="2026-06-02T09:41:15 IST" name="GET API Tests" finished-at="2026-06-02T09:41:23 IST" duration-ms="8749">
+      <class name="tests.API.GetNotesAPITest">
+        <test-method is-config="true" signature="apiSetup()[pri:0, instance:tests.API.GetNotesAPITest@1c742ed4]" started-at="2026-06-02T09:41:15 IST" name="apiSetup" finished-at="2026-06-02T09:41:22 IST" duration-ms="7110" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- apiSetup -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.API.DeleteNoteAPITest@69c81773]" started-at="2026-06-01T23:32:35 IST" name="setUp" finished-at="2026-06-01T23:32:35 IST" duration-ms="4" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.API.GetNotesAPITest@1c742ed4]" started-at="2026-06-02T09:41:22 IST" name="setUp" finished-at="2026-06-02T09:41:22 IST" duration-ms="7" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void tests.API.DeleteNoteAPITest.TC_API_02_DeleteNote()]]>
+                <![CDATA[public void tests.API.GetNotesAPITest.TC_API_01_GetNotes()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TC_API_02_DeleteNote()[pri:0, instance:tests.API.DeleteNoteAPITest@69c81773]" started-at="2026-06-01T23:32:35 IST" name="TC_API_02_DeleteNote" description="TC-API-02: Delete a Note via API" finished-at="2026-06-01T23:32:36 IST" duration-ms="1190" status="PASS">
+        <test-method signature="TC_API_01_GetNotes()[pri:0, instance:tests.API.GetNotesAPITest@1c742ed4]" started-at="2026-06-02T09:41:22 IST" name="TC_API_01_GetNotes" description="TC-API-01: GET /notes Returns Notes List" finished-at="2026-06-02T09:41:23 IST" duration-ms="1618" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_API_02_DeleteNote -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.API.DeleteNoteAPITest@69c81773]" started-at="2026-06-01T23:32:36 IST" name="tearDown" finished-at="2026-06-01T23:32:36 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- TC_API_01_GetNotes -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.API.GetNotesAPITest@1c742ed4]" started-at="2026-06-02T09:41:23 IST" name="tearDown" finished-at="2026-06-02T09:41:23 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- tests.API.DeleteNoteAPITest -->
-    </test> <!-- DELETE API Tests -->
-    <test started-at="2026-06-01T23:32:36 IST" name="Response Time API Tests" finished-at="2026-06-01T23:32:37 IST" duration-ms="1734">
+      </class> <!-- tests.API.GetNotesAPITest -->
+    </test> <!-- GET API Tests -->
+    <test started-at="2026-06-02T09:41:23 IST" name="Response Time API Tests" finished-at="2026-06-02T09:41:24 IST" duration-ms="902">
       <class name="tests.API.ResponseTimeAPITest">
-        <test-method is-config="true" signature="apiSetup()[pri:0, instance:tests.API.ResponseTimeAPITest@4d15107f]" started-at="2026-06-01T23:32:36 IST" name="apiSetup" finished-at="2026-06-01T23:32:36 IST" duration-ms="782" status="PASS">
+        <test-method is-config="true" signature="apiSetup()[pri:0, instance:tests.API.ResponseTimeAPITest@4d15107f]" started-at="2026-06-02T09:41:23 IST" name="apiSetup" finished-at="2026-06-02T09:41:24 IST" duration-ms="523" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- apiSetup -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.API.ResponseTimeAPITest@4d15107f]" started-at="2026-06-01T23:32:36 IST" name="setUp" finished-at="2026-06-01T23:32:36 IST" duration-ms="28" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.API.ResponseTimeAPITest@4d15107f]" started-at="2026-06-02T09:41:24 IST" name="setUp" finished-at="2026-06-02T09:41:24 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -183,23 +156,50 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TC_API_03_ResponseTimeUnder2Seconds()[pri:0, instance:tests.API.ResponseTimeAPITest@4d15107f]" started-at="2026-06-01T23:32:36 IST" name="TC_API_03_ResponseTimeUnder2Seconds" description="TC-API-03: API Response Time is Under 2 Seconds" finished-at="2026-06-01T23:32:37 IST" duration-ms="911" status="PASS">
+        <test-method signature="TC_API_03_ResponseTimeUnder2Seconds()[pri:0, instance:tests.API.ResponseTimeAPITest@4d15107f]" started-at="2026-06-02T09:41:24 IST" name="TC_API_03_ResponseTimeUnder2Seconds" description="TC-API-03: API Response Time is Under 2 Seconds" finished-at="2026-06-02T09:41:24 IST" duration-ms="368" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_API_03_ResponseTimeUnder2Seconds -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.API.ResponseTimeAPITest@4d15107f]" started-at="2026-06-01T23:32:37 IST" name="tearDown" finished-at="2026-06-01T23:32:37 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.API.ResponseTimeAPITest@4d15107f]" started-at="2026-06-02T09:41:24 IST" name="tearDown" finished-at="2026-06-02T09:41:24 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.API.ResponseTimeAPITest -->
     </test> <!-- Response Time API Tests -->
-    <test started-at="2026-06-01T23:32:37 IST" name="Negative API Tests" finished-at="2026-06-01T23:32:42 IST" duration-ms="4150">
-      <class name="tests.API.NegativeAPITest">
-        <test-method is-config="true" signature="apiSetup()[pri:0, instance:tests.API.NegativeAPITest@6b09fb41]" started-at="2026-06-01T23:32:37 IST" name="apiSetup" finished-at="2026-06-01T23:32:39 IST" duration-ms="1180" status="PASS">
+    <test started-at="2026-06-02T09:41:23 IST" name="DELETE API Tests" finished-at="2026-06-02T09:41:25 IST" duration-ms="1793">
+      <class name="tests.API.DeleteNoteAPITest">
+        <test-method is-config="true" signature="apiSetup()[pri:0, instance:tests.API.DeleteNoteAPITest@69c81773]" started-at="2026-06-02T09:41:23 IST" name="apiSetup" finished-at="2026-06-02T09:41:24 IST" duration-ms="723" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- apiSetup -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.API.NegativeAPITest@6b09fb41]" started-at="2026-06-01T23:32:39 IST" name="setUp" finished-at="2026-06-01T23:32:39 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.API.DeleteNoteAPITest@69c81773]" started-at="2026-06-02T09:41:24 IST" name="setUp" finished-at="2026-06-02T09:41:24 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.API.DeleteNoteAPITest.TC_API_02_DeleteNote()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC_API_02_DeleteNote()[pri:0, instance:tests.API.DeleteNoteAPITest@69c81773]" started-at="2026-06-02T09:41:24 IST" name="TC_API_02_DeleteNote" description="TC-API-02: Delete a Note via API" finished-at="2026-06-02T09:41:25 IST" duration-ms="1057" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_API_02_DeleteNote -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.API.DeleteNoteAPITest@69c81773]" started-at="2026-06-02T09:41:25 IST" name="tearDown" finished-at="2026-06-02T09:41:25 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.API.DeleteNoteAPITest -->
+    </test> <!-- DELETE API Tests -->
+    <test started-at="2026-06-02T09:41:25 IST" name="Negative API Tests" finished-at="2026-06-02T09:41:28 IST" duration-ms="3314">
+      <class name="tests.API.NegativeAPITest">
+        <test-method is-config="true" signature="apiSetup()[pri:0, instance:tests.API.NegativeAPITest@6b09fb41]" started-at="2026-06-02T09:41:25 IST" name="apiSetup" finished-at="2026-06-02T09:41:26 IST" duration-ms="1029" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- apiSetup -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.API.NegativeAPITest@6b09fb41]" started-at="2026-06-02T09:41:26 IST" name="setUp" finished-at="2026-06-02T09:41:26 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -210,15 +210,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TC_NEG_03_CreateNoteWithoutToken()[pri:0, instance:tests.API.NegativeAPITest@6b09fb41]" started-at="2026-06-01T23:32:39 IST" name="TC_NEG_03_CreateNoteWithoutToken" description="TC-NEG-03: Create Note via API without Token" finished-at="2026-06-01T23:32:40 IST" duration-ms="1248" status="PASS">
+        <test-method signature="TC_NEG_03_CreateNoteWithoutToken()[pri:0, instance:tests.API.NegativeAPITest@6b09fb41]" started-at="2026-06-02T09:41:26 IST" name="TC_NEG_03_CreateNoteWithoutToken" description="TC-NEG-03: Create Note via API without Token" finished-at="2026-06-02T09:41:26 IST" duration-ms="790" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_NEG_03_CreateNoteWithoutToken -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.API.NegativeAPITest@6b09fb41]" started-at="2026-06-01T23:32:40 IST" name="tearDown" finished-at="2026-06-01T23:32:40 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.API.NegativeAPITest@6b09fb41]" started-at="2026-06-02T09:41:26 IST" name="tearDown" finished-at="2026-06-02T09:41:26 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.API.NegativeAPITest@6b09fb41]" started-at="2026-06-01T23:32:40 IST" name="setUp" finished-at="2026-06-01T23:32:40 IST" duration-ms="19" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.API.NegativeAPITest@6b09fb41]" started-at="2026-06-02T09:41:26 IST" name="setUp" finished-at="2026-06-02T09:41:26 IST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -229,15 +229,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TC_NEG_04_InvalidToken()[pri:0, instance:tests.API.NegativeAPITest@6b09fb41]" started-at="2026-06-01T23:32:40 IST" name="TC_NEG_04_InvalidToken" description="TC-NEG-04: GET /notes with Invalid Token" finished-at="2026-06-01T23:32:41 IST" duration-ms="641" status="PASS">
+        <test-method signature="TC_NEG_04_InvalidToken()[pri:0, instance:tests.API.NegativeAPITest@6b09fb41]" started-at="2026-06-02T09:41:26 IST" name="TC_NEG_04_InvalidToken" description="TC-NEG-04: GET /notes with Invalid Token" finished-at="2026-06-02T09:41:27 IST" duration-ms="717" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_NEG_04_InvalidToken -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.API.NegativeAPITest@6b09fb41]" started-at="2026-06-01T23:32:41 IST" name="tearDown" finished-at="2026-06-01T23:32:41 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.API.NegativeAPITest@6b09fb41]" started-at="2026-06-02T09:41:27 IST" name="tearDown" finished-at="2026-06-02T09:41:27 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.API.NegativeAPITest@6b09fb41]" started-at="2026-06-01T23:32:41 IST" name="setUp" finished-at="2026-06-01T23:32:41 IST" duration-ms="3" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.API.NegativeAPITest@6b09fb41]" started-at="2026-06-02T09:41:27 IST" name="setUp" finished-at="2026-06-02T09:41:27 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -248,19 +248,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TC_NEG_05_DeleteWrongNoteId()[pri:0, instance:tests.API.NegativeAPITest@6b09fb41]" started-at="2026-06-01T23:32:41 IST" name="TC_NEG_05_DeleteWrongNoteId" description="TC-NEG-05: DELETE Note with Wrong Note ID" finished-at="2026-06-01T23:32:42 IST" duration-ms="984" status="PASS">
+        <test-method signature="TC_NEG_05_DeleteWrongNoteId()[pri:0, instance:tests.API.NegativeAPITest@6b09fb41]" started-at="2026-06-02T09:41:27 IST" name="TC_NEG_05_DeleteWrongNoteId" description="TC-NEG-05: DELETE Note with Wrong Note ID" finished-at="2026-06-02T09:41:28 IST" duration-ms="699" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_NEG_05_DeleteWrongNoteId -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.API.NegativeAPITest@6b09fb41]" started-at="2026-06-01T23:32:42 IST" name="tearDown" finished-at="2026-06-01T23:32:42 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.API.NegativeAPITest@6b09fb41]" started-at="2026-06-02T09:41:28 IST" name="tearDown" finished-at="2026-06-02T09:41:28 IST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.API.NegativeAPITest -->
     </test> <!-- Negative API Tests -->
-    <test started-at="2026-06-01T23:31:10 IST" name="Create Note UI Tests" finished-at="2026-06-01T23:32:46 IST" duration-ms="95574">
+    <test started-at="2026-06-02T09:40:00 IST" name="Create Note UI Tests" finished-at="2026-06-02T09:41:58 IST" duration-ms="118223">
       <class name="tests.UI.CreateNoteTest">
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.UI.CreateNoteTest@7bd7d6d6]" started-at="2026-06-01T23:31:10 IST" name="setUp" finished-at="2026-06-01T23:31:42 IST" duration-ms="31843" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.UI.CreateNoteTest@7bd7d6d6]" started-at="2026-06-02T09:40:00 IST" name="setUp" finished-at="2026-06-02T09:40:14 IST" duration-ms="14166" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -271,15 +271,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TC_UI_02_CreateNote()[pri:0, instance:tests.UI.CreateNoteTest@7bd7d6d6]" started-at="2026-06-01T23:31:42 IST" name="TC_UI_02_CreateNote" description="TC-UI-02: Create a New Note via UI" finished-at="2026-06-01T23:32:02 IST" duration-ms="19740" status="PASS">
+        <test-method signature="TC_UI_02_CreateNote()[pri:0, instance:tests.UI.CreateNoteTest@7bd7d6d6]" started-at="2026-06-02T09:40:14 IST" name="TC_UI_02_CreateNote" description="TC-UI-02: Create a New Note via UI" finished-at="2026-06-02T09:40:40 IST" duration-ms="26155" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_UI_02_CreateNote -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.UI.CreateNoteTest@7bd7d6d6]" started-at="2026-06-01T23:32:02 IST" name="tearDown" finished-at="2026-06-01T23:32:13 IST" duration-ms="11446" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.UI.CreateNoteTest@7bd7d6d6]" started-at="2026-06-02T09:40:40 IST" name="tearDown" finished-at="2026-06-02T09:40:44 IST" duration-ms="3116" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.UI.CreateNoteTest@7bd7d6d6]" started-at="2026-06-01T23:32:13 IST" name="setUp" finished-at="2026-06-01T23:32:16 IST" duration-ms="2429" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.UI.CreateNoteTest@7bd7d6d6]" started-at="2026-06-02T09:40:44 IST" name="setUp" finished-at="2026-06-02T09:40:58 IST" duration-ms="13938" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -290,42 +290,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TC_UI_03_NoteAppearsInList()[pri:0, instance:tests.UI.CreateNoteTest@7bd7d6d6]" started-at="2026-06-01T23:32:16 IST" name="TC_UI_03_NoteAppearsInList" description="TC-UI-03: Newly Created Note Appears in UI List" finished-at="2026-06-01T23:32:41 IST" duration-ms="25508" status="PASS">
+        <test-method signature="TC_UI_03_NoteAppearsInList()[pri:0, instance:tests.UI.CreateNoteTest@7bd7d6d6]" started-at="2026-06-02T09:40:58 IST" name="TC_UI_03_NoteAppearsInList" description="TC-UI-03: Newly Created Note Appears in UI List" finished-at="2026-06-02T09:41:54 IST" duration-ms="56098" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_UI_03_NoteAppearsInList -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.UI.CreateNoteTest@7bd7d6d6]" started-at="2026-06-01T23:32:41 IST" name="tearDown" finished-at="2026-06-01T23:32:46 IST" duration-ms="4522" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.UI.CreateNoteTest@7bd7d6d6]" started-at="2026-06-02T09:41:54 IST" name="tearDown" finished-at="2026-06-02T09:41:58 IST" duration-ms="4621" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.UI.CreateNoteTest -->
     </test> <!-- Create Note UI Tests -->
-    <test started-at="2026-06-01T23:32:42 IST" name="End to End Tests" finished-at="2026-06-01T23:33:08 IST" duration-ms="26024">
-      <class name="tests.E2E.EndToEndTest">
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.E2E.EndToEndTest@34bde49d]" started-at="2026-06-01T23:32:42 IST" name="setUp" finished-at="2026-06-01T23:32:45 IST" duration-ms="2966" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void tests.E2E.EndToEndTest.TC_E2E_01_CompleteFlow()]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="TC_E2E_01_CompleteFlow()[pri:0, instance:tests.E2E.EndToEndTest@34bde49d]" started-at="2026-06-01T23:32:45 IST" name="TC_E2E_01_CompleteFlow" description="TC-E2E-01: Complete UI and API Note Lifecycle Validation" finished-at="2026-06-01T23:33:05 IST" duration-ms="20215" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_E2E_01_CompleteFlow -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.E2E.EndToEndTest@34bde49d]" started-at="2026-06-01T23:33:05 IST" name="tearDown" finished-at="2026-06-01T23:33:08 IST" duration-ms="2824" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- tests.E2E.EndToEndTest -->
-    </test> <!-- End to End Tests -->
-    <test started-at="2026-06-01T23:32:36 IST" name="JMeter Performance Tests" finished-at="2026-06-01T23:33:14 IST" duration-ms="38434">
+    <test started-at="2026-06-02T09:41:24 IST" name="JMeter Performance Tests" finished-at="2026-06-02T09:42:04 IST" duration-ms="39795">
       <class name="tests.API.JMeterTest">
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.API.JMeterTest@1a4927d6]" started-at="2026-06-01T23:32:36 IST" name="setUp" finished-at="2026-06-01T23:32:36 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.API.JMeterTest@1a4927d6]" started-at="2026-06-02T09:41:24 IST" name="setUp" finished-at="2026-06-02T09:41:24 IST" duration-ms="5" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -336,15 +313,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TC_PERF_01_30Users()[pri:0, instance:tests.API.JMeterTest@1a4927d6]" started-at="2026-06-01T23:32:36 IST" name="TC_PERF_01_30Users" description="Performance Test - 30 Users" finished-at="2026-06-01T23:32:56 IST" duration-ms="20346" status="PASS">
+        <test-method signature="TC_PERF_01_30Users()[pri:0, instance:tests.API.JMeterTest@1a4927d6]" started-at="2026-06-02T09:41:24 IST" name="TC_PERF_01_30Users" description="Performance Test - 30 Users" finished-at="2026-06-02T09:41:45 IST" duration-ms="20534" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_PERF_01_30Users -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.API.JMeterTest@1a4927d6]" started-at="2026-06-01T23:32:56 IST" name="tearDown" finished-at="2026-06-01T23:32:56 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.API.JMeterTest@1a4927d6]" started-at="2026-06-02T09:41:45 IST" name="tearDown" finished-at="2026-06-02T09:41:45 IST" duration-ms="7" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.API.JMeterTest@1a4927d6]" started-at="2026-06-01T23:32:56 IST" name="setUp" finished-at="2026-06-01T23:32:56 IST" duration-ms="12" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.API.JMeterTest@1a4927d6]" started-at="2026-06-02T09:41:45 IST" name="setUp" finished-at="2026-06-02T09:41:45 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -355,15 +332,38 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="TC_PERF_02_50Users()[pri:0, instance:tests.API.JMeterTest@1a4927d6]" started-at="2026-06-01T23:32:56 IST" name="TC_PERF_02_50Users" description="Performance Test - 50 Users" finished-at="2026-06-01T23:33:14 IST" duration-ms="17998" status="PASS">
+        <test-method signature="TC_PERF_02_50Users()[pri:0, instance:tests.API.JMeterTest@1a4927d6]" started-at="2026-06-02T09:41:45 IST" name="TC_PERF_02_50Users" description="Performance Test - 50 Users" finished-at="2026-06-02T09:42:04 IST" duration-ms="19184" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_PERF_02_50Users -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.API.JMeterTest@1a4927d6]" started-at="2026-06-01T23:33:14 IST" name="tearDown" finished-at="2026-06-01T23:33:14 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.API.JMeterTest@1a4927d6]" started-at="2026-06-02T09:42:04 IST" name="tearDown" finished-at="2026-06-02T09:42:04 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- tests.API.JMeterTest -->
     </test> <!-- JMeter Performance Tests -->
+    <test started-at="2026-06-02T09:41:28 IST" name="End to End Tests" finished-at="2026-06-02T09:42:43 IST" duration-ms="75063">
+      <class name="tests.E2E.EndToEndTest">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:tests.E2E.EndToEndTest@34bde49d]" started-at="2026-06-02T09:41:28 IST" name="setUp" finished-at="2026-06-02T09:41:36 IST" duration-ms="7617" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void tests.E2E.EndToEndTest.TC_E2E_01_CompleteFlow()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="TC_E2E_01_CompleteFlow()[pri:0, instance:tests.E2E.EndToEndTest@34bde49d]" started-at="2026-06-02T09:41:36 IST" name="TC_E2E_01_CompleteFlow" description="TC-E2E-01: Complete UI and API Note Lifecycle Validation" finished-at="2026-06-02T09:42:43 IST" duration-ms="67122" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_E2E_01_CompleteFlow -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.E2E.EndToEndTest@34bde49d]" started-at="2026-06-02T09:42:43 IST" name="tearDown" finished-at="2026-06-02T09:42:43 IST" duration-ms="300" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.E2E.EndToEndTest -->
+    </test> <!-- End to End Tests -->
   </suite> <!-- NotesApp Test Suite -->
 </testng-results>

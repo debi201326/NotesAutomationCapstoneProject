@@ -24,13 +24,14 @@ public class GetNotesAPITest extends BaseTest {
     @Severity(SeverityLevel.CRITICAL)
     public void TC_API_01_GetNotes() {
 
+
         System.out.println("TC-API-01: GET /notes Returns Notes List");
         Response response = APIAuthentication.getWithRetry("/notes", 3);
         System.out.println("Status Code: " + response.statusCode());
         Assert.assertEquals(response.statusCode(), 200, "GET /notes did not return 200");
         String body = response.getBody().asString();
         Assert.assertTrue(body.contains("data"), "Response does not contain data field");
-        SchemaValidator.validate(response, "get_notes_schema.json");
+        SchemaValidator.validate(response, ConfigReader.get("get_notes_schema_path"));
         System.out.println("TC-API-01 PASSED");
     }
 }
